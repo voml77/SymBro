@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+*.zip
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual Environments
+.env
+.venv
+venv/
+ENV/
+env/
+
+# Distribution / Packaging
+*.egg-info/
+dist/
+build/
+*.egg
+
+# PyInstaller
+*.spec
+
+# Backup files
+*.bak
+*.tmp
+
+# Archive files
+*.zip
+*.tar.gz
+*.rar
+*.7z

@@ -56,8 +56,16 @@ Ziel: Prototyp innerhalb von 14 Tagen
   - Rechts: Chat-Fenster
 - Skill-System vorbereitet und eingebunden
 - Datei-Handling Modul fertig implementiert
+- Chat-Speicher-System vorbereitet:
+  - Chat-Themen werden automatisch aus der ersten Nachricht generiert
+  - Speicherung des Chat-Verlaufs in JSON-Dateien geplant
+  - Kontext-Menü für das Löschen von Chats per Rechtsklick integriert
 
 ## Nächste Schritte (Plan für die kommenden Tage)
+
+0. Fixing Chat-Speicher-System:
+   - Sicherstellen, dass Chat-Dateien korrekt im Verzeichnis `data/chats/` gespeichert werden
+   - Überprüfung und Optimierung der Speicherlogik in `memory.py` und `main_window.py`
 
 1. GUI-Detailverfeinerung:
    - Dynamische Anpassung der GUI an Fenstergröße

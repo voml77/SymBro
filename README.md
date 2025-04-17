@@ -48,24 +48,26 @@ Ziel: Prototyp innerhalb von 14 Tagen
 ## Aktueller Stand
 
 - Migration der GUI auf PySide6 erfolgreich abgeschlossen
-- Erste GUI-Struktur steht: 
+- GUI-Design in gemeinsamer Mensch-KI-Symbiose stetig weiterentwickelt:
   - Dynamischer Name im Header
-  - Farblich angepasster Hintergrund
-  - Links: Steuerungs-Icons (Farbauswahl & neuer Dialog)
-  - Links unten: Chat-Übersicht
-  - Rechts: Chat-Fenster
-- Skill-System vorbereitet und eingebunden
-- Datei-Handling Modul fertig implementiert
-- Chat-Speicher-System vorbereitet:
-  - Chat-Themen werden automatisch aus der ersten Nachricht generiert
-  - Speicherung des Chat-Verlaufs in JSON-Dateien geplant
-  - Kontext-Menü für das Löschen von Chats per Rechtsklick integriert
+  - Farblich angepasstes Design (inkl. aktiver Chat-Hervorhebung)
+  - Links: Interaktive Steuerungs-Icons (Farbe ändern, neuer Dialog, Markdown-Export)
+  - Links unten: Chat-Übersicht mit Favoriten-Option
+  - Rechts: Konversationsansicht mit Zeitstempeln und Eingabefeld
+- Skill-System aktiv (Modularität vorbereitet)
+- Datei-Handling Modul implementiert
+- Chat-System:
+  - Chat-Themen werden automatisch gespeichert
+  - Favoritenstatus kann zugewiesen und gespeichert werden
+  - Umbenennung von Chats per Doppelklick (dynamisch gespeichert)
+  - Kontext-Menü: Chats löschen, Favoriten setzen/entfernen
+- Markdown-Export mit eigenem Icon integriert: Exportiert aktuelle Konversation als `.md` in `data/exports/`
 
 ## Nächste Schritte (Plan für die kommenden Tage)
 
-0. Fixing Chat-Speicher-System:
-   - Sicherstellen, dass Chat-Dateien korrekt im Verzeichnis `data/chats/` gespeichert werden
-   - Überprüfung und Optimierung der Speicherlogik in `memory.py` und `main_window.py`
+0. Fixes & Finetuning:
+   - Verfeinerung der Chat-Speicherung & Favoriten-Logik
+   - Fehlerfreies Handling von Duplikaten und Umbenennungen
 
 1. GUI-Detailverfeinerung:
    - Dynamische Anpassung der GUI an Fenstergröße
@@ -87,6 +89,10 @@ Ziel: Prototyp innerhalb von 14 Tagen
 5. Vorbereitungen für langfristige Features:
    - Diskussionslogik (Bayessches Theorem)
    - Modularer Ausbau für weitere Skills und User Interaction
+
+6. Export- und Dateimanagement erweitern:
+   - Markdown-Export verbessern (z.B. Zeitformatierung, Exportdialog)
+   - Vorbereitung auf Drag & Drop Upload und Verarbeitung von Dateien im Chat
 
 ## Lizenz
 

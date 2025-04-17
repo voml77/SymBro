@@ -10,10 +10,24 @@ from modules.namesoul import NameSoul
 from modules.memory import Memory
 import os
 import datetime
+import shutil
+
+def clear_upload_folder():
+    upload_dir = os.path.join("data", "uploads")
+    if os.path.exists(upload_dir):
+        for file in os.listdir(upload_dir):
+            file_path = os.path.join(upload_dir, file)
+            try:
+                if os.path.isfile(file_path):
+                    os.remove(file_path)
+            except Exception as e:
+                print(f"Fehler beim Löschen der Upload-Datei: {file_path} – {e}")
 
 class MainWindow(QMainWindow):
     def __init__(self, skill_manager):
         super().__init__()
+        self.setAcceptDrops(True)
+        clear_upload_folder()
         self.skill_manager = skill_manager
         
         self.name = NameSoul().get_name()
@@ -109,6 +123,7 @@ class MainWindow(QMainWindow):
         right_layout.addWidget(self.welcome_label)
 
         self.message_list = QListWidget()
+        self.message_list.setAcceptDrops(True)
         self.message_list.setStyleSheet("""
                                         background-color: #1a1a1a;
                                         color: white;
@@ -123,10 +138,33 @@ class MainWindow(QMainWindow):
         self.input_field.setFixedHeight(40)
         self.input_field.setStyleSheet("background-color: #1a1a1a; color: white; border-radius: 10px; border: 2px solid #1f4449; padding-right: 30px;")
 
-        send_action = self.input_field.addAction(QIcon("gui_pyside/icons/send_icon.png"), QLineEdit.TrailingPosition)
+        icon_size = QSize(28, 28)
+        
+        send_pixmap = QPixmap("gui_pyside/icons/send_icon.png").scaled(icon_size, Qt.KeepAspectRatio, Qt.SmoothTransformation)
+        send_icon = QIcon(send_pixmap)
+        send_action = self.input_field.addAction(send_icon, QLineEdit.TrailingPosition)
+        send_action.setToolTip("Nachricht senden")
         send_action.triggered.connect(self.send_message)
-        md_action = self.input_field.addAction(QIcon("gui_pyside/icons/md_icon.png"), QLineEdit.TrailingPosition)
+        
+        md_pixmap = QPixmap("gui_pyside/icons/md_icon.png").scaled(icon_size, Qt.KeepAspectRatio, Qt.SmoothTransformation)
+        md_icon = QIcon(md_pixmap)
+        md_action = self.input_field.addAction(md_icon, QLineEdit.TrailingPosition)
+        md_action.setToolTip("Chat als Markdown exportieren")
         md_action.triggered.connect(self.export_chat_to_markdown)
+        
+        plus_pixmap = QPixmap("gui_pyside/icons/plus_icon.png").scaled(icon_size, Qt.KeepAspectRatio, Qt.SmoothTransformation)
+        plus_icon = QIcon(plus_pixmap)
+        plus_action = self.input_field.addAction(plus_icon, QLineEdit.TrailingPosition)
+        plus_action.setToolTip("Datei hinzufügen (Upload)")
+        plus_action.triggered.connect(self.handle_plus_icon_click)
+        
+        self.input_field.setStyleSheet("""
+            background-color: #1a1a1a;
+            color: white;
+            border-radius: 10px;
+            border: 2px solid #1f4449;
+            padding-right: 90px;
+        """)
 
         input_layout = QHBoxLayout()
         input_layout.addWidget(self.input_field)
@@ -173,6 +211,7 @@ class MainWindow(QMainWindow):
         if item:
             chat_id = item.data(Qt.UserRole)
             self.memory.delete_chat(chat_id)
+            self.memory.remove_chat_from_list(chat_id)
             self.chat_list.takeItem(self.chat_list.row(item))
             self.message_list.clear()
             self.existing_titles.discard(item.text())
@@ -301,7 +340,8 @@ class MainWindow(QMainWindow):
         if item:
             chat_id = item.data(Qt.UserRole)
             new_title = item.text()
-            self.memory.update_chats_list(chat_id, new_title)
+            is_favorite = item.data(Qt.UserRole + 1)
+            self.memory.update_chats_list(chat_id, new_title, is_favorite)
 
             # Automatisch auch den Chatverlauf speichern mit neuem Titel
             messages = []
@@ -318,8 +358,6 @@ class MainWindow(QMainWindow):
                     "content": text.split("): ", 1)[-1]
                 })
             self.memory.save_chat(chat_id, new_title, messages)
-            is_favorite = item.data(Qt.UserRole + 1)
-            self.memory.update_chats_list(chat_id, new_title, is_favorite)
 
     def export_chat_to_markdown(self):
         if not self.selected_chat_id:
@@ -336,10 +374,11 @@ class MainWindow(QMainWindow):
         lines = [f"## Chat: {title}", ""]
 
         for msg in messages:
-            sender = "🧑 Du" if msg["role"] == "user" else f"🤖 {self.name}"
-            timestamp = datetime.datetime.now().strftime('%H:%M')  # Platzhalterzeit
-            content = msg["content"]
-            lines.append(f"**{sender} ({timestamp}):** {content}")
+            role = msg.get("role", "elias")
+            content = msg.get("content", "")
+            timestamp = msg.get("timestamp", datetime.datetime.now().strftime('%H:%M'))
+            sender = "🧑 Du" if role == "user" else f"🤖 {self.name}"
+            lines.append(f"**{sender} ({timestamp}):**\n{content}\n\n---")
 
         markdown_content = "\n\n".join(lines)
 
@@ -349,7 +388,51 @@ class MainWindow(QMainWindow):
         with open(file_path, "w", encoding="utf-8") as f:
             f.write(markdown_content)
         print(f"Chat erfolgreich exportiert nach: {file_path}")
+        self.message_list.addItem(QListWidgetItem(f"✅ Chat exportiert nach: {file_path}"))
 
+
+    def save_uploaded_file(self, file_path):
+        try:
+            filename = os.path.basename(file_path)
+            target_dir = os.path.join("data", "uploads")
+            os.makedirs(target_dir, exist_ok=True)
+            target_path = os.path.join(target_dir, filename)
+            shutil.copy(file_path, target_path)
+            print(f"Datei erfolgreich gespeichert: {target_path}")
+            return target_path
+        except Exception as e:
+            print(f"Fehler beim Speichern der Datei: {e}")
+            return None
+
+    def handle_plus_icon_click(self):
+        from PySide6.QtWidgets import QFileDialog
+        file_dialog = QFileDialog(self)
+        file_dialog.setFileMode(QFileDialog.ExistingFile)
+        if file_dialog.exec():
+            selected_files = file_dialog.selectedFiles()
+            for file_path in selected_files:
+                saved_path = self.save_uploaded_file(file_path)
+                if saved_path:
+                    ext = os.path.splitext(saved_path)[1].lower()
+                    if ext in [".png", ".jpg", ".jpeg", ".gif"]:
+                        file_icon = "🖼"
+                    elif ext in [".mp3", ".wav", ".ogg"]:
+                        file_icon = "🎵"
+                    else:
+                        file_icon = "📄"
+                    self.message_list.addItem(QListWidgetItem(f"{file_icon} Datei hinzugefügt: {os.path.basename(saved_path)}"))
+
+    def dragEnterEvent(self, event):
+        if event.mimeData().hasUrls():
+            event.acceptProposedAction()
+
+    def dropEvent(self, event):
+        if event.mimeData().hasUrls():
+            for url in event.mimeData().urls():
+                file_path = url.toLocalFile()
+                saved_path = self.save_uploaded_file(file_path)
+                if saved_path:
+                    self.message_list.addItem(QListWidgetItem(f"📎 Datei hinzugefügt: {os.path.basename(saved_path)}"))
 
 # Ausführen, wenn Datei direkt gestartet wird
 if __name__ == "__main__":

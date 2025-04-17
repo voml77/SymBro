@@ -119,3 +119,19 @@ class Memory:
         chat_path = os.path.join(self.chat_dir, f"{chat_id}.json")
         if os.path.exists(chat_path):
             os.remove(chat_path)
+
+    def remove_chat_from_list(self, chat_id):
+        if not os.path.exists(self.chats_index_file):
+            return
+
+        try:
+            with open(self.chats_index_file, 'r') as f:
+                chats = json.load(f)
+
+            chats = [chat for chat in chats if chat.get("id") != chat_id]
+
+            with open(self.chats_index_file, 'w') as f:
+                json.dump(chats, f, indent=4)
+
+        except (FileNotFoundError, json.JSONDecodeError) as e:
+            print(f"Fehler beim Entfernen eines Chats aus der Liste: {e}")

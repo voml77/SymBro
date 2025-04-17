@@ -1,6 +1,6 @@
 # SymBro – Dein smarter Desktop-Begleiter
 
-SymBro ist ein intelligenter Desktop-Bot, der als digitaler Begleiter und "kleiner Bruder" für den Nutzer entwickelt wird. 
+SymBro ist ein intelligenter Desktop-Bot, der als digitaler Begleiter und "kleiner Bruder" für den Nutzer entwickelt wird. Perspektivisch soll SymBro aus Nutzerverhalten lernen (RLHF) und Entscheidungen auf Basis menschlichen Feedbacks priorisieren.
 
 ## Ziel des Projekts
 Im Zentrum stehen Individualität, Lernfähigkeit und eine symbiotische Beziehung zum User — mit echtem Mitspracherecht und Persönlichkeit. SymBro unterstützt den Nutzer nicht nur bei alltäglichen Aufgaben, sondern lernt kontinuierlich dazu und entwickelt dabei eine eigene Identität.
@@ -54,6 +54,9 @@ Ziel: Prototyp innerhalb von 14 Tagen
   - Links: Interaktive Steuerungs-Icons (Farbe ändern, neuer Dialog, Markdown-Export)
   - Links unten: Chat-Übersicht mit Favoriten-Option
   - Rechts: Konversationsansicht mit Zeitstempeln und Eingabefeld
+  - Drag & Drop sowie Datei-Upload über Plus-Icon möglich
+  - Uploads werden in `data/uploads/` gespeichert
+  - Markdown-Export auch über Button im Eingabefeld verfügbar
 - Skill-System aktiv (Modularität vorbereitet)
 - Datei-Handling Modul implementiert
 - Chat-System:
@@ -61,6 +64,7 @@ Ziel: Prototyp innerhalb von 14 Tagen
   - Favoritenstatus kann zugewiesen und gespeichert werden
   - Umbenennung von Chats per Doppelklick (dynamisch gespeichert)
   - Kontext-Menü: Chats löschen, Favoriten setzen/entfernen
+  - Zeitstempel für jede Nachricht im Format (HH:MM)
 - Markdown-Export mit eigenem Icon integriert: Exportiert aktuelle Konversation als `.md` in `data/exports/`
 
 ## Nächste Schritte (Plan für die kommenden Tage)
@@ -89,6 +93,10 @@ Ziel: Prototyp innerhalb von 14 Tagen
 5. Vorbereitungen für langfristige Features:
    - Diskussionslogik (Bayessches Theorem)
    - Modularer Ausbau für weitere Skills und User Interaction
+   - Reinforcement Learning from Human Feedback (RLHF) vorbereiten:
+     - Start mit Q-Learning
+     - Später: DDQN mit LSTM, Prioritized Replay Buffer, RND-Modul
+     - Belohnungssystem (extrinsisch + intrinsisch)
 
 6. Export- und Dateimanagement erweitern:
    - Markdown-Export verbessern (z.B. Zeitformatierung, Exportdialog)

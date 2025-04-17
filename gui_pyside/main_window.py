@@ -31,6 +31,7 @@ class MainWindow(QMainWindow):
         self.skill_manager = skill_manager
         
         self.name = NameSoul().get_name()
+        self.theme_color = NameSoul().get_color()
         self.memory = Memory()
         self.setWindowFlags(Qt.FramelessWindowHint)
         self.pressing = False
@@ -51,7 +52,7 @@ class MainWindow(QMainWindow):
         # Linker Bereich
         left_widget = QWidget()
         left_widget.setFixedWidth(250)
-        left_widget.setStyleSheet("background-color: #1f4449;")
+        left_widget.setStyleSheet(f"background-color: {self.theme_color};")
 
         #Layout for Icons
         icon_layout = QVBoxLayout()
@@ -97,7 +98,7 @@ class MainWindow(QMainWindow):
 
         self.chat_list.setContentsMargins(0, 0, 0, 0)
         self.chat_list.setStyleSheet(
-            "background-color: #1f4449; color: white; border-radius: 10px; border: 2px solid #1a1a1a;"
+            f"background-color: {self.theme_color}; color: white; border-radius: 10px; border: 2px solid #1a1a1a;"
             "font-size: 16px; font-family: 'Arial';"
         )
         self.chat_list.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
@@ -181,7 +182,17 @@ class MainWindow(QMainWindow):
         self.chat_list.itemChanged.connect(self.chat_title_changed)
 
     def change_color(self):
-        print("Farbauswahl (Platzhalter)")
+        from PySide6.QtWidgets import QColorDialog
+        color = QColorDialog.getColor()
+        if color.isValid():
+            self.theme_color = color.name()
+            NameSoul().set_color(self.theme_color)
+
+            self.chat_list.setStyleSheet(
+                f"background-color: {self.theme_color}; color: white; border-radius: 10px; border: 2px solid #1a1a1a;"
+                "font-size: 16px; font-family: 'Arial';"
+            )
+            self.centralWidget().findChild(QWidget).setStyleSheet(f"background-color: {self.theme_color};")
 
     def new_chat(self):
         base_title = "Neuer Chat"
@@ -236,8 +247,16 @@ class MainWindow(QMainWindow):
             if chat_data and "messages" in chat_data:
                 self.message_list.clear()
                 for msg in chat_data["messages"]:
-                    prefix = "🧑 Du: " if msg["role"] == "user" else "🤖 Elias: "
-                    self.message_list.addItem(QListWidgetItem(f"{prefix}{msg['content']}"))
+                    prefix = f"🧑 Du ({msg.get('timestamp', '')}):\n" if msg["role"] == "user" else f"🤖 {self.name} ({msg.get('timestamp', '')}):\n"
+                    item_msg = QListWidgetItem()
+                    item_msg.setText(f"{prefix}{msg['content']}")
+                    item_msg.setTextAlignment(Qt.AlignLeft)
+                    if msg["role"] == "user":
+                        item_msg.setBackground(QColor("#2b6d72"))
+                    else:
+                        item_msg.setBackground(QColor("#444444"))
+                    item_msg.setForeground(Qt.white)
+                    self.message_list.addItem(item_msg)
                 item.setFlags(item.flags() | Qt.ItemIsEditable)
         else:
             print("Kein Item ausgewählt!")

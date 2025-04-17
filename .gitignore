@@ -39,3 +39,13 @@ build/
 *.tar.gz
 *.rar
 *.7z
+
+# SymBro Upload-Schutz
+data/uploads/
+*.doc
+*.docx
+*.pdf
+*.ppt
+*.pptx
+*.xls
+*.xlsx

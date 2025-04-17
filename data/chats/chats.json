@@ -1,8 +1,14 @@
 [
     {
+        "id": "chat_3",
+        "title": "Sprechblase :-)",
+        "created_at": "2025-04-17 22:25",
+        "favorite": false
+    },
+    {
         "id": "chat_1",
-        "title": "Alles klappt wunderbar :-)",
-        "created_at": "2025-04-17 21:25",
+        "title": "Sprechblase",
+        "created_at": "2025-04-17 22:25",
         "favorite": false
     }
 ]

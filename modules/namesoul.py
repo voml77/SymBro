@@ -6,13 +6,22 @@ class NameSoul:
     def __init__(self):
         self.identity_file = 'data/identity.json'
         self.name = None
-        self.load_name()
+        self.theme_color = "#1f4449"
+        self.load_identity()
 
-    def load_name(self):
+    def load_identity(self):
         if os.path.exists(self.identity_file) and os.path.getsize(self.identity_file) > 0:
             with open(self.identity_file, 'r') as f:
                 data = json.load(f)
                 self.name = data.get('name')
+                self.theme_color = data.get('theme_color', "#1f4449")
+
+    def get_theme_color(self):
+        return self.theme_color
+
+    def set_theme_color(self, color):
+        self.theme_color = color
+        self.save_identity()
 
     def name_exists(self):
         return self.name is not None
@@ -37,7 +46,7 @@ class NameSoul:
             chosen_name = user_input
 
         self.name = chosen_name
-        self.save_name()
+        self.save_identity()
         print(f"Perfekt! Von nun an heiße ich {self.name}. Schön, dich an meiner Seite zu haben.")
 
     def get_name_suggestion_from_openai(self):
@@ -50,7 +59,10 @@ class NameSoul:
         )
         return response.choices[0].message['content'].strip()
 
-    def save_name(self):
+    def save_identity(self):
         os.makedirs(os.path.dirname(self.identity_file), exist_ok=True)
         with open(self.identity_file, 'w') as f:
-            json.dump({'name': self.name}, f)
+            json.dump({'name': self.name, 'theme_color': self.theme_color}, f)
+
+    def get_color(self):
+        return self.theme_color

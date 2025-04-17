@@ -3,12 +3,13 @@ from PySide6.QtWidgets import (
     QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
     QPushButton, QListWidget, QLabel, QLineEdit, QSizePolicy, QSpacerItem, QListWidgetItem, QMenu
 )
-from PySide6.QtGui import QIcon
+from PySide6.QtGui import QIcon, QColor
 from PySide6.QtCore import Qt, QSize
-from PySide6.QtGui import QGuiApplication
+from PySide6.QtGui import QGuiApplication, QPixmap
 from modules.namesoul import NameSoul
 from modules.memory import Memory
 import os
+import datetime
 
 class MainWindow(QMainWindow):
     def __init__(self, skill_manager):
@@ -19,6 +20,8 @@ class MainWindow(QMainWindow):
         self.memory = Memory()
         self.setWindowFlags(Qt.FramelessWindowHint)
         self.pressing = False
+        self.selected_chat_id = None
+        self.existing_titles = set()
         self.init_ui()
         self.move_to_bottom_right()
 
@@ -30,7 +33,6 @@ class MainWindow(QMainWindow):
         main_layout = QHBoxLayout(main_widget)
         main_layout.setContentsMargins(0, 0, 0, 0)
         main_layout.setSpacing(0)
-
         
         # Linker Bereich
         left_widget = QWidget()
@@ -70,34 +72,33 @@ class MainWindow(QMainWindow):
         left_layout = QVBoxLayout(left_widget)
         left_layout.setAlignment(Qt.AlignTop)
         left_layout.setSpacing(20)
+        
+        self.chat_list = QListWidget()
+        self.chat_list.itemClicked.connect(self.chat_selected)
+        left_layout.addWidget(self.chat_list)
 
         left_layout.addLayout(icon_layout)  # Add Icon Layout
         
-        chat_label = QLabel("Chats")
-        chat_label.setAlignment(Qt.AlignCenter)
-        chat_label.setContentsMargins(0, 10, 0, 10)
-        chat_label.setStyleSheet("color: white; font-size: 16px;")
-        
-        left_layout.addWidget(chat_label)
-        
         left_layout.addSpacing(10)
 
-        self.chat_list = QListWidget()
         self.chat_list.setContentsMargins(0, 0, 0, 0)
         self.chat_list.setStyleSheet(
             "background-color: #1f4449; color: white; border-radius: 10px; border: 2px solid #1a1a1a;"
+            "font-size: 16px; font-family: 'Arial';"
         )
         self.chat_list.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
         self.chat_list.setContextMenuPolicy(Qt.CustomContextMenu)
         self.chat_list.customContextMenuRequested.connect(self.show_chat_context_menu)
-        left_layout.addWidget(self.chat_list)
 
         # Existierende Chats laden
         for chat in self.memory.load_chats():
-            item = QListWidgetItem(chat["title"])
+            item = QListWidgetItem("⭐ " + chat["title"] if chat.get("favorite") else chat["title"])
             item.setData(Qt.UserRole, chat["id"])
+            item.setData(Qt.UserRole + 1, chat.get("favorite", False))  # Store favorite status
             self.chat_list.addItem(item)
-
+            self.existing_titles.add(chat["title"])
+            print(f"Added chat: {chat['title']}, ID: {chat['id']}")
+             
         # Rechter Bereich
         right_widget = QWidget()
         right_widget.setStyleSheet("background-color: #020202;")
@@ -124,6 +125,8 @@ class MainWindow(QMainWindow):
 
         send_action = self.input_field.addAction(QIcon("gui_pyside/icons/send_icon.png"), QLineEdit.TrailingPosition)
         send_action.triggered.connect(self.send_message)
+        md_action = self.input_field.addAction(QIcon("gui_pyside/icons/md_icon.png"), QLineEdit.TrailingPosition)
+        md_action.triggered.connect(self.export_chat_to_markdown)
 
         input_layout = QHBoxLayout()
         input_layout.addWidget(self.input_field)
@@ -136,17 +139,32 @@ class MainWindow(QMainWindow):
 
         self.setCentralWidget(main_widget)
         self.input_field.returnPressed.connect(self.send_message)
+        self.chat_list.itemDoubleClicked.connect(self.rename_chat)
+        self.chat_list.itemChanged.connect(self.chat_title_changed)
 
     def change_color(self):
         print("Farbauswahl (Platzhalter)")
 
     def new_chat(self):
+        base_title = "Neuer Chat"
+        counter = 1
+        while f"{base_title} {counter}" in self.existing_titles:
+            counter += 1
+        chat_title = f"{base_title} {counter}"
+        self.existing_titles.add(chat_title)
+        
         chat_id = f"chat_{self.chat_list.count() + 1}"
-        chat_title = f"Neuer Chat {self.chat_list.count() + 1}"
         item = QListWidgetItem(chat_title)
         item.setData(Qt.UserRole, chat_id)
         self.chat_list.addItem(item)
-        self.memory.save_chat(chat_id, chat_title)
+        chat_data = {
+            "id": chat_id,
+            "title": chat_title,
+            "messages": []  # Wichtig: Leere Nachrichtenliste hinzufügen
+            }
+        self.memory.save_chat(chat_data["id"], chat_data["title"], chat_data["messages"])
+        
+        self.selected_chat_id = chat_id
         self.message_list.clear()
         self.welcome_label.setText(f"SymBro - {self.name} aktiv")
 
@@ -157,30 +175,75 @@ class MainWindow(QMainWindow):
             self.memory.delete_chat(chat_id)
             self.chat_list.takeItem(self.chat_list.row(item))
             self.message_list.clear()
+            self.existing_titles.discard(item.text())
+            
+    def chat_selected(self, item):
+        if item:
+            for i in range(self.chat_list.count()):
+                other_item = self.chat_list.item(i)
+                if other_item != item:
+                    other_item.setBackground(Qt.transparent)
+                    other_item.setForeground(Qt.white)
+                    font = other_item.font()
+                    font.setBold(False)
+                    other_item.setFont(font)
+            item.setBackground(QColor("#2b6d72"))  # leicht helleres Cyan passend zum Hintergrund
+            item.setForeground(Qt.white)
+            font = item.font()
+            font.setBold(True)
+            item.setFont(font)
+            self.selected_chat_id = item.data(Qt.UserRole)
+            chat_data = self.memory.load_chat_by_id(self.selected_chat_id)
+            if chat_data and "messages" in chat_data:
+                self.message_list.clear()
+                for msg in chat_data["messages"]:
+                    prefix = "🧑 Du: " if msg["role"] == "user" else "🤖 Elias: "
+                    self.message_list.addItem(QListWidgetItem(f"{prefix}{msg['content']}"))
+                item.setFlags(item.flags() | Qt.ItemIsEditable)
+        else:
+            print("Kein Item ausgewählt!")
 
     def send_message(self):
         message = self.input_field.text().strip()
         if message:
-            user_item = QListWidgetItem(f"🧑 Du: {message}")
+            user_item = QListWidgetItem(f"🧑 Du ({datetime.datetime.now().strftime('%H:%M')}): {message}")
             self.message_list.addItem(user_item)
-            elias_item = QListWidgetItem("🤖 Elias: Ich habe deine Nachricht erhalten.")
+            elias_item = QListWidgetItem(f"🤖 Elias ({datetime.datetime.now().strftime('%H:%M')}): Ich habe deine Nachricht erhalten.")
             self.message_list.addItem(elias_item)
             self.input_field.clear()
+            print(self.selected_chat_id)
 
-            if self.chat_list.currentItem():
-                chat_id = self.chat_list.currentItem().data(Qt.UserRole)
+            if self.selected_chat_id is not None:
+                chat_id = self.selected_chat_id
                 new_title = message[:30] + "..." if len(message) > 30 else message
-                self.chat_list.currentItem().setText(new_title)
-                self.memory.update_chats_list({"id": chat_id, "title": new_title})
+                try:# Finde das Item in der Liste und aktualisiere den Titel
+                    for i in range(self.chat_list.count()):
+                        item = self.chat_list.item(i)
+                        if item.data(Qt.UserRole) == chat_id:
+                            item.setText(new_title)
+                            item.setFlags(item.flags() | Qt.ItemIsEditable)
+                            self.memory.update_chats_list(chat_id, new_title)
+                            break
                 
-                # Speichere den Chatverlauf in einer Datei
-                messages = []
-                for index in range(self.message_list.count()):
-                    messages.append({"role": "user" if "Du:" in self.message_list.item(index).text() else "elias",
-                                     "content": self.message_list.item(index).text()})
-                self.memory.save_chat(chat_id, new_title)
-        
-            self.message_list.scrollToBottom()
+                    # Speichere den Chatverlauf in einer Datei
+                    messages = []
+                    for index in range(self.message_list.count()):
+                        text = self.message_list.item(index).text()
+                        if text.startswith("🧑 Du"):
+                            role = "user"
+                        elif text.startswith(f"🤖 {self.name}"):
+                            role = "elias"
+                        else:
+                            role = "elias"
+                        messages.append({"role": role, "content": text})
+                    self.memory.save_chat(chat_id, new_title, messages)
+                    self.message_list.scrollToBottom()
+                    self.existing_titles.add(new_title)
+                
+                except Exception as e:
+                    print(f"Fehler beim Speichern des Chats: {e}")
+                    import traceback
+                    traceback.print_exc()  
             
     def move_to_bottom_right(self):
         screen = QGuiApplication.primaryScreen()
@@ -208,9 +271,85 @@ class MainWindow(QMainWindow):
     def show_chat_context_menu(self, position):
         menu = QMenu()
         delete_action = menu.addAction("Löschen")
+        favorite_action = menu.addAction("Als Favorit markieren")
+        unfavorite_action = menu.addAction("Favorit entfernen")
         action = menu.exec_(self.chat_list.viewport().mapToGlobal(position))
         if action == delete_action:
             self.delete_current_chat()
+        elif action == favorite_action:
+            item = self.chat_list.currentItem()
+            if item:
+                item.setText("⭐ " + item.text() if not item.text().startswith("⭐ ") else item.text())
+                item.setData(Qt.UserRole + 1, True)
+        elif action == unfavorite_action:
+            item = self.chat_list.currentItem()
+            if item:
+                if item.text().startswith("⭐ "):
+                    item.setText(item.text()[2:])
+                item.setData(Qt.UserRole + 1, False)
+    
+    def rename_chat(self, item):
+        old_title = item.text()
+        item.setFlags(item.flags() | Qt.ItemIsEditable)
+        self.chat_list.editItem(item)
+        item.setFlags(item.flags() | Qt.ItemIsEditable)
+        item.setSelected(True)
+        self.chat_list.setCurrentItem(item)
+        self.chat_list.editItem(item)
+
+    def chat_title_changed(self, item):
+        if item:
+            chat_id = item.data(Qt.UserRole)
+            new_title = item.text()
+            self.memory.update_chats_list(chat_id, new_title)
+
+            # Automatisch auch den Chatverlauf speichern mit neuem Titel
+            messages = []
+            for index in range(self.message_list.count()):
+                text = self.message_list.item(index).text()
+                if text.startswith("🧑 Du"):
+                    role = "user"
+                elif text.startswith(f"🤖 {self.name}"):
+                    role = "elias"
+                else:
+                    role = "elias"
+                messages.append({
+                    "role": role,
+                    "content": text.split("): ", 1)[-1]
+                })
+            self.memory.save_chat(chat_id, new_title, messages)
+            is_favorite = item.data(Qt.UserRole + 1)
+            self.memory.update_chats_list(chat_id, new_title, is_favorite)
+
+    def export_chat_to_markdown(self):
+        if not self.selected_chat_id:
+            print("Kein Chat ausgewählt zum Export.")
+            return
+
+        chat_data = self.memory.load_chat_by_id(self.selected_chat_id)
+        if not chat_data:
+            print("Kein Chatverlauf vorhanden.")
+            return
+
+        title = chat_data["title"]
+        messages = chat_data.get("messages", [])
+        lines = [f"## Chat: {title}", ""]
+
+        for msg in messages:
+            sender = "🧑 Du" if msg["role"] == "user" else f"🤖 {self.name}"
+            timestamp = datetime.datetime.now().strftime('%H:%M')  # Platzhalterzeit
+            content = msg["content"]
+            lines.append(f"**{sender} ({timestamp}):** {content}")
+
+        markdown_content = "\n\n".join(lines)
+
+        export_dir = os.path.join("data", "exports")
+        os.makedirs(export_dir, exist_ok=True)
+        file_path = os.path.join(export_dir, f"{title.replace(' ', '_')}.md")
+        with open(file_path, "w", encoding="utf-8") as f:
+            f.write(markdown_content)
+        print(f"Chat erfolgreich exportiert nach: {file_path}")
+
 
 # Ausführen, wenn Datei direkt gestartet wird
 if __name__ == "__main__":

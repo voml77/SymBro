@@ -51,12 +51,17 @@ Ziel: Prototyp innerhalb von 14 Tagen
 - GUI-Design in gemeinsamer Mensch-KI-Symbiose stetig weiterentwickelt:
   - Dynamischer Name im Header
   - Farblich angepasstes Design (inkl. aktiver Chat-Hervorhebung)
+  - Aktuell gewählte Lieblingsfarbe wird beim Start aus `identity.json` geladen
+  - Farbwahl kann jederzeit geändert werden und wird dauerhaft gespeichert
   - Links: Interaktive Steuerungs-Icons (Farbe ändern, neuer Dialog, Markdown-Export)
   - Links unten: Chat-Übersicht mit Favoriten-Option
   - Rechts: Konversationsansicht mit Zeitstempeln und Eingabefeld
+  - Nachrichten werden in moderner Sprechblasen-Optik dargestellt
+  - Benutzer- und Elias-Nachrichten farblich differenziert
   - Drag & Drop sowie Datei-Upload über Plus-Icon möglich
   - Uploads werden in `data/uploads/` gespeichert
   - Markdown-Export auch über Button im Eingabefeld verfügbar
+  - Weitere GUI-Verbesserungen wie runde Sprechblasen und kleinere Icons in Planung
 - Skill-System aktiv (Modularität vorbereitet)
 - Datei-Handling Modul implementiert
 - Chat-System:
@@ -67,40 +72,34 @@ Ziel: Prototyp innerhalb von 14 Tagen
   - Zeitstempel für jede Nachricht im Format (HH:MM)
 - Markdown-Export mit eigenem Icon integriert: Exportiert aktuelle Konversation als `.md` in `data/exports/`
 
-## Nächste Schritte (Plan für die kommenden Tage)
+## Nächste Schritte (konkretisierter Plan ab Tag 11)
 
-0. Fixes & Finetuning:
-   - Verfeinerung der Chat-Speicherung & Favoriten-Logik
-   - Fehlerfreies Handling von Duplikaten und Umbenennungen
+0. Fixes & Feinschliff:
+   - Vermeidung von Chat-Duplikaten (Titelprüfung)
+   - Korrekte Löschung aus `chats.json` beim Entfernen eines Chats
 
-1. GUI-Detailverfeinerung:
-   - Dynamische Anpassung der GUI an Fenstergröße
-   - Erste User-Dialog-Interaktion
-   - Mini-Meme-Anzeige & visuelle User Experience verbessern
+1. Dialogsystem aktivieren:
+   - Nachrichten an GPT senden und Antwort anzeigen
+   - Kontextlogik vorbereiten (Zusammenfassung, Speaker-Rolle etc.)
 
-2. Integration NameSoul & Memory in GUI:
-   - Lieblingsfarbe Abfrage und direkte Anpassung der GUI
-   - Speicherung von User-Präferenzen über Memory-Modul
+2. Eingabemodi erweitern:
+   - Plus-Icon mit Upload-Trigger vollständig verknüpfen
+   - Drag & Drop optional erweitern (Anzeige & Feedback im UI)
 
-3. Erweiterung Skills:
-   - File Handling in GUI verfügbar machen
-   - Skill-Auswahl über GUI steuerbar machen
+3. Zusatzoptionen im Chat:
+   - Chat als Markdown exportieren
+   - Favoriten verwalten & farblich hervorheben
 
-4. Start des SymBro-Dialogsystems:
-   - Kontextsensitive Antworten
-   - Vorbereitung auf OpenAI API Anbindung (später dynamische Dialoge)
+4. RLHF-Vorbereitungen:
+   - Speicherung von User-Feedback vorbereiten
+   - Startpunkt für spätere Bewertungssysteme
 
-5. Vorbereitungen für langfristige Features:
-   - Diskussionslogik (Bayessches Theorem)
-   - Modularer Ausbau für weitere Skills und User Interaction
-   - Reinforcement Learning from Human Feedback (RLHF) vorbereiten:
-     - Start mit Q-Learning
-     - Später: DDQN mit LSTM, Prioritized Replay Buffer, RND-Modul
-     - Belohnungssystem (extrinsisch + intrinsisch)
-
-6. Export- und Dateimanagement erweitern:
-   - Markdown-Export verbessern (z.B. Zeitformatierung, Exportdialog)
-   - Vorbereitung auf Drag & Drop Upload und Verarbeitung von Dateien im Chat
+5. GUI finalisieren:
+   - Eingabefeld & Button-Alignment perfektionieren
+   - Sprechblasen-Design weiter verfeinern
+   - Runde Sprechblasen implementieren
+   - Icons in Nachrichten verkleinern und visuell einbinden
+   - Optional: Chat-Hintergrund mit Verlauf oder Muster versehen
 
 ## Lizenz
 

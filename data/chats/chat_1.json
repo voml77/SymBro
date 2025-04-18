@@ -1,15 +1,17 @@
 {
     "id": "chat_1",
-    "title": "Sprechblase",
-    "created_at": "2025-04-17 22:25",
+    "title": "Hallo Elias :-)",
+    "created_at": "2025-04-18 10:31",
     "messages": [
         {
             "role": "user",
-            "content": "Sprechblase"
+            "content": "Hallo Elias :-)",
+            "timestamp": "10:31"
         },
         {
             "role": "elias",
-            "content": "Ich habe deine Nachricht erhalten."
+            "content": "\ud83e\udd16 Elias (10:31):\nHallo! Wie kann ich dir heute helfen?",
+            "timestamp": ""
         }
     ]
 }

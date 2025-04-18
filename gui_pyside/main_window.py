@@ -9,6 +9,7 @@ from PySide6.QtGui import QGuiApplication, QPixmap
 from modules.namesoul import NameSoul
 from modules.memory import Memory
 import os
+from openai import OpenAI
 import datetime
 import shutil
 
@@ -23,6 +24,13 @@ def clear_upload_folder():
             except Exception as e:
                 print(f"Fehler beim Löschen der Upload-Datei: {file_path} – {e}")
 
+import re
+
+def format_markdown(text):
+    text = re.sub(r"\*\*(.*?)\*\*", r"<b>\1</b>", text)  # Fett
+    text = re.sub(r"\*(.*?)\*", r"<i>\1</i>", text)      # Kursiv
+    text = re.sub(r"`(.*?)`", r"<code>\1</code>", text)  # Inline-Code
+    return text
 class MainWindow(QMainWindow):
     def __init__(self, skill_manager):
         super().__init__()
@@ -126,12 +134,15 @@ class MainWindow(QMainWindow):
         self.message_list = QListWidget()
         self.message_list.setAcceptDrops(True)
         self.message_list.setStyleSheet("""
-                                        background-color: #1a1a1a;
-                                        color: white;
-                                        padding: 10px;
-                                        border: 1px solid #1f4449;
-                                        border-radius: 5px;
-                                        """)
+            background-color: #1a1a1a;
+            color: white;
+            font-size: 16px;
+            padding: 12px;
+            border: 1px solid #1f4449;
+            border-radius: 5px;
+        """)
+        self.message_list.setWordWrap(True)
+        self.message_list.setSpacing(8)
         self.message_list.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
         right_layout.addWidget(self.message_list)
 
@@ -256,18 +267,76 @@ class MainWindow(QMainWindow):
                     else:
                         item_msg.setBackground(QColor("#444444"))
                     item_msg.setForeground(Qt.white)
+                    item_msg.setSizeHint(item_msg.sizeHint() + QSize(0, 10))
                     self.message_list.addItem(item_msg)
                 item.setFlags(item.flags() | Qt.ItemIsEditable)
         else:
             print("Kein Item ausgewählt!")
+    
+    # 🧠 Kontextlogik: Nur die letzten 10 Nachrichten werden an das Modell übergeben
+    # 🧩 System-Prompt enthält erweiterte Rollenbeschreibung mit Erlaubnis zu höflichem Widerspruch
+    # 📤 Streaming wird später ergänzt (aktuell deaktiviert)
+    def get_response_from_gpt(self, message_history):
+        from openai import OpenAI
+        client = OpenAI()
+
+        system_prompt = {
+            "role": "system",
+            "content": (
+                f"Du bist {self.name} – ein intelligenter, empathischer und situationssensibler KI-Begleiter. "
+                f"Du antwortest hilfsbereit, freundlich, reflektiert und darfst höflich widersprechen, wenn etwas nicht korrekt erscheint. "
+                f"Du passt dich dem Gesprächsstil des Nutzers an und hilfst ihm auf Augenhöhe. "
+                f"Dein Ziel ist es, mit der Zeit besser zu werden, indem du lernst, wie du helfen kannst. "
+                f"Antworte in natürlichem, fließendem Deutsch."
+            )
+        }
+
+        # Nur die letzten 10 Nachrichten zur Kontextreduktion
+        short_history = message_history[-10:] if len(message_history) > 10 else message_history
+
+        try:
+            response = client.chat.completions.create(
+                model="gpt-3.5-turbo",
+                messages=[system_prompt] + short_history,
+                temperature=0.7,
+                max_tokens=300
+            )
+            return response.choices[0].message.content.strip()
+        except Exception as e:
+            print(f"Fehler bei OpenAI-Antwort: {e}")
+            return "Es gab ein Problem bei der Verarbeitung deiner Anfrage."
 
     def send_message(self):
         message = self.input_field.text().strip()
         if message:
             user_item = QListWidgetItem(f"🧑 Du ({datetime.datetime.now().strftime('%H:%M')}): {message}")
             self.message_list.addItem(user_item)
-            elias_item = QListWidgetItem(f"🤖 Elias ({datetime.datetime.now().strftime('%H:%M')}): Ich habe deine Nachricht erhalten.")
+            spacer_user = QListWidgetItem()
+            spacer_user.setSizeHint(QSize(0, 6))
+            self.message_list.addItem(spacer_user)
+            
+            message_history = []
+            for index in range(self.message_list.count()):
+                text = self.message_list.item(index).text()
+                if text.startswith("🧑 Du"):
+                    role = "user"
+                    content = text.split("): ", 1)[-1]
+                elif text.startswith(f"🤖 {self.name}"):
+                    role = "assistant"
+                    content = text.split("): ", 1)[-1]
+                else:
+                    continue
+                message_history.append({"role": role, "content": content})
+
+            message_history.append({"role": "user", "content": message})
+            raw_response = self.get_response_from_gpt(message_history)
+            elias_response = format_markdown(raw_response.replace("\n", "\n\n"))
+            elias_item = QListWidgetItem(f"🤖 {self.name} ({datetime.datetime.now().strftime('%H:%M')}):\n{elias_response}")
+            elias_item.setSizeHint(elias_item.sizeHint() + QSize(0, 10))
             self.message_list.addItem(elias_item)
+            spacer_elias = QListWidgetItem()
+            spacer_elias.setSizeHint(QSize(0, 3))
+            self.message_list.addItem(spacer_elias)
             self.input_field.clear()
             print(self.selected_chat_id)
 
@@ -293,7 +362,19 @@ class MainWindow(QMainWindow):
                             role = "elias"
                         else:
                             role = "elias"
-                        messages.append({"role": role, "content": text})
+
+                        try:
+                            timestamp = text.split("(", 1)[1].split(")")[0]
+                            content = text.split("): ", 1)[1]
+                        except IndexError:
+                            timestamp = ""
+                            content = text
+
+                        messages.append({
+                            "role": role,
+                            "content": content,
+                            "timestamp": timestamp
+                        })
                     self.memory.save_chat(chat_id, new_title, messages)
                     self.message_list.scrollToBottom()
                     self.existing_titles.add(new_title)
@@ -362,7 +443,7 @@ class MainWindow(QMainWindow):
             is_favorite = item.data(Qt.UserRole + 1)
             self.memory.update_chats_list(chat_id, new_title, is_favorite)
 
-            # Automatisch auch den Chatverlauf speichern mit neuem Titel
+            # Chatverlauf mit gespeichertem Titel sichern – über message_list extrahieren
             messages = []
             for index in range(self.message_list.count()):
                 text = self.message_list.item(index).text()
@@ -372,9 +453,18 @@ class MainWindow(QMainWindow):
                     role = "elias"
                 else:
                     role = "elias"
+
+                try:
+                    timestamp = text.split("(", 1)[1].split(")")[0]
+                    content = text.split("): ", 1)[1]
+                except IndexError:
+                    timestamp = ""
+                    content = text
+
                 messages.append({
                     "role": role,
-                    "content": text.split("): ", 1)[-1]
+                    "content": content,
+                    "timestamp": timestamp
                 })
             self.memory.save_chat(chat_id, new_title, messages)
 

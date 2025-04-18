@@ -71,6 +71,10 @@ Ziel: Prototyp innerhalb von 14 Tagen
   - Kontext-Menü: Chats löschen, Favoriten setzen/entfernen
   - Zeitstempel für jede Nachricht im Format (HH:MM)
 - Markdown-Export mit eigenem Icon integriert: Exportiert aktuelle Konversation als `.md` in `data/exports/`
+- GPT-Integration aktiv:
+  - Nachrichten werden direkt an GPT-3.5-Turbo gesendet
+  - System-Prompt wurde angepasst: Elias darf höflich widersprechen und passt sich dem Stil des Users an
+  - Kontextlogik integriert: Es werden nur die letzten 10 relevanten Nachrichten übergeben
 
 ## Nächste Schritte (konkretisierter Plan ab Tag 11)
 
@@ -78,9 +82,10 @@ Ziel: Prototyp innerhalb von 14 Tagen
    - Vermeidung von Chat-Duplikaten (Titelprüfung)
    - Korrekte Löschung aus `chats.json` beim Entfernen eines Chats
 
-1. Dialogsystem aktivieren:
-   - Nachrichten an GPT senden und Antwort anzeigen
-   - Kontextlogik vorbereiten (Zusammenfassung, Speaker-Rolle etc.)
+1. Dialogsystem aktiv:
+   - GPT-Dialogsystem ist eingebunden und funktioniert stabil
+   - Kontextlogik zur Begrenzung auf letzte 10 Nachrichten implementiert
+   - System-Prompt erlaubt höflichen Widerspruch
 
 2. Eingabemodi erweitern:
    - Plus-Icon mit Upload-Trigger vollständig verknüpfen

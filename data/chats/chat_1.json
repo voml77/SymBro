@@ -1,17 +1,6 @@
 {
     "id": "chat_1",
     "title": "Hallo Elias :-)",
-    "created_at": "2025-04-18 10:31",
-    "messages": [
-        {
-            "role": "user",
-            "content": "Hallo Elias :-)",
-            "timestamp": "10:31"
-        },
-        {
-            "role": "elias",
-            "content": "\ud83e\udd16 Elias (10:31):\nHallo! Wie kann ich dir heute helfen?",
-            "timestamp": ""
-        }
-    ]
+    "created_at": "2025-04-18 12:33",
+    "messages": []
 }

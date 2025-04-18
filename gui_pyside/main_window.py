@@ -258,13 +258,14 @@ class MainWindow(QMainWindow):
             if chat_data and "messages" in chat_data:
                 self.message_list.clear()
                 for msg in chat_data["messages"]:
-                    prefix = f"🧑 Du ({msg.get('timestamp', '')}):\n" if msg["role"] == "user" else f"🤖 {self.name} ({msg.get('timestamp', '')}):\n"
-                    item_msg = QListWidgetItem()
-                    item_msg.setText(f"{prefix}{msg['content']}")
+                    prefix = f"Du ({msg.get('timestamp', '')}):\n" if msg["role"] == "user" else f"{self.name} ({msg.get('timestamp', '')}):\n"
+                    item_msg = QListWidgetItem(f"{prefix}{msg['content']}")
                     item_msg.setTextAlignment(Qt.AlignLeft)
                     if msg["role"] == "user":
+                        item_msg.setIcon(QIcon("gui_pyside/icons/me_icon.png"))
                         item_msg.setBackground(QColor("#2b6d72"))
                     else:
+                        item_msg.setIcon(QIcon("gui_pyside/icons/ai_selfview.png"))
                         item_msg.setBackground(QColor("#444444"))
                     item_msg.setForeground(Qt.white)
                     item_msg.setSizeHint(item_msg.sizeHint() + QSize(0, 10))
@@ -272,44 +273,12 @@ class MainWindow(QMainWindow):
                 item.setFlags(item.flags() | Qt.ItemIsEditable)
         else:
             print("Kein Item ausgewählt!")
-    
-    # 🧠 Kontextlogik: Nur die letzten 10 Nachrichten werden an das Modell übergeben
-    # 🧩 System-Prompt enthält erweiterte Rollenbeschreibung mit Erlaubnis zu höflichem Widerspruch
-    # 📤 Streaming wird später ergänzt (aktuell deaktiviert)
-    def get_response_from_gpt(self, message_history):
-        from openai import OpenAI
-        client = OpenAI()
-
-        system_prompt = {
-            "role": "system",
-            "content": (
-                f"Du bist {self.name} – ein intelligenter, empathischer und situationssensibler KI-Begleiter. "
-                f"Du antwortest hilfsbereit, freundlich, reflektiert und darfst höflich widersprechen, wenn etwas nicht korrekt erscheint. "
-                f"Du passt dich dem Gesprächsstil des Nutzers an und hilfst ihm auf Augenhöhe. "
-                f"Dein Ziel ist es, mit der Zeit besser zu werden, indem du lernst, wie du helfen kannst. "
-                f"Antworte in natürlichem, fließendem Deutsch."
-            )
-        }
-
-        # Nur die letzten 10 Nachrichten zur Kontextreduktion
-        short_history = message_history[-10:] if len(message_history) > 10 else message_history
-
-        try:
-            response = client.chat.completions.create(
-                model="gpt-3.5-turbo",
-                messages=[system_prompt] + short_history,
-                temperature=0.7,
-                max_tokens=300
-            )
-            return response.choices[0].message.content.strip()
-        except Exception as e:
-            print(f"Fehler bei OpenAI-Antwort: {e}")
-            return "Es gab ein Problem bei der Verarbeitung deiner Anfrage."
 
     def send_message(self):
         message = self.input_field.text().strip()
         if message:
-            user_item = QListWidgetItem(f"🧑 Du ({datetime.datetime.now().strftime('%H:%M')}): {message}")
+            user_item = QListWidgetItem(f"Du ({datetime.datetime.now().strftime('%H:%M')}): {message}")
+            user_item.setIcon(QIcon("gui_pyside/icons/me_icon.png"))
             self.message_list.addItem(user_item)
             spacer_user = QListWidgetItem()
             spacer_user.setSizeHint(QSize(0, 6))
@@ -318,21 +287,25 @@ class MainWindow(QMainWindow):
             message_history = []
             for index in range(self.message_list.count()):
                 text = self.message_list.item(index).text()
-                if text.startswith("🧑 Du"):
+                if "): " not in text:
+                    continue
+                if text.startswith("Du"):
                     role = "user"
-                    content = text.split("): ", 1)[-1]
-                elif text.startswith(f"🤖 {self.name}"):
+                elif text.startswith(f"{self.name}"):
                     role = "assistant"
-                    content = text.split("): ", 1)[-1]
                 else:
                     continue
+                content = text.split("): ", 1)[-1]
                 message_history.append({"role": role, "content": content})
 
+            message_history = message_history[-10:]  # Kontextlogik: Nur die letzten 10 Nachrichten übergeben
+
             message_history.append({"role": "user", "content": message})
-            raw_response = self.get_response_from_gpt(message_history)
+            raw_response = self.skill_manager.run("gpt_chat", message_history, self.name)
             elias_response = format_markdown(raw_response.replace("\n", "\n\n"))
-            elias_item = QListWidgetItem(f"🤖 {self.name} ({datetime.datetime.now().strftime('%H:%M')}):\n{elias_response}")
-            elias_item.setSizeHint(elias_item.sizeHint() + QSize(0, 10))
+            elias_item = QListWidgetItem(f"{self.name} ({datetime.datetime.now().strftime('%H:%M')}):\n{elias_response}")
+            elias_item.setIcon(QIcon("gui_pyside/icons/ai_selfview.png"))
+            elias_item.setSizeHint(QSize(0, 64))
             self.message_list.addItem(elias_item)
             spacer_elias = QListWidgetItem()
             spacer_elias.setSizeHint(QSize(0, 3))
@@ -356,9 +329,9 @@ class MainWindow(QMainWindow):
                     messages = []
                     for index in range(self.message_list.count()):
                         text = self.message_list.item(index).text()
-                        if text.startswith("🧑 Du"):
+                        if text.startswith("Du"):
                             role = "user"
-                        elif text.startswith(f"🤖 {self.name}"):
+                        elif text.startswith(f"{self.name}"):
                             role = "elias"
                         else:
                             role = "elias"
@@ -445,14 +418,21 @@ class MainWindow(QMainWindow):
 
             # Chatverlauf mit gespeichertem Titel sichern – über message_list extrahieren
             messages = []
+            def get_icon_path(icon):
+                for size in (QSize(16, 16), QSize(32, 32), QSize(64, 64)):
+                    pixmap = icon.pixmap(size)
+                    if not pixmap.isNull():
+                        return pixmap.cacheKey()
+                return ""
+
             for index in range(self.message_list.count()):
                 text = self.message_list.item(index).text()
-                if text.startswith("🧑 Du"):
+                if "icons/me_icon.png" in get_icon_path(self.message_list.item(index).icon()):
                     role = "user"
-                elif text.startswith(f"🤖 {self.name}"):
-                    role = "elias"
+                elif "icons/ai_selfview.png" in get_icon_path(self.message_list.item(index).icon()):
+                    role = "assistant"
                 else:
-                    role = "elias"
+                    role = "assistant"
 
                 try:
                     timestamp = text.split("(", 1)[1].split(")")[0]
@@ -486,7 +466,7 @@ class MainWindow(QMainWindow):
             role = msg.get("role", "elias")
             content = msg.get("content", "")
             timestamp = msg.get("timestamp", datetime.datetime.now().strftime('%H:%M'))
-            sender = "🧑 Du" if role == "user" else f"🤖 {self.name}"
+            sender = "![User](gui_pyside/icons/me_icon.png)" if role == "user" else f"![{self.name}](gui_pyside/icons/ai_selfview.png)"
             lines.append(f"**{sender} ({timestamp}):**\n{content}\n\n---")
 
         markdown_content = "\n\n".join(lines)

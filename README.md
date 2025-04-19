@@ -95,9 +95,13 @@ Ziel: Prototyp innerhalb von 14 Tagen
    - Chat als Markdown exportieren
    - Favoriten verwalten & farblich hervorheben
 
-4. RLHF-Vorbereitungen:
+4. RLHF-Integration (Grundsystem aktiv):
    - Speicherung von User-Feedback vorbereiten
    - Startpunkt für spätere Bewertungssysteme
+   - Feedback-Buttons (Daumen hoch/runter) im Chat eingefügt
+   - Klicks auf Buttons aktualisieren automatisch den RLHF-Reward in `interactions.json`
+   - RLHF-Engine speichert Zustand, Aktion, Reward und nächste Antwort zur späteren Modellierung
+   - Visualisierung der Buttons verbessert: kleinere Darstellung, direkte Positionierung unter Elias' Antwort
 
 5. GUI finalisieren:
    - Eingabefeld & Button-Alignment perfektionieren
@@ -116,4 +120,5 @@ Designed & Developed by Vadim Ott
 GitHub: https://github.com/voml77/SymBro  
 
 Dieses Projekt ist Teil einer persönlichen Vision:  
+> Am heutigen Tag wurde die erste Version des RLHF-Systems aktiviert – inklusive Reward-Logging und Feedback-Mechanismus 🧠✨
 SymBro — mehr als nur ein Bot. Ein smarter Begleiter, der Individualität, Lernfähigkeit und Symbiose in den Mittelpunkt stellt.

@@ -1,0 +1,214 @@
+[
+    {
+        "timestamp": "2025-04-19T18:08:30.790163",
+        "state": [
+            {
+                "role": "user",
+                "content": "😃"
+            },
+            {
+                "role": "user",
+                "content": "😃"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": "PENDING",
+        "next_state": "Hallo! Wie kann ich dir heute helfen? 😊"
+    },
+    {
+        "timestamp": "2025-04-19T18:08:30.790879",
+        "state": [
+            {
+                "role": "user",
+                "content": "😃"
+            }
+        ],
+        "action": "😃",
+        "reward": "PENDING",
+        "next_state": "Hallo! Wie kann ich dir heute helfen? 😊"
+    },
+    {
+        "timestamp": "2025-04-19T18:45:26.218435",
+        "state": [
+            {
+                "role": "user",
+                "content": "😃"
+            },
+            {
+                "role": "user",
+                "content": "😃"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": "PENDING",
+        "next_state": "Hallo! Wie kann ich dir heute helfen? 😊"
+    },
+    {
+        "timestamp": "2025-04-19T18:45:26.219486",
+        "state": [
+            {
+                "role": "user",
+                "content": "😃"
+            }
+        ],
+        "action": "😃",
+        "reward": "PENDING",
+        "next_state": "Hallo! Wie kann ich dir heute helfen? 😊"
+    },
+    {
+        "timestamp": "2025-04-19T18:55:23.211958",
+        "state": [
+            {
+                "role": "user",
+                "content": "😃"
+            },
+            {
+                "role": "user",
+                "content": "😃"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": "PENDING",
+        "next_state": "Hallo! Wie kann ich dir heute helfen? 😊"
+    },
+    {
+        "timestamp": "2025-04-19T18:55:23.212838",
+        "state": [
+            {
+                "role": "user",
+                "content": "😃"
+            }
+        ],
+        "action": "😃",
+        "reward": 1.0,
+        "next_state": "Hallo! Wie kann ich dir heute helfen? 😊"
+    },
+    {
+        "timestamp": "2025-04-19T18:55:52.287314",
+        "state": [
+            {
+                "role": "user",
+                "content": "😃"
+            },
+            {
+                "role": "user",
+                "content": "😇"
+            },
+            {
+                "role": "user",
+                "content": "😇"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": "PENDING",
+        "next_state": "Hallo! Wie kann ich dir heute helfen? 😇"
+    },
+    {
+        "timestamp": "2025-04-19T18:55:52.288596",
+        "state": [
+            {
+                "role": "user",
+                "content": "😃"
+            },
+            {
+                "role": "user",
+                "content": "😇"
+            }
+        ],
+        "action": "😇",
+        "reward": -1.0,
+        "next_state": "Hallo! Wie kann ich dir heute helfen? 😇"
+    },
+    {
+        "timestamp": "2025-04-19T18:58:26.099113",
+        "state": [
+            {
+                "role": "user",
+                "content": "😃"
+            },
+            {
+                "role": "user",
+                "content": "😃"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": "PENDING",
+        "next_state": "Hallo! Wie kann ich dir heute helfen? 😊"
+    },
+    {
+        "timestamp": "2025-04-19T18:58:26.100187",
+        "state": [
+            {
+                "role": "user",
+                "content": "😃"
+            }
+        ],
+        "action": "😃",
+        "reward": -1.0,
+        "next_state": "Hallo! Wie kann ich dir heute helfen? 😊"
+    },
+    {
+        "timestamp": "2025-04-19T19:07:04.146524",
+        "state": [
+            {
+                "role": "user",
+                "content": "😄"
+            },
+            {
+                "role": "user",
+                "content": "😄"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": "PENDING",
+        "next_state": "Hallo! Wie kann ich dir heute helfen? 😄"
+    },
+    {
+        "timestamp": "2025-04-19T19:07:04.147622",
+        "state": [
+            {
+                "role": "user",
+                "content": "😄"
+            }
+        ],
+        "action": "😄",
+        "reward": "PENDING",
+        "next_state": "Hallo! Wie kann ich dir heute helfen? 😄"
+    },
+    {
+        "timestamp": "2025-04-19T19:07:29.125836",
+        "state": [
+            {
+                "role": "user",
+                "content": "😄"
+            },
+            {
+                "role": "user",
+                "content": "In dem Du mit mir kommunizierst 😇"
+            },
+            {
+                "role": "user",
+                "content": "In dem Du mit mir kommunizierst 😇"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": "PENDING",
+        "next_state": "Hallo! Ich freue mich darauf, mit dir zu kommunizieren und dir zu helfen. Wie kann ich heute unterstützen? 😊"
+    },
+    {
+        "timestamp": "2025-04-19T19:07:29.127108",
+        "state": [
+            {
+                "role": "user",
+                "content": "😄"
+            },
+            {
+                "role": "user",
+                "content": "In dem Du mit mir kommunizierst 😇"
+            }
+        ],
+        "action": "In dem Du mit mir kommunizierst 😇",
+        "reward": 1.0,
+        "next_state": "Hallo! Ich freue mich darauf, mit dir zu kommunizieren und dir zu helfen. Wie kann ich heute unterstützen? 😊"
+    }
+]

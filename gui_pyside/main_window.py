@@ -1,4 +1,5 @@
 import sys
+from modules.skills.skill_manager import SkillManager
 from PySide6.QtWidgets import (
     QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
     QPushButton, QListWidget, QLabel, QLineEdit, QSizePolicy, QSpacerItem, QListWidgetItem, QMenu
@@ -8,6 +9,8 @@ from PySide6.QtCore import Qt, QSize
 from PySide6.QtGui import QGuiApplication, QPixmap
 from modules.namesoul import NameSoul
 from modules.memory import Memory
+from modules.rlhf.rlhf_engine import log_interaction
+from modules.rlhf.rlhf_engine import update_reward_for_last_interaction
 import os
 from openai import OpenAI
 import datetime
@@ -32,11 +35,11 @@ def format_markdown(text):
     text = re.sub(r"`(.*?)`", r"<code>\1</code>", text)  # Inline-Code
     return text
 class MainWindow(QMainWindow):
-    def __init__(self, skill_manager):
+    def __init__(self, skill_manager=None):
         super().__init__()
         self.setAcceptDrops(True)
         clear_upload_folder()
-        self.skill_manager = skill_manager
+        self.skill_manager = skill_manager or SkillManager()
         
         self.name = NameSoul().get_name()
         self.theme_color = NameSoul().get_color()
@@ -164,6 +167,12 @@ class MainWindow(QMainWindow):
         md_action.setToolTip("Chat als Markdown exportieren")
         md_action.triggered.connect(self.export_chat_to_markdown)
         
+        emoji_pixmap = QPixmap("gui_pyside/icons/emojis_button.png").scaled(icon_size, Qt.KeepAspectRatio, Qt.SmoothTransformation)
+        emoji_icon = QIcon(emoji_pixmap)
+        emoji_action = self.input_field.addAction(emoji_icon, QLineEdit.TrailingPosition)
+        emoji_action.setToolTip("Emoji auswählen")
+        emoji_action.triggered.connect(self.show_emoji_picker)
+
         plus_pixmap = QPixmap("gui_pyside/icons/plus_icon.png").scaled(icon_size, Qt.KeepAspectRatio, Qt.SmoothTransformation)
         plus_icon = QIcon(plus_pixmap)
         plus_action = self.input_field.addAction(plus_icon, QLineEdit.TrailingPosition)
@@ -299,17 +308,51 @@ class MainWindow(QMainWindow):
                 message_history.append({"role": role, "content": content})
 
             message_history = message_history[-10:]  # Kontextlogik: Nur die letzten 10 Nachrichten übergeben
-
             message_history.append({"role": "user", "content": message})
+            
             raw_response = self.skill_manager.run("gpt_chat", message_history, self.name)
+            log_interaction(
+                state=message_history[:-1],  # Vorherige Nachrichten (ohne aktuelle User-Eingabe)
+                action=message,              # Benutzeranfrage
+                reward="PENDING",                 # Reward folgt später
+                next_state=raw_response      # Antwort von Elias
+                )
+            
             elias_response = format_markdown(raw_response.replace("\n", "\n\n"))
             elias_item = QListWidgetItem(f"{self.name} ({datetime.datetime.now().strftime('%H:%M')}):\n{elias_response}")
             elias_item.setIcon(QIcon("gui_pyside/icons/ai_selfview.png"))
-            elias_item.setSizeHint(QSize(0, 64))
+            self.message_list.setIconSize(QSize(37, 37))
             self.message_list.addItem(elias_item)
-            spacer_elias = QListWidgetItem()
-            spacer_elias.setSizeHint(QSize(0, 3))
-            self.message_list.addItem(spacer_elias)
+            # Feedback-Buttons (visuell optimiert)
+            feedback_layout = QWidget()
+            feedback_layout.setStyleSheet("background-color: transparent; border: none;")
+            feedback_buttons = QHBoxLayout(feedback_layout)
+            feedback_buttons.setContentsMargins(0, 0, 0, 0)
+            feedback_buttons.setSpacing(6)
+
+            positive_btn = QPushButton()
+            positive_btn.setIcon(QIcon("gui_pyside/icons/thumbs_up.png"))
+            positive_btn.setIconSize(QSize(20, 20))
+            positive_btn.setFixedSize(24, 24)
+            positive_btn.setStyleSheet("background-color: transparent; border: none;")
+            positive_btn.clicked.connect(lambda: update_reward_for_last_interaction(+1.0))
+
+            negative_btn = QPushButton()
+            negative_btn.setIcon(QIcon("gui_pyside/icons/thumbs_down.png"))
+            negative_btn.setIconSize(QSize(20, 20))
+            negative_btn.setFixedSize(24, 24)
+            negative_btn.setStyleSheet("background-color: transparent; border: none;")
+            negative_btn.clicked.connect(lambda: update_reward_for_last_interaction(-1.0))
+
+            feedback_buttons.addWidget(positive_btn)
+            feedback_buttons.addWidget(negative_btn)
+
+            feedback_item = QListWidgetItem()
+            feedback_item.setSizeHint(feedback_layout.sizeHint())
+            # Insert feedback_item immediately after elias_item
+            elias_index = self.message_list.indexFromItem(elias_item).row()
+            self.message_list.insertItem(elias_index + 1, feedback_item)
+            self.message_list.setItemWidget(feedback_item, feedback_layout)
             self.input_field.clear()
             print(self.selected_chat_id)
 
@@ -522,6 +565,19 @@ class MainWindow(QMainWindow):
                 saved_path = self.save_uploaded_file(file_path)
                 if saved_path:
                     self.message_list.addItem(QListWidgetItem(f"📎 Datei hinzugefügt: {os.path.basename(saved_path)}"))
+
+    def show_emoji_picker(self):
+        from gui_pyside.emoji_window import EmojiWindow
+        self.emoji_window = EmojiWindow(self)
+        self.emoji_window.emoji_selected.connect(self.insert_emoji)
+        self.emoji_window.exec()
+        
+    def insert_emoji(self, emoji):
+        cursor_position = self.input_field.cursorPosition()
+        current_text = self.input_field.text()
+        new_text = current_text[:cursor_position] + emoji + current_text[cursor_position:]
+        self.input_field.setText(new_text)
+        self.input_field.setCursorPosition(cursor_position + len(emoji))
 
 # Ausführen, wenn Datei direkt gestartet wird
 if __name__ == "__main__":

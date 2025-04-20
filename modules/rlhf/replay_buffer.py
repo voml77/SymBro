@@ -25,9 +25,14 @@ class PrioritizedReplayBuffer:
         self.counter += 1
 
     def sample(self, batch_size=32):
+        # Sortiere nach Priorität (höchste zuerst)
         sorted_buffer = sorted(self.buffer, reverse=True)[:batch_size]
+
         samples = [exp[-1] for exp in sorted_buffer]
-        return samples
+        indices = [self.buffer.index(item) for item in sorted_buffer]
+        weights = [1.0 for _ in samples]  # Dummy-Gewichte, falls nicht genutzt
+
+        return samples, indices, weights
 
     def _decay_factor(self, timestamp):
         age = time.time() - timestamp
@@ -85,3 +90,6 @@ class PrioritizedReplayBuffer:
         with open(filepath, "rb") as f:
             self.buffer = pickle.load(f)
         print(f"📥 ReplayBuffer geladen von {filepath}")
+        
+# Globale Buffer-Instanz für gemeinsame Nutzung
+buffer = PrioritizedReplayBuffer(capacity=1000)

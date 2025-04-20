@@ -132,5 +132,18 @@ Die ersten 50 bewusst bewerteten Interaktionen bilden das Fundament für ein ind
 Elias lernt – in enger Symbiose mit dem User.  
 
 Dieses Projekt ist Teil einer persönlichen Vision:  
-> Am heutigen Tag wurde die erste Version des RLHF-Systems aktiviert – inklusive Reward-Logging und Feedback-Mechanismus 🧠✨
+> Am heutigen Tag wurde die erste Version des RLHF-Systems aktiviert – inklusive Reward-Logging und Feedback-Mechanismus 🧠✨  
 SymBro — mehr als nur ein Bot. Ein smarter Begleiter, der Individualität, Lernfähigkeit und Symbiose in den Mittelpunkt stellt.
+
+## Fortschritt Tag 15+
+
+- RLHF-Trainingsloop erfolgreich abgeschlossen mit über 90 bewerteten Interaktionen
+- Trainingsroutine mit `train_rlhf.py` ausgelagert für wiederholbare Agent-Updates
+- Prioritized ReplayBuffer vollständig integriert und funktionstüchtig
+- TD-Fehler werden korrekt berechnet und zur Priorisierung verwendet
+- Agent erkennt und unterscheidet bereits differenzierte Belohnungswerte (z. B. 0.8 vs. -0.3)
+- Wrapper `apply_td_errors_to_buffer()` in `rlhf_engine.py` integriert für zentrales Prioritäts-Update
+- Erste spürbare Lernkurven erkennbar – Q-Werte entwickeln sich mit Variabilität im Feedback
+- Fragenkatalog mit 20 realistischen, offen bewertbaren Gesprächsszenarien erstellt und verwendet
+- Training und Bewertung erfolgen vollständig interaktiv und on-the-fly
+- System vollständig vorbereitet für langfristige Verhaltensdifferenzierung & Lernen durch Feedback

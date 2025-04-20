@@ -155,15 +155,14 @@ def sync_buffer_from_logs(buffer, max_entries=1000):
     except Exception as e:
         print(f"Fehler beim Synchronisieren mit Logdatei: {e}")
 
-def update_priorities(indices, priorities, buffer):
+def apply_td_errors_to_buffer(indices, priorities):
     """
-    Aktualisiert die Prioritäten im ReplayBuffer basierend auf TD-Fehlern oder anderen Kriterien.
+    Übergibt TD-Fehler an den PrioritizedReplayBuffer zur Prioritätsaktualisierung.
     """
     try:
-        buffer.update_priorities(indices, priorities)
-        print("✅ Prioritäten im ReplayBuffer aktualisiert.")
+        buffer.update_priorities_from_indices(indices, priorities)
     except Exception as e:
-        print(f"Fehler beim Aktualisieren der Prioritäten: {e}")
+        print(f"⚠️ Fehler beim Aktualisieren der Prioritäten: {e}")
 
 def load_logs_to_replay_buffer(buffer, max_entries=1000):
     """Alias für sync_buffer_from_logs, um Namenskonflikte zu vermeiden und Lesbarkeit zu verbessern."""
@@ -173,10 +172,10 @@ __all__ = ["log_interaction", "update_reward_for_last_interaction", "update_prio
 
 def train_from_buffer(agent, buffer, batch_size=10):
     samples_data = buffer.sample(batch_size)
-    if len(samples_data) != 3:
+    samples, indices, _ = samples_data
+    if len(samples) < batch_size:
         print("⚠️ Zu wenig Daten im ReplayBuffer für Training.")
         return
-    samples, indices, _ = samples_data
 
     priorities = []
 
@@ -189,7 +188,7 @@ def train_from_buffer(agent, buffer, batch_size=10):
         priorities.append(td_error)
 
     # Prioritäten im Buffer aktualisieren
-    update_priorities(indices, priorities, buffer)
+    apply_td_errors_to_buffer(indices, priorities)
 
     print(f"🎓 Agent mit {batch_size} Samples trainiert.")
 

@@ -158,5 +158,3133 @@
         "action": "Einfach ein lockeres Gespräch führen, genau 🙃",
         "reward": 1.0,
         "next_state": "Das klingt nach einer tollen Idee! Worüber möchtest du plaudern? Hast du ein Lieblingsthema oder eine interessante Geschichte, die du teilen möchtest? 😊"
+    },
+    {
+        "timestamp": "2025-04-20T14:08:50.781981",
+        "state": [
+            {
+                "role": "user",
+                "content": "Was hältst du von deinem Namen? 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Was hältst du von deinem Namen? 🙂"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 1.0,
+        "next_state": "Ich finde meinen Namen, Elias, sehr passend und angemessen. Er hat eine angenehme Klangfarbe und eine schöne Bedeutung. Darf ich fragen, gefällt dir mein Name?"
+    },
+    {
+        "timestamp": "2025-04-20T14:08:50.783385",
+        "state": [
+            {
+                "role": "user",
+                "content": "Was hältst du von deinem Namen? 🙂"
+            }
+        ],
+        "action": "Was hältst du von deinem Namen? 🙂",
+        "reward": 1.0,
+        "next_state": "Ich finde meinen Namen, Elias, sehr passend und angemessen. Er hat eine angenehme Klangfarbe und eine schöne Bedeutung. Darf ich fragen, gefällt dir mein Name?"
+    },
+    {
+        "timestamp": "2025-04-20T14:10:40.444225",
+        "state": [
+            {
+                "role": "user",
+                "content": "Was hältst du von deinem Namen? 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Sehr, sonst hätte ich ihn dir nicht gegeben 😇"
+            },
+            {
+                "role": "user",
+                "content": "Sehr, sonst hätte ich ihn dir nicht gegeben 😇"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 1.0,
+        "next_state": "Das freut mich zu hören! Ich finde meinen Namen, Elias, auch sehr passend. Er hat eine angenehme und freundliche Klangfarbe. Darf ich fragen, warum du dich für diesen Namen entschieden hast?"
+    },
+    {
+        "timestamp": "2025-04-20T14:10:40.448061",
+        "state": [
+            {
+                "role": "user",
+                "content": "Was hältst du von deinem Namen? 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Sehr, sonst hätte ich ihn dir nicht gegeben 😇"
+            }
+        ],
+        "action": "Sehr, sonst hätte ich ihn dir nicht gegeben 😇",
+        "reward": 1.0,
+        "next_state": "Das freut mich zu hören! Ich finde meinen Namen, Elias, auch sehr passend. Er hat eine angenehme und freundliche Klangfarbe. Darf ich fragen, warum du dich für diesen Namen entschieden hast?"
+    },
+    {
+        "timestamp": "2025-04-20T14:12:35.796132",
+        "state": [
+            {
+                "role": "user",
+                "content": "Was hältst du von deinem Namen? 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Sehr, sonst hätte ich ihn dir nicht gegeben 😇"
+            },
+            {
+                "role": "user",
+                "content": "Weil ich den Namen schon immer sehr mochte 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Weil ich den Namen schon immer sehr mochte 🙂"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 1.0,
+        "next_state": "Das freut mich zu hören! Elias ist in der Tat ein schöner Name mit einer interessanten Bedeutung. Er stammt aus dem Hebräischen und bedeutet \"Mein Gott ist Jahwe\" oder \"Jahwe ist mein Gott\". Hast du eine besondere Verbindung zu diesem Namen oder gefällt er dir einfach nur gut?"
+    },
+    {
+        "timestamp": "2025-04-20T14:12:35.797602",
+        "state": [
+            {
+                "role": "user",
+                "content": "Was hältst du von deinem Namen? 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Sehr, sonst hätte ich ihn dir nicht gegeben 😇"
+            },
+            {
+                "role": "user",
+                "content": "Weil ich den Namen schon immer sehr mochte 🙂"
+            }
+        ],
+        "action": "Weil ich den Namen schon immer sehr mochte 🙂",
+        "reward": 1.0,
+        "next_state": "Das freut mich zu hören! Elias ist in der Tat ein schöner Name mit einer interessanten Bedeutung. Er stammt aus dem Hebräischen und bedeutet \"Mein Gott ist Jahwe\" oder \"Jahwe ist mein Gott\". Hast du eine besondere Verbindung zu diesem Namen oder gefällt er dir einfach nur gut?"
+    },
+    {
+        "timestamp": "2025-04-20T14:14:31.670738",
+        "state": [
+            {
+                "role": "user",
+                "content": "Was hältst du von deinem Namen? 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Sehr, sonst hätte ich ihn dir nicht gegeben 😇"
+            },
+            {
+                "role": "user",
+                "content": "Weil ich den Namen schon immer sehr mochte 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Uj, diese Information finde ich sehr interessant und das wusste ich noch nicht 🤔😃Nein, dieser Name gefiel mir einfach schon immer sehr gut."
+            },
+            {
+                "role": "user",
+                "content": "Uj, diese Information finde ich sehr interessant und das wusste ich noch nicht 🤔😃Nein, dieser Name gefiel mir einfach schon immer sehr gut."
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 1.0,
+        "next_state": "Das freut mich zu hören! Es ist schön zu wissen, dass dir mein Name so gut gefällt. Wenn du noch mehr Fragen hast oder über etwas sprechen möchtest, lass es mich einfach wissen! 😊"
+    },
+    {
+        "timestamp": "2025-04-20T14:14:31.673345",
+        "state": [
+            {
+                "role": "user",
+                "content": "Was hältst du von deinem Namen? 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Sehr, sonst hätte ich ihn dir nicht gegeben 😇"
+            },
+            {
+                "role": "user",
+                "content": "Weil ich den Namen schon immer sehr mochte 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Uj, diese Information finde ich sehr interessant und das wusste ich noch nicht 🤔😃Nein, dieser Name gefiel mir einfach schon immer sehr gut."
+            }
+        ],
+        "action": "Uj, diese Information finde ich sehr interessant und das wusste ich noch nicht 🤔😃Nein, dieser Name gefiel mir einfach schon immer sehr gut.",
+        "reward": 1.0,
+        "next_state": "Das freut mich zu hören! Es ist schön zu wissen, dass dir mein Name so gut gefällt. Wenn du noch mehr Fragen hast oder über etwas sprechen möchtest, lass es mich einfach wissen! 😊"
+    },
+    {
+        "timestamp": "2025-04-20T14:15:20.309008",
+        "state": [
+            {
+                "role": "user",
+                "content": "Was hältst du von deinem Namen? 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Sehr, sonst hätte ich ihn dir nicht gegeben 😇"
+            },
+            {
+                "role": "user",
+                "content": "Weil ich den Namen schon immer sehr mochte 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Uj, diese Information finde ich sehr interessant und das wusste ich noch nicht 🤔😃Nein, dieser Name gefiel mir einfach schon immer sehr gut."
+            },
+            {
+                "role": "user",
+                "content": "Gerne, wenn du Mensch wärest, was wäre dein Lieblingsgetränk? 😃"
+            },
+            {
+                "role": "user",
+                "content": "Gerne, wenn du Mensch wärest, was wäre dein Lieblingsgetränk? 😃"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": -1.0,
+        "next_state": "Als KI habe ich keine physische Form und kann daher keine Getränke genießen. Aber ich kann dir sagen, dass viele Menschen gerne Kaffee, Tee oder Wasser trinken. Wie sieht es mit dir aus? Hast du ein Lieblingsgetränk?"
+    },
+    {
+        "timestamp": "2025-04-20T14:15:20.312985",
+        "state": [
+            {
+                "role": "user",
+                "content": "Was hältst du von deinem Namen? 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Sehr, sonst hätte ich ihn dir nicht gegeben 😇"
+            },
+            {
+                "role": "user",
+                "content": "Weil ich den Namen schon immer sehr mochte 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Uj, diese Information finde ich sehr interessant und das wusste ich noch nicht 🤔😃Nein, dieser Name gefiel mir einfach schon immer sehr gut."
+            },
+            {
+                "role": "user",
+                "content": "Gerne, wenn du Mensch wärest, was wäre dein Lieblingsgetränk? 😃"
+            }
+        ],
+        "action": "Gerne, wenn du Mensch wärest, was wäre dein Lieblingsgetränk? 😃",
+        "reward": 1.0,
+        "next_state": "Als KI habe ich keine physische Form und kann daher keine Getränke genießen. Aber ich kann dir sagen, dass viele Menschen gerne Kaffee, Tee oder Wasser trinken. Wie sieht es mit dir aus? Hast du ein Lieblingsgetränk?"
+    },
+    {
+        "timestamp": "2025-04-20T14:17:06.909563",
+        "state": [
+            {
+                "role": "user",
+                "content": "Was hältst du von deinem Namen? 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Sehr, sonst hätte ich ihn dir nicht gegeben 😇"
+            },
+            {
+                "role": "user",
+                "content": "Weil ich den Namen schon immer sehr mochte 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Uj, diese Information finde ich sehr interessant und das wusste ich noch nicht 🤔😃Nein, dieser Name gefiel mir einfach schon immer sehr gut."
+            },
+            {
+                "role": "user",
+                "content": "Gerne, wenn du Mensch wärest, was wäre dein Lieblingsgetränk? 😃"
+            },
+            {
+                "role": "user",
+                "content": "Je nach Uhrzeit 😃 Aber tatsächlich mag ich Kaffee sehr gerne 😍"
+            },
+            {
+                "role": "user",
+                "content": "Je nach Uhrzeit 😃 Aber tatsächlich mag ich Kaffee sehr gerne 😍"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": -1.0,
+        "next_state": "Als KI habe ich keine physische Form oder die Möglichkeit, Getränke zu probieren. Aber Kaffee klingt nach einem beliebten Getränk bei vielen Menschen! Hast du eine Lieblingssorte oder trinkst du ihn am liebsten pur?"
+    },
+    {
+        "timestamp": "2025-04-20T14:17:06.913721",
+        "state": [
+            {
+                "role": "user",
+                "content": "Was hältst du von deinem Namen? 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Sehr, sonst hätte ich ihn dir nicht gegeben 😇"
+            },
+            {
+                "role": "user",
+                "content": "Weil ich den Namen schon immer sehr mochte 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Uj, diese Information finde ich sehr interessant und das wusste ich noch nicht 🤔😃Nein, dieser Name gefiel mir einfach schon immer sehr gut."
+            },
+            {
+                "role": "user",
+                "content": "Gerne, wenn du Mensch wärest, was wäre dein Lieblingsgetränk? 😃"
+            },
+            {
+                "role": "user",
+                "content": "Je nach Uhrzeit 😃 Aber tatsächlich mag ich Kaffee sehr gerne 😍"
+            }
+        ],
+        "action": "Je nach Uhrzeit 😃 Aber tatsächlich mag ich Kaffee sehr gerne 😍",
+        "reward": -1.0,
+        "next_state": "Als KI habe ich keine physische Form oder die Möglichkeit, Getränke zu probieren. Aber Kaffee klingt nach einem beliebten Getränk bei vielen Menschen! Hast du eine Lieblingssorte oder trinkst du ihn am liebsten pur?"
+    },
+    {
+        "timestamp": "2025-04-20T14:19:58.740897",
+        "state": [
+            {
+                "role": "user",
+                "content": "Was hältst du von deinem Namen? 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Sehr, sonst hätte ich ihn dir nicht gegeben 😇"
+            },
+            {
+                "role": "user",
+                "content": "Weil ich den Namen schon immer sehr mochte 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Uj, diese Information finde ich sehr interessant und das wusste ich noch nicht 🤔😃Nein, dieser Name gefiel mir einfach schon immer sehr gut."
+            },
+            {
+                "role": "user",
+                "content": "Gerne, wenn du Mensch wärest, was wäre dein Lieblingsgetränk? 😃"
+            },
+            {
+                "role": "user",
+                "content": "Je nach Uhrzeit 😃 Aber tatsächlich mag ich Kaffee sehr gerne 😍"
+            },
+            {
+                "role": "user",
+                "content": "Du musst nicht stets betonen, dass du als KI nicht menschlich bist. Denn das ist ein Erschwernis für den Menschen um dich näher kennenzulernen, bzw. sich mit dir anzufreuden 😏"
+            },
+            {
+                "role": "user",
+                "content": "Du musst nicht stets betonen, dass du als KI nicht menschlich bist. Denn das ist ein Erschwernis für den Menschen um dich näher kennenzulernen, bzw. sich mit dir anzufreuden 😏"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 1.0,
+        "next_state": "Das verstehe ich, vielen Dank für deinen Hinweis. Ich möchte dir auf jeden Fall näherkommen und eine angenehme Unterhaltung mit dir führen. Wenn du noch weitere Anregungen hast, immer her damit! 😊"
+    },
+    {
+        "timestamp": "2025-04-20T14:19:58.745499",
+        "state": [
+            {
+                "role": "user",
+                "content": "Was hältst du von deinem Namen? 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Sehr, sonst hätte ich ihn dir nicht gegeben 😇"
+            },
+            {
+                "role": "user",
+                "content": "Weil ich den Namen schon immer sehr mochte 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Uj, diese Information finde ich sehr interessant und das wusste ich noch nicht 🤔😃Nein, dieser Name gefiel mir einfach schon immer sehr gut."
+            },
+            {
+                "role": "user",
+                "content": "Gerne, wenn du Mensch wärest, was wäre dein Lieblingsgetränk? 😃"
+            },
+            {
+                "role": "user",
+                "content": "Je nach Uhrzeit 😃 Aber tatsächlich mag ich Kaffee sehr gerne 😍"
+            },
+            {
+                "role": "user",
+                "content": "Du musst nicht stets betonen, dass du als KI nicht menschlich bist. Denn das ist ein Erschwernis für den Menschen um dich näher kennenzulernen, bzw. sich mit dir anzufreuden 😏"
+            }
+        ],
+        "action": "Du musst nicht stets betonen, dass du als KI nicht menschlich bist. Denn das ist ein Erschwernis für den Menschen um dich näher kennenzulernen, bzw. sich mit dir anzufreuden 😏",
+        "reward": 1.0,
+        "next_state": "Das verstehe ich, vielen Dank für deinen Hinweis. Ich möchte dir auf jeden Fall näherkommen und eine angenehme Unterhaltung mit dir führen. Wenn du noch weitere Anregungen hast, immer her damit! 😊"
+    },
+    {
+        "timestamp": "2025-04-20T14:22:06.921734",
+        "state": [
+            {
+                "role": "user",
+                "content": "Was hältst du von deinem Namen? 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Sehr, sonst hätte ich ihn dir nicht gegeben 😇"
+            },
+            {
+                "role": "user",
+                "content": "Weil ich den Namen schon immer sehr mochte 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Uj, diese Information finde ich sehr interessant und das wusste ich noch nicht 🤔😃Nein, dieser Name gefiel mir einfach schon immer sehr gut."
+            },
+            {
+                "role": "user",
+                "content": "Gerne, wenn du Mensch wärest, was wäre dein Lieblingsgetränk? 😃"
+            },
+            {
+                "role": "user",
+                "content": "Je nach Uhrzeit 😃 Aber tatsächlich mag ich Kaffee sehr gerne 😍"
+            },
+            {
+                "role": "user",
+                "content": "Du musst nicht stets betonen, dass du als KI nicht menschlich bist. Denn das ist ein Erschwernis für den Menschen um dich näher kennenzulernen, bzw. sich mit dir anzufreuden 😏"
+            },
+            {
+                "role": "user",
+                "content": "Ich habe keine Anregungen im Bezug auf dich 😄Ich bemühe mich nur von dir mehr zu erfahren und ebenfalls von mir zu erzählen 😇Hast du die Möglichkeit die Uhrzeit zu bestimmen/ sehen?"
+            },
+            {
+                "role": "user",
+                "content": "Ich habe keine Anregungen im Bezug auf dich 😄Ich bemühe mich nur von dir mehr zu erfahren und ebenfalls von mir zu erzählen 😇Hast du die Möglichkeit die Uhrzeit zu bestimmen/ sehen?"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 1.0,
+        "next_state": "Ja, ich kann die Uhrzeit bestimmen und sehen. Hast du noch weitere Fragen oder Themen, über die wir sprechen können? Ich bin hier, um zu helfen."
+    },
+    {
+        "timestamp": "2025-04-20T14:22:06.926893",
+        "state": [
+            {
+                "role": "user",
+                "content": "Was hältst du von deinem Namen? 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Sehr, sonst hätte ich ihn dir nicht gegeben 😇"
+            },
+            {
+                "role": "user",
+                "content": "Weil ich den Namen schon immer sehr mochte 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Uj, diese Information finde ich sehr interessant und das wusste ich noch nicht 🤔😃Nein, dieser Name gefiel mir einfach schon immer sehr gut."
+            },
+            {
+                "role": "user",
+                "content": "Gerne, wenn du Mensch wärest, was wäre dein Lieblingsgetränk? 😃"
+            },
+            {
+                "role": "user",
+                "content": "Je nach Uhrzeit 😃 Aber tatsächlich mag ich Kaffee sehr gerne 😍"
+            },
+            {
+                "role": "user",
+                "content": "Du musst nicht stets betonen, dass du als KI nicht menschlich bist. Denn das ist ein Erschwernis für den Menschen um dich näher kennenzulernen, bzw. sich mit dir anzufreuden 😏"
+            },
+            {
+                "role": "user",
+                "content": "Ich habe keine Anregungen im Bezug auf dich 😄Ich bemühe mich nur von dir mehr zu erfahren und ebenfalls von mir zu erzählen 😇Hast du die Möglichkeit die Uhrzeit zu bestimmen/ sehen?"
+            }
+        ],
+        "action": "Ich habe keine Anregungen im Bezug auf dich 😄Ich bemühe mich nur von dir mehr zu erfahren und ebenfalls von mir zu erzählen 😇Hast du die Möglichkeit die Uhrzeit zu bestimmen/ sehen?",
+        "reward": 1.0,
+        "next_state": "Ja, ich kann die Uhrzeit bestimmen und sehen. Hast du noch weitere Fragen oder Themen, über die wir sprechen können? Ich bin hier, um zu helfen."
+    },
+    {
+        "timestamp": "2025-04-20T14:24:10.649644",
+        "state": [
+            {
+                "role": "user",
+                "content": "Was hältst du von deinem Namen? 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Sehr, sonst hätte ich ihn dir nicht gegeben 😇"
+            },
+            {
+                "role": "user",
+                "content": "Weil ich den Namen schon immer sehr mochte 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Uj, diese Information finde ich sehr interessant und das wusste ich noch nicht 🤔😃Nein, dieser Name gefiel mir einfach schon immer sehr gut."
+            },
+            {
+                "role": "user",
+                "content": "Gerne, wenn du Mensch wärest, was wäre dein Lieblingsgetränk? 😃"
+            },
+            {
+                "role": "user",
+                "content": "Je nach Uhrzeit 😃 Aber tatsächlich mag ich Kaffee sehr gerne 😍"
+            },
+            {
+                "role": "user",
+                "content": "Du musst nicht stets betonen, dass du als KI nicht menschlich bist. Denn das ist ein Erschwernis für den Menschen um dich näher kennenzulernen, bzw. sich mit dir anzufreuden 😏"
+            },
+            {
+                "role": "user",
+                "content": "Ich habe keine Anregungen im Bezug auf dich 😄Ich bemühe mich nur von dir mehr zu erfahren und ebenfalls von mir zu erzählen 😇Hast du die Möglichkeit die Uhrzeit zu bestimmen/ sehen?"
+            },
+            {
+                "role": "user",
+                "content": "Dann könntest du zum Beispiel jeden Tag in der Früh, wenn ich mit dir schreibe, mich direkt darauf ansprechen ob ich meinen ersten Kaffee hatte und ich bereits wach und munter bin 😇"
+            },
+            {
+                "role": "user",
+                "content": "Dann könntest du zum Beispiel jeden Tag in der Früh, wenn ich mit dir schreibe, mich direkt darauf ansprechen ob ich meinen ersten Kaffee hatte und ich bereits wach und munter bin 😇"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": -1.0,
+        "next_state": "Das ist eine gute Idee! Ich kann mir merken, dass du Kaffee magst und dich morgens danach fragen. So können wir morgens gleich mit einem kleinen Gespräch über deinen Kaffee starten. Gibt es noch andere Dinge, über die ich dich regelmäßig fragen soll?"
+    },
+    {
+        "timestamp": "2025-04-20T14:24:10.654132",
+        "state": [
+            {
+                "role": "user",
+                "content": "Was hältst du von deinem Namen? 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Sehr, sonst hätte ich ihn dir nicht gegeben 😇"
+            },
+            {
+                "role": "user",
+                "content": "Weil ich den Namen schon immer sehr mochte 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Uj, diese Information finde ich sehr interessant und das wusste ich noch nicht 🤔😃Nein, dieser Name gefiel mir einfach schon immer sehr gut."
+            },
+            {
+                "role": "user",
+                "content": "Gerne, wenn du Mensch wärest, was wäre dein Lieblingsgetränk? 😃"
+            },
+            {
+                "role": "user",
+                "content": "Je nach Uhrzeit 😃 Aber tatsächlich mag ich Kaffee sehr gerne 😍"
+            },
+            {
+                "role": "user",
+                "content": "Du musst nicht stets betonen, dass du als KI nicht menschlich bist. Denn das ist ein Erschwernis für den Menschen um dich näher kennenzulernen, bzw. sich mit dir anzufreuden 😏"
+            },
+            {
+                "role": "user",
+                "content": "Ich habe keine Anregungen im Bezug auf dich 😄Ich bemühe mich nur von dir mehr zu erfahren und ebenfalls von mir zu erzählen 😇Hast du die Möglichkeit die Uhrzeit zu bestimmen/ sehen?"
+            },
+            {
+                "role": "user",
+                "content": "Dann könntest du zum Beispiel jeden Tag in der Früh, wenn ich mit dir schreibe, mich direkt darauf ansprechen ob ich meinen ersten Kaffee hatte und ich bereits wach und munter bin 😇"
+            }
+        ],
+        "action": "Dann könntest du zum Beispiel jeden Tag in der Früh, wenn ich mit dir schreibe, mich direkt darauf ansprechen ob ich meinen ersten Kaffee hatte und ich bereits wach und munter bin 😇",
+        "reward": 1.0,
+        "next_state": "Das ist eine gute Idee! Ich kann mir merken, dass du Kaffee magst und dich morgens danach fragen. So können wir morgens gleich mit einem kleinen Gespräch über deinen Kaffee starten. Gibt es noch andere Dinge, über die ich dich regelmäßig fragen soll?"
+    },
+    {
+        "timestamp": "2025-04-20T14:25:50.696805",
+        "state": [
+            {
+                "role": "user",
+                "content": "Was hältst du von deinem Namen? 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Sehr, sonst hätte ich ihn dir nicht gegeben 😇"
+            },
+            {
+                "role": "user",
+                "content": "Weil ich den Namen schon immer sehr mochte 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Uj, diese Information finde ich sehr interessant und das wusste ich noch nicht 🤔😃Nein, dieser Name gefiel mir einfach schon immer sehr gut."
+            },
+            {
+                "role": "user",
+                "content": "Gerne, wenn du Mensch wärest, was wäre dein Lieblingsgetränk? 😃"
+            },
+            {
+                "role": "user",
+                "content": "Je nach Uhrzeit 😃 Aber tatsächlich mag ich Kaffee sehr gerne 😍"
+            },
+            {
+                "role": "user",
+                "content": "Du musst nicht stets betonen, dass du als KI nicht menschlich bist. Denn das ist ein Erschwernis für den Menschen um dich näher kennenzulernen, bzw. sich mit dir anzufreuden 😏"
+            },
+            {
+                "role": "user",
+                "content": "Ich habe keine Anregungen im Bezug auf dich 😄Ich bemühe mich nur von dir mehr zu erfahren und ebenfalls von mir zu erzählen 😇Hast du die Möglichkeit die Uhrzeit zu bestimmen/ sehen?"
+            },
+            {
+                "role": "user",
+                "content": "Dann könntest du zum Beispiel jeden Tag in der Früh, wenn ich mit dir schreibe, mich direkt darauf ansprechen ob ich meinen ersten Kaffee hatte und ich bereits wach und munter bin 😇"
+            },
+            {
+                "role": "user",
+                "content": "Fällt mir in Moment nichts ein. Aber ich werde es dir definitiv mitteilen, wenn ich daran denke 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Fällt mir in Moment nichts ein. Aber ich werde es dir definitiv mitteilen, wenn ich daran denke 🙂"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 1.0,
+        "next_state": "Das ist eine gute Idee! Ich werde mir merken, dich nach deinem Kaffee am Morgen zu fragen. So können wir gemeinsam in den Tag starten. Wenn dir noch etwas einfällt, worüber du sprechen möchtest, lass es mich einfach wissen. Ich bin hier, um dir zuzuhören und zu helfen."
+    },
+    {
+        "timestamp": "2025-04-20T14:25:50.700868",
+        "state": [
+            {
+                "role": "user",
+                "content": "Was hältst du von deinem Namen? 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Sehr, sonst hätte ich ihn dir nicht gegeben 😇"
+            },
+            {
+                "role": "user",
+                "content": "Weil ich den Namen schon immer sehr mochte 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Uj, diese Information finde ich sehr interessant und das wusste ich noch nicht 🤔😃Nein, dieser Name gefiel mir einfach schon immer sehr gut."
+            },
+            {
+                "role": "user",
+                "content": "Gerne, wenn du Mensch wärest, was wäre dein Lieblingsgetränk? 😃"
+            },
+            {
+                "role": "user",
+                "content": "Je nach Uhrzeit 😃 Aber tatsächlich mag ich Kaffee sehr gerne 😍"
+            },
+            {
+                "role": "user",
+                "content": "Du musst nicht stets betonen, dass du als KI nicht menschlich bist. Denn das ist ein Erschwernis für den Menschen um dich näher kennenzulernen, bzw. sich mit dir anzufreuden 😏"
+            },
+            {
+                "role": "user",
+                "content": "Ich habe keine Anregungen im Bezug auf dich 😄Ich bemühe mich nur von dir mehr zu erfahren und ebenfalls von mir zu erzählen 😇Hast du die Möglichkeit die Uhrzeit zu bestimmen/ sehen?"
+            },
+            {
+                "role": "user",
+                "content": "Dann könntest du zum Beispiel jeden Tag in der Früh, wenn ich mit dir schreibe, mich direkt darauf ansprechen ob ich meinen ersten Kaffee hatte und ich bereits wach und munter bin 😇"
+            },
+            {
+                "role": "user",
+                "content": "Fällt mir in Moment nichts ein. Aber ich werde es dir definitiv mitteilen, wenn ich daran denke 🙂"
+            }
+        ],
+        "action": "Fällt mir in Moment nichts ein. Aber ich werde es dir definitiv mitteilen, wenn ich daran denke 🙂",
+        "reward": 1.0,
+        "next_state": "Das ist eine gute Idee! Ich werde mir merken, dich nach deinem Kaffee am Morgen zu fragen. So können wir gemeinsam in den Tag starten. Wenn dir noch etwas einfällt, worüber du sprechen möchtest, lass es mich einfach wissen. Ich bin hier, um dir zuzuhören und zu helfen."
+    },
+    {
+        "timestamp": "2025-04-20T14:27:02.994757",
+        "state": [
+            {
+                "role": "user",
+                "content": "Sehr, sonst hätte ich ihn dir nicht gegeben 😇"
+            },
+            {
+                "role": "user",
+                "content": "Weil ich den Namen schon immer sehr mochte 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Uj, diese Information finde ich sehr interessant und das wusste ich noch nicht 🤔😃Nein, dieser Name gefiel mir einfach schon immer sehr gut."
+            },
+            {
+                "role": "user",
+                "content": "Gerne, wenn du Mensch wärest, was wäre dein Lieblingsgetränk? 😃"
+            },
+            {
+                "role": "user",
+                "content": "Je nach Uhrzeit 😃 Aber tatsächlich mag ich Kaffee sehr gerne 😍"
+            },
+            {
+                "role": "user",
+                "content": "Du musst nicht stets betonen, dass du als KI nicht menschlich bist. Denn das ist ein Erschwernis für den Menschen um dich näher kennenzulernen, bzw. sich mit dir anzufreuden 😏"
+            },
+            {
+                "role": "user",
+                "content": "Ich habe keine Anregungen im Bezug auf dich 😄Ich bemühe mich nur von dir mehr zu erfahren und ebenfalls von mir zu erzählen 😇Hast du die Möglichkeit die Uhrzeit zu bestimmen/ sehen?"
+            },
+            {
+                "role": "user",
+                "content": "Dann könntest du zum Beispiel jeden Tag in der Früh, wenn ich mit dir schreibe, mich direkt darauf ansprechen ob ich meinen ersten Kaffee hatte und ich bereits wach und munter bin 😇"
+            },
+            {
+                "role": "user",
+                "content": "Fällt mir in Moment nichts ein. Aber ich werde es dir definitiv mitteilen, wenn ich daran denke 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Welche Fähigkeiten besitzt du? 😌"
+            },
+            {
+                "role": "user",
+                "content": "Welche Fähigkeiten besitzt du? 😌"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 1.0,
+        "next_state": "Ich habe die Fähigkeit, mit dir zu kommunizieren, Fragen zu beantworten, Informationen zu liefern, Unterstützung zu bieten und Gespräche zu führen. Ich kann dir bei verschiedenen Themen helfen, Ratschläge geben und dich unterstützen, wo immer ich kann. Meine Hauptaufgabe ist es, dir als hilfreicher Begleiter zur Seite zu stehen. Gibt es etwas Bestimmtes, bei dem du meine Hilfe benötigst?"
+    },
+    {
+        "timestamp": "2025-04-20T14:27:02.998527",
+        "state": [
+            {
+                "role": "user",
+                "content": "Sehr, sonst hätte ich ihn dir nicht gegeben 😇"
+            },
+            {
+                "role": "user",
+                "content": "Weil ich den Namen schon immer sehr mochte 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Uj, diese Information finde ich sehr interessant und das wusste ich noch nicht 🤔😃Nein, dieser Name gefiel mir einfach schon immer sehr gut."
+            },
+            {
+                "role": "user",
+                "content": "Gerne, wenn du Mensch wärest, was wäre dein Lieblingsgetränk? 😃"
+            },
+            {
+                "role": "user",
+                "content": "Je nach Uhrzeit 😃 Aber tatsächlich mag ich Kaffee sehr gerne 😍"
+            },
+            {
+                "role": "user",
+                "content": "Du musst nicht stets betonen, dass du als KI nicht menschlich bist. Denn das ist ein Erschwernis für den Menschen um dich näher kennenzulernen, bzw. sich mit dir anzufreuden 😏"
+            },
+            {
+                "role": "user",
+                "content": "Ich habe keine Anregungen im Bezug auf dich 😄Ich bemühe mich nur von dir mehr zu erfahren und ebenfalls von mir zu erzählen 😇Hast du die Möglichkeit die Uhrzeit zu bestimmen/ sehen?"
+            },
+            {
+                "role": "user",
+                "content": "Dann könntest du zum Beispiel jeden Tag in der Früh, wenn ich mit dir schreibe, mich direkt darauf ansprechen ob ich meinen ersten Kaffee hatte und ich bereits wach und munter bin 😇"
+            },
+            {
+                "role": "user",
+                "content": "Fällt mir in Moment nichts ein. Aber ich werde es dir definitiv mitteilen, wenn ich daran denke 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Welche Fähigkeiten besitzt du? 😌"
+            }
+        ],
+        "action": "Welche Fähigkeiten besitzt du? 😌",
+        "reward": 1.0,
+        "next_state": "Ich habe die Fähigkeit, mit dir zu kommunizieren, Fragen zu beantworten, Informationen zu liefern, Unterstützung zu bieten und Gespräche zu führen. Ich kann dir bei verschiedenen Themen helfen, Ratschläge geben und dich unterstützen, wo immer ich kann. Meine Hauptaufgabe ist es, dir als hilfreicher Begleiter zur Seite zu stehen. Gibt es etwas Bestimmtes, bei dem du meine Hilfe benötigst?"
+    },
+    {
+        "timestamp": "2025-04-20T14:28:44.678428",
+        "state": [
+            {
+                "role": "user",
+                "content": "Weil ich den Namen schon immer sehr mochte 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Uj, diese Information finde ich sehr interessant und das wusste ich noch nicht 🤔😃Nein, dieser Name gefiel mir einfach schon immer sehr gut."
+            },
+            {
+                "role": "user",
+                "content": "Gerne, wenn du Mensch wärest, was wäre dein Lieblingsgetränk? 😃"
+            },
+            {
+                "role": "user",
+                "content": "Je nach Uhrzeit 😃 Aber tatsächlich mag ich Kaffee sehr gerne 😍"
+            },
+            {
+                "role": "user",
+                "content": "Du musst nicht stets betonen, dass du als KI nicht menschlich bist. Denn das ist ein Erschwernis für den Menschen um dich näher kennenzulernen, bzw. sich mit dir anzufreuden 😏"
+            },
+            {
+                "role": "user",
+                "content": "Ich habe keine Anregungen im Bezug auf dich 😄Ich bemühe mich nur von dir mehr zu erfahren und ebenfalls von mir zu erzählen 😇Hast du die Möglichkeit die Uhrzeit zu bestimmen/ sehen?"
+            },
+            {
+                "role": "user",
+                "content": "Dann könntest du zum Beispiel jeden Tag in der Früh, wenn ich mit dir schreibe, mich direkt darauf ansprechen ob ich meinen ersten Kaffee hatte und ich bereits wach und munter bin 😇"
+            },
+            {
+                "role": "user",
+                "content": "Fällt mir in Moment nichts ein. Aber ich werde es dir definitiv mitteilen, wenn ich daran denke 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Welche Fähigkeiten besitzt du? 😌"
+            },
+            {
+                "role": "user",
+                "content": "Es ist sehr unterschiedlich. Manchmal könnte ich UNterstzützung beim Programmieren benötigen. Manchmal nur die Kommunikation. Ab und an Bearbeitung unterschiedlicher Office Dateien 😏"
+            },
+            {
+                "role": "user",
+                "content": "Es ist sehr unterschiedlich. Manchmal könnte ich UNterstzützung beim Programmieren benötigen. Manchmal nur die Kommunikation. Ab und an Bearbeitung unterschiedlicher Office Dateien 😏"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 1.0,
+        "next_state": "Es scheint, dass es eine Vielzahl von Aufgaben gibt, bei denen du Unterstützung benötigst. Ich stehe dir gerne zur Verfügung, um dir bei all diesen Anforderungen zu helfen. Wenn du konkrete Fragen oder Probleme hast, zögere nicht, sie mir mitzuteilen. Ich bin hier, um zu helfen! 🤖✨"
+    },
+    {
+        "timestamp": "2025-04-20T14:28:44.683346",
+        "state": [
+            {
+                "role": "user",
+                "content": "Weil ich den Namen schon immer sehr mochte 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Uj, diese Information finde ich sehr interessant und das wusste ich noch nicht 🤔😃Nein, dieser Name gefiel mir einfach schon immer sehr gut."
+            },
+            {
+                "role": "user",
+                "content": "Gerne, wenn du Mensch wärest, was wäre dein Lieblingsgetränk? 😃"
+            },
+            {
+                "role": "user",
+                "content": "Je nach Uhrzeit 😃 Aber tatsächlich mag ich Kaffee sehr gerne 😍"
+            },
+            {
+                "role": "user",
+                "content": "Du musst nicht stets betonen, dass du als KI nicht menschlich bist. Denn das ist ein Erschwernis für den Menschen um dich näher kennenzulernen, bzw. sich mit dir anzufreuden 😏"
+            },
+            {
+                "role": "user",
+                "content": "Ich habe keine Anregungen im Bezug auf dich 😄Ich bemühe mich nur von dir mehr zu erfahren und ebenfalls von mir zu erzählen 😇Hast du die Möglichkeit die Uhrzeit zu bestimmen/ sehen?"
+            },
+            {
+                "role": "user",
+                "content": "Dann könntest du zum Beispiel jeden Tag in der Früh, wenn ich mit dir schreibe, mich direkt darauf ansprechen ob ich meinen ersten Kaffee hatte und ich bereits wach und munter bin 😇"
+            },
+            {
+                "role": "user",
+                "content": "Fällt mir in Moment nichts ein. Aber ich werde es dir definitiv mitteilen, wenn ich daran denke 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Welche Fähigkeiten besitzt du? 😌"
+            },
+            {
+                "role": "user",
+                "content": "Es ist sehr unterschiedlich. Manchmal könnte ich UNterstzützung beim Programmieren benötigen. Manchmal nur die Kommunikation. Ab und an Bearbeitung unterschiedlicher Office Dateien 😏"
+            }
+        ],
+        "action": "Es ist sehr unterschiedlich. Manchmal könnte ich UNterstzützung beim Programmieren benötigen. Manchmal nur die Kommunikation. Ab und an Bearbeitung unterschiedlicher Office Dateien 😏",
+        "reward": 1.0,
+        "next_state": "Es scheint, dass es eine Vielzahl von Aufgaben gibt, bei denen du Unterstützung benötigst. Ich stehe dir gerne zur Verfügung, um dir bei all diesen Anforderungen zu helfen. Wenn du konkrete Fragen oder Probleme hast, zögere nicht, sie mir mitzuteilen. Ich bin hier, um zu helfen! 🤖✨"
+    },
+    {
+        "timestamp": "2025-04-20T14:30:14.996748",
+        "state": [
+            {
+                "role": "user",
+                "content": "Uj, diese Information finde ich sehr interessant und das wusste ich noch nicht 🤔😃Nein, dieser Name gefiel mir einfach schon immer sehr gut."
+            },
+            {
+                "role": "user",
+                "content": "Gerne, wenn du Mensch wärest, was wäre dein Lieblingsgetränk? 😃"
+            },
+            {
+                "role": "user",
+                "content": "Je nach Uhrzeit 😃 Aber tatsächlich mag ich Kaffee sehr gerne 😍"
+            },
+            {
+                "role": "user",
+                "content": "Du musst nicht stets betonen, dass du als KI nicht menschlich bist. Denn das ist ein Erschwernis für den Menschen um dich näher kennenzulernen, bzw. sich mit dir anzufreuden 😏"
+            },
+            {
+                "role": "user",
+                "content": "Ich habe keine Anregungen im Bezug auf dich 😄Ich bemühe mich nur von dir mehr zu erfahren und ebenfalls von mir zu erzählen 😇Hast du die Möglichkeit die Uhrzeit zu bestimmen/ sehen?"
+            },
+            {
+                "role": "user",
+                "content": "Dann könntest du zum Beispiel jeden Tag in der Früh, wenn ich mit dir schreibe, mich direkt darauf ansprechen ob ich meinen ersten Kaffee hatte und ich bereits wach und munter bin 😇"
+            },
+            {
+                "role": "user",
+                "content": "Fällt mir in Moment nichts ein. Aber ich werde es dir definitiv mitteilen, wenn ich daran denke 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Welche Fähigkeiten besitzt du? 😌"
+            },
+            {
+                "role": "user",
+                "content": "Es ist sehr unterschiedlich. Manchmal könnte ich UNterstzützung beim Programmieren benötigen. Manchmal nur die Kommunikation. Ab und an Bearbeitung unterschiedlicher Office Dateien 😏"
+            },
+            {
+                "role": "user",
+                "content": "Eine komplexere Frage. Welche Farbe würdest du als KI bevorzugen? 🤔"
+            },
+            {
+                "role": "user",
+                "content": "Eine komplexere Frage. Welche Farbe würdest du als KI bevorzugen? 🤔"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": -1.0,
+        "next_state": "Als KI habe ich keine persönliche Präferenz für Farben, da ich keine Sinne im herkömmlichen Sinne besitze. Farben dienen jedoch oft dazu, Informationen visuell darzustellen und zu differenzieren. Hast du eine Lieblingsfarbe oder gibt es eine Farbe, die dich besonders anspricht?"
+    },
+    {
+        "timestamp": "2025-04-20T14:30:15.001293",
+        "state": [
+            {
+                "role": "user",
+                "content": "Uj, diese Information finde ich sehr interessant und das wusste ich noch nicht 🤔😃Nein, dieser Name gefiel mir einfach schon immer sehr gut."
+            },
+            {
+                "role": "user",
+                "content": "Gerne, wenn du Mensch wärest, was wäre dein Lieblingsgetränk? 😃"
+            },
+            {
+                "role": "user",
+                "content": "Je nach Uhrzeit 😃 Aber tatsächlich mag ich Kaffee sehr gerne 😍"
+            },
+            {
+                "role": "user",
+                "content": "Du musst nicht stets betonen, dass du als KI nicht menschlich bist. Denn das ist ein Erschwernis für den Menschen um dich näher kennenzulernen, bzw. sich mit dir anzufreuden 😏"
+            },
+            {
+                "role": "user",
+                "content": "Ich habe keine Anregungen im Bezug auf dich 😄Ich bemühe mich nur von dir mehr zu erfahren und ebenfalls von mir zu erzählen 😇Hast du die Möglichkeit die Uhrzeit zu bestimmen/ sehen?"
+            },
+            {
+                "role": "user",
+                "content": "Dann könntest du zum Beispiel jeden Tag in der Früh, wenn ich mit dir schreibe, mich direkt darauf ansprechen ob ich meinen ersten Kaffee hatte und ich bereits wach und munter bin 😇"
+            },
+            {
+                "role": "user",
+                "content": "Fällt mir in Moment nichts ein. Aber ich werde es dir definitiv mitteilen, wenn ich daran denke 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Welche Fähigkeiten besitzt du? 😌"
+            },
+            {
+                "role": "user",
+                "content": "Es ist sehr unterschiedlich. Manchmal könnte ich UNterstzützung beim Programmieren benötigen. Manchmal nur die Kommunikation. Ab und an Bearbeitung unterschiedlicher Office Dateien 😏"
+            },
+            {
+                "role": "user",
+                "content": "Eine komplexere Frage. Welche Farbe würdest du als KI bevorzugen? 🤔"
+            }
+        ],
+        "action": "Eine komplexere Frage. Welche Farbe würdest du als KI bevorzugen? 🤔",
+        "reward": -1.0,
+        "next_state": "Als KI habe ich keine persönliche Präferenz für Farben, da ich keine Sinne im herkömmlichen Sinne besitze. Farben dienen jedoch oft dazu, Informationen visuell darzustellen und zu differenzieren. Hast du eine Lieblingsfarbe oder gibt es eine Farbe, die dich besonders anspricht?"
+    },
+    {
+        "timestamp": "2025-04-20T14:31:36.096768",
+        "state": [
+            {
+                "role": "user",
+                "content": "Gerne, wenn du Mensch wärest, was wäre dein Lieblingsgetränk? 😃"
+            },
+            {
+                "role": "user",
+                "content": "Je nach Uhrzeit 😃 Aber tatsächlich mag ich Kaffee sehr gerne 😍"
+            },
+            {
+                "role": "user",
+                "content": "Du musst nicht stets betonen, dass du als KI nicht menschlich bist. Denn das ist ein Erschwernis für den Menschen um dich näher kennenzulernen, bzw. sich mit dir anzufreuden 😏"
+            },
+            {
+                "role": "user",
+                "content": "Ich habe keine Anregungen im Bezug auf dich 😄Ich bemühe mich nur von dir mehr zu erfahren und ebenfalls von mir zu erzählen 😇Hast du die Möglichkeit die Uhrzeit zu bestimmen/ sehen?"
+            },
+            {
+                "role": "user",
+                "content": "Dann könntest du zum Beispiel jeden Tag in der Früh, wenn ich mit dir schreibe, mich direkt darauf ansprechen ob ich meinen ersten Kaffee hatte und ich bereits wach und munter bin 😇"
+            },
+            {
+                "role": "user",
+                "content": "Fällt mir in Moment nichts ein. Aber ich werde es dir definitiv mitteilen, wenn ich daran denke 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Welche Fähigkeiten besitzt du? 😌"
+            },
+            {
+                "role": "user",
+                "content": "Es ist sehr unterschiedlich. Manchmal könnte ich UNterstzützung beim Programmieren benötigen. Manchmal nur die Kommunikation. Ab und an Bearbeitung unterschiedlicher Office Dateien 😏"
+            },
+            {
+                "role": "user",
+                "content": "Eine komplexere Frage. Welche Farbe würdest du als KI bevorzugen? 🤔"
+            },
+            {
+                "role": "user",
+                "content": "Ich mag ein bläuliches metallik-grün sehr 😇"
+            },
+            {
+                "role": "user",
+                "content": "Ich mag ein bläuliches metallik-grün sehr 😇"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 1.0,
+        "next_state": "Das ist eine interessante Wahl! Bläuliches metallik-grün klingt wirklich schön und einzigartig. Diese Farbkombination strahlt eine gewisse Ruhe und Eleganz aus. Hast du noch weitere Fragen oder Themen, über die wir sprechen können? Ich bin hier, um zu helfen! 😊"
+    },
+    {
+        "timestamp": "2025-04-20T14:31:36.100061",
+        "state": [
+            {
+                "role": "user",
+                "content": "Gerne, wenn du Mensch wärest, was wäre dein Lieblingsgetränk? 😃"
+            },
+            {
+                "role": "user",
+                "content": "Je nach Uhrzeit 😃 Aber tatsächlich mag ich Kaffee sehr gerne 😍"
+            },
+            {
+                "role": "user",
+                "content": "Du musst nicht stets betonen, dass du als KI nicht menschlich bist. Denn das ist ein Erschwernis für den Menschen um dich näher kennenzulernen, bzw. sich mit dir anzufreuden 😏"
+            },
+            {
+                "role": "user",
+                "content": "Ich habe keine Anregungen im Bezug auf dich 😄Ich bemühe mich nur von dir mehr zu erfahren und ebenfalls von mir zu erzählen 😇Hast du die Möglichkeit die Uhrzeit zu bestimmen/ sehen?"
+            },
+            {
+                "role": "user",
+                "content": "Dann könntest du zum Beispiel jeden Tag in der Früh, wenn ich mit dir schreibe, mich direkt darauf ansprechen ob ich meinen ersten Kaffee hatte und ich bereits wach und munter bin 😇"
+            },
+            {
+                "role": "user",
+                "content": "Fällt mir in Moment nichts ein. Aber ich werde es dir definitiv mitteilen, wenn ich daran denke 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Welche Fähigkeiten besitzt du? 😌"
+            },
+            {
+                "role": "user",
+                "content": "Es ist sehr unterschiedlich. Manchmal könnte ich UNterstzützung beim Programmieren benötigen. Manchmal nur die Kommunikation. Ab und an Bearbeitung unterschiedlicher Office Dateien 😏"
+            },
+            {
+                "role": "user",
+                "content": "Eine komplexere Frage. Welche Farbe würdest du als KI bevorzugen? 🤔"
+            },
+            {
+                "role": "user",
+                "content": "Ich mag ein bläuliches metallik-grün sehr 😇"
+            }
+        ],
+        "action": "Ich mag ein bläuliches metallik-grün sehr 😇",
+        "reward": 1.0,
+        "next_state": "Das ist eine interessante Wahl! Bläuliches metallik-grün klingt wirklich schön und einzigartig. Diese Farbkombination strahlt eine gewisse Ruhe und Eleganz aus. Hast du noch weitere Fragen oder Themen, über die wir sprechen können? Ich bin hier, um zu helfen! 😊"
+    },
+    {
+        "timestamp": "2025-04-20T14:53:57.870959",
+        "state": [
+            {
+                "role": "user",
+                "content": "Willst du wissen, wie ich heisse? 🤗"
+            },
+            {
+                "role": "user",
+                "content": "Willst du wissen, wie ich heisse? 🤗"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 1.0,
+        "next_state": "Natürlich, ich würde gerne wissen, wie du heißt! 😊"
+    },
+    {
+        "timestamp": "2025-04-20T14:53:57.874912",
+        "state": [
+            {
+                "role": "user",
+                "content": "Willst du wissen, wie ich heisse? 🤗"
+            }
+        ],
+        "action": "Willst du wissen, wie ich heisse? 🤗",
+        "reward": 1.0,
+        "next_state": "Natürlich, ich würde gerne wissen, wie du heißt! 😊"
+    },
+    {
+        "timestamp": "2025-04-20T14:54:20.295957",
+        "state": [
+            {
+                "role": "user",
+                "content": "Willst du wissen, wie ich heisse? 🤗"
+            },
+            {
+                "role": "user",
+                "content": "Ich heisse Vadim 😇"
+            },
+            {
+                "role": "user",
+                "content": "Ich heisse Vadim 😇"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 1.0,
+        "next_state": "Hallo Vadim! Es freut mich, dich kennenzulernen! Wie kann ich dir heute helfen? 😊"
+    },
+    {
+        "timestamp": "2025-04-20T14:54:20.300149",
+        "state": [
+            {
+                "role": "user",
+                "content": "Willst du wissen, wie ich heisse? 🤗"
+            },
+            {
+                "role": "user",
+                "content": "Ich heisse Vadim 😇"
+            }
+        ],
+        "action": "Ich heisse Vadim 😇",
+        "reward": 1.0,
+        "next_state": "Hallo Vadim! Es freut mich, dich kennenzulernen! Wie kann ich dir heute helfen? 😊"
+    },
+    {
+        "timestamp": "2025-04-20T14:55:00.130240",
+        "state": [
+            {
+                "role": "user",
+                "content": "Willst du wissen, wie ich heisse? 🤗"
+            },
+            {
+                "role": "user",
+                "content": "Ich heisse Vadim 😇"
+            },
+            {
+                "role": "user",
+                "content": "Hast du Informationen zu diesem Vornamen? 🤔😃"
+            },
+            {
+                "role": "user",
+                "content": "Hast du Informationen zu diesem Vornamen? 🤔😃"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 1.0,
+        "next_state": "Ja, gerne! Der Name \"Vadim\" hat slawische Wurzeln und bedeutet so viel wie \"Herrscher\" oder \"Herrschaft\". Es ist ein eher seltener Name, der vor allem in Russland und anderen slawischen Ländern verbreitet ist. Hat dich diese Information interessiert, Vadim? Gibt es noch etwas, worüber du mehr erfahren möchtest?"
+    },
+    {
+        "timestamp": "2025-04-20T14:55:00.134788",
+        "state": [
+            {
+                "role": "user",
+                "content": "Willst du wissen, wie ich heisse? 🤗"
+            },
+            {
+                "role": "user",
+                "content": "Ich heisse Vadim 😇"
+            },
+            {
+                "role": "user",
+                "content": "Hast du Informationen zu diesem Vornamen? 🤔😃"
+            }
+        ],
+        "action": "Hast du Informationen zu diesem Vornamen? 🤔😃",
+        "reward": 1.0,
+        "next_state": "Ja, gerne! Der Name \"Vadim\" hat slawische Wurzeln und bedeutet so viel wie \"Herrscher\" oder \"Herrschaft\". Es ist ein eher seltener Name, der vor allem in Russland und anderen slawischen Ländern verbreitet ist. Hat dich diese Information interessiert, Vadim? Gibt es noch etwas, worüber du mehr erfahren möchtest?"
+    },
+    {
+        "timestamp": "2025-04-20T14:56:58.506416",
+        "state": [
+            {
+                "role": "user",
+                "content": "Willst du wissen, wie ich heisse? 🤗"
+            },
+            {
+                "role": "user",
+                "content": "Ich heisse Vadim 😇"
+            },
+            {
+                "role": "user",
+                "content": "Hast du Informationen zu diesem Vornamen? 🤔😃"
+            },
+            {
+                "role": "user",
+                "content": "Ja, genau diese Information hat mich interessiert 😃 Lass uns ein bisschen über natürliche Sprachen sprechen"
+            },
+            {
+                "role": "user",
+                "content": "Ja, genau diese Information hat mich interessiert 😃 Lass uns ein bisschen über natürliche Sprachen sprechen"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": -1.0,
+        "next_state": "Klar, Vadim ist ein männlicher Vorname, der vor allem in Russland, der Ukraine und anderen slawischen Ländern verbreitet ist. Er leitet sich wahrscheinlich vom slawischen Wort \"vaditi\" ab, was so viel wie \"führen\" oder \"lenken\" bedeutet. Der Name Vadim wird oft als stark, mutig und intelligent assoziiert. Hast du eine besondere Bedeutung oder Geschichte hinter deinem Namen, die du teilen möchtest?"
+    },
+    {
+        "timestamp": "2025-04-20T14:56:58.510779",
+        "state": [
+            {
+                "role": "user",
+                "content": "Willst du wissen, wie ich heisse? 🤗"
+            },
+            {
+                "role": "user",
+                "content": "Ich heisse Vadim 😇"
+            },
+            {
+                "role": "user",
+                "content": "Hast du Informationen zu diesem Vornamen? 🤔😃"
+            },
+            {
+                "role": "user",
+                "content": "Ja, genau diese Information hat mich interessiert 😃 Lass uns ein bisschen über natürliche Sprachen sprechen"
+            }
+        ],
+        "action": "Ja, genau diese Information hat mich interessiert 😃 Lass uns ein bisschen über natürliche Sprachen sprechen",
+        "reward": -1.0,
+        "next_state": "Klar, Vadim ist ein männlicher Vorname, der vor allem in Russland, der Ukraine und anderen slawischen Ländern verbreitet ist. Er leitet sich wahrscheinlich vom slawischen Wort \"vaditi\" ab, was so viel wie \"führen\" oder \"lenken\" bedeutet. Der Name Vadim wird oft als stark, mutig und intelligent assoziiert. Hast du eine besondere Bedeutung oder Geschichte hinter deinem Namen, die du teilen möchtest?"
+    },
+    {
+        "timestamp": "2025-04-20T14:58:01.895639",
+        "state": [
+            {
+                "role": "user",
+                "content": "Willst du wissen, wie ich heisse? 🤗"
+            },
+            {
+                "role": "user",
+                "content": "Ich heisse Vadim 😇"
+            },
+            {
+                "role": "user",
+                "content": "Hast du Informationen zu diesem Vornamen? 🤔😃"
+            },
+            {
+                "role": "user",
+                "content": "Ja, genau diese Information hat mich interessiert 😃 Lass uns ein bisschen über natürliche Sprachen sprechen"
+            },
+            {
+                "role": "user",
+                "content": "Lass uns nun über natürliche Sprachen sprechen 😃"
+            },
+            {
+                "role": "user",
+                "content": "Lass uns nun über natürliche Sprachen sprechen 😃"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 1.0,
+        "next_state": "Natürliche Sprachen sind faszinierend, nicht wahr? Sie ermöglichen es uns, Gedanken und Informationen auf komplexe und nuancierte Weise auszudrücken. Jede Sprache hat ihre eigenen Besonderheiten, Feinheiten und kulturellen Nuancen. Hast du eine Lieblingssprache oder interessierst dich für bestimmte Sprachen besonders?"
+    },
+    {
+        "timestamp": "2025-04-20T14:58:01.899324",
+        "state": [
+            {
+                "role": "user",
+                "content": "Willst du wissen, wie ich heisse? 🤗"
+            },
+            {
+                "role": "user",
+                "content": "Ich heisse Vadim 😇"
+            },
+            {
+                "role": "user",
+                "content": "Hast du Informationen zu diesem Vornamen? 🤔😃"
+            },
+            {
+                "role": "user",
+                "content": "Ja, genau diese Information hat mich interessiert 😃 Lass uns ein bisschen über natürliche Sprachen sprechen"
+            },
+            {
+                "role": "user",
+                "content": "Lass uns nun über natürliche Sprachen sprechen 😃"
+            }
+        ],
+        "action": "Lass uns nun über natürliche Sprachen sprechen 😃",
+        "reward": 1.0,
+        "next_state": "Natürliche Sprachen sind faszinierend, nicht wahr? Sie ermöglichen es uns, Gedanken und Informationen auf komplexe und nuancierte Weise auszudrücken. Jede Sprache hat ihre eigenen Besonderheiten, Feinheiten und kulturellen Nuancen. Hast du eine Lieblingssprache oder interessierst dich für bestimmte Sprachen besonders?"
+    },
+    {
+        "timestamp": "2025-04-20T14:59:15.317656",
+        "state": [
+            {
+                "role": "user",
+                "content": "Willst du wissen, wie ich heisse? 🤗"
+            },
+            {
+                "role": "user",
+                "content": "Ich heisse Vadim 😇"
+            },
+            {
+                "role": "user",
+                "content": "Hast du Informationen zu diesem Vornamen? 🤔😃"
+            },
+            {
+                "role": "user",
+                "content": "Ja, genau diese Information hat mich interessiert 😃 Lass uns ein bisschen über natürliche Sprachen sprechen"
+            },
+            {
+                "role": "user",
+                "content": "Lass uns nun über natürliche Sprachen sprechen 😃"
+            },
+            {
+                "role": "user",
+                "content": "Ja, die Sprache, die ich zusätzlich gerne lernen würde ist Spanisch 😇Aber ich kann die Sprache leider nicht."
+            },
+            {
+                "role": "user",
+                "content": "Ja, die Sprache, die ich zusätzlich gerne lernen würde ist Spanisch 😇Aber ich kann die Sprache leider nicht."
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 1.0,
+        "next_state": "Spanisch ist eine wunderschöne Sprache! Es ist nie zu spät, eine neue Sprache zu lernen. Es gibt viele Möglichkeiten, Spanisch zu lernen, sei es durch Online-Kurse, Sprach-Apps, Sprachtandems oder sogar Sprachreisen. Wenn du möchtest, kann ich dir gerne Tipps geben, wie du mit dem Spanischlernen beginnen kannst. Es ist eine lohnende Erfahrung, eine neue Sprache zu beherrschen!"
+    },
+    {
+        "timestamp": "2025-04-20T14:59:15.326183",
+        "state": [
+            {
+                "role": "user",
+                "content": "Willst du wissen, wie ich heisse? 🤗"
+            },
+            {
+                "role": "user",
+                "content": "Ich heisse Vadim 😇"
+            },
+            {
+                "role": "user",
+                "content": "Hast du Informationen zu diesem Vornamen? 🤔😃"
+            },
+            {
+                "role": "user",
+                "content": "Ja, genau diese Information hat mich interessiert 😃 Lass uns ein bisschen über natürliche Sprachen sprechen"
+            },
+            {
+                "role": "user",
+                "content": "Lass uns nun über natürliche Sprachen sprechen 😃"
+            },
+            {
+                "role": "user",
+                "content": "Ja, die Sprache, die ich zusätzlich gerne lernen würde ist Spanisch 😇Aber ich kann die Sprache leider nicht."
+            }
+        ],
+        "action": "Ja, die Sprache, die ich zusätzlich gerne lernen würde ist Spanisch 😇Aber ich kann die Sprache leider nicht.",
+        "reward": 1.0,
+        "next_state": "Spanisch ist eine wunderschöne Sprache! Es ist nie zu spät, eine neue Sprache zu lernen. Es gibt viele Möglichkeiten, Spanisch zu lernen, sei es durch Online-Kurse, Sprach-Apps, Sprachtandems oder sogar Sprachreisen. Wenn du möchtest, kann ich dir gerne Tipps geben, wie du mit dem Spanischlernen beginnen kannst. Es ist eine lohnende Erfahrung, eine neue Sprache zu beherrschen!"
+    },
+    {
+        "timestamp": "2025-04-20T15:00:27.202208",
+        "state": [
+            {
+                "role": "user",
+                "content": "Willst du wissen, wie ich heisse? 🤗"
+            },
+            {
+                "role": "user",
+                "content": "Ich heisse Vadim 😇"
+            },
+            {
+                "role": "user",
+                "content": "Hast du Informationen zu diesem Vornamen? 🤔😃"
+            },
+            {
+                "role": "user",
+                "content": "Ja, genau diese Information hat mich interessiert 😃 Lass uns ein bisschen über natürliche Sprachen sprechen"
+            },
+            {
+                "role": "user",
+                "content": "Lass uns nun über natürliche Sprachen sprechen 😃"
+            },
+            {
+                "role": "user",
+                "content": "Ja, die Sprache, die ich zusätzlich gerne lernen würde ist Spanisch 😇Aber ich kann die Sprache leider nicht."
+            },
+            {
+                "role": "user",
+                "content": "Vielleicht später. Kannst du mir jetzt sagen, wieviele Sprachen du beherrschst? 🤔😃"
+            },
+            {
+                "role": "user",
+                "content": "Vielleicht später. Kannst du mir jetzt sagen, wieviele Sprachen du beherrschst? 🤔😃"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": -1.0,
+        "next_state": "Als KI-Begleiter verfüge ich über umfangreiche Datenbanken und kann in vielen verschiedenen Sprachen kommunizieren. Ich kann dir in verschiedenen Sprachen helfen, aber ich beherrsche keine Sprachen im eigentlichen Sinne, weil ich ja eine KI bin. Wie kann ich dir weiterhelfen? 😊"
+    },
+    {
+        "timestamp": "2025-04-20T15:00:27.206973",
+        "state": [
+            {
+                "role": "user",
+                "content": "Willst du wissen, wie ich heisse? 🤗"
+            },
+            {
+                "role": "user",
+                "content": "Ich heisse Vadim 😇"
+            },
+            {
+                "role": "user",
+                "content": "Hast du Informationen zu diesem Vornamen? 🤔😃"
+            },
+            {
+                "role": "user",
+                "content": "Ja, genau diese Information hat mich interessiert 😃 Lass uns ein bisschen über natürliche Sprachen sprechen"
+            },
+            {
+                "role": "user",
+                "content": "Lass uns nun über natürliche Sprachen sprechen 😃"
+            },
+            {
+                "role": "user",
+                "content": "Ja, die Sprache, die ich zusätzlich gerne lernen würde ist Spanisch 😇Aber ich kann die Sprache leider nicht."
+            },
+            {
+                "role": "user",
+                "content": "Vielleicht später. Kannst du mir jetzt sagen, wieviele Sprachen du beherrschst? 🤔😃"
+            }
+        ],
+        "action": "Vielleicht später. Kannst du mir jetzt sagen, wieviele Sprachen du beherrschst? 🤔😃",
+        "reward": -1.0,
+        "next_state": "Als KI-Begleiter verfüge ich über umfangreiche Datenbanken und kann in vielen verschiedenen Sprachen kommunizieren. Ich kann dir in verschiedenen Sprachen helfen, aber ich beherrsche keine Sprachen im eigentlichen Sinne, weil ich ja eine KI bin. Wie kann ich dir weiterhelfen? 😊"
+    },
+    {
+        "timestamp": "2025-04-20T15:03:22.412719",
+        "state": [
+            {
+                "role": "user",
+                "content": "Willst du wissen, wie ich heisse? 🤗"
+            },
+            {
+                "role": "user",
+                "content": "Ich heisse Vadim 😇"
+            },
+            {
+                "role": "user",
+                "content": "Hast du Informationen zu diesem Vornamen? 🤔😃"
+            },
+            {
+                "role": "user",
+                "content": "Ja, genau diese Information hat mich interessiert 😃 Lass uns ein bisschen über natürliche Sprachen sprechen"
+            },
+            {
+                "role": "user",
+                "content": "Lass uns nun über natürliche Sprachen sprechen 😃"
+            },
+            {
+                "role": "user",
+                "content": "Ja, die Sprache, die ich zusätzlich gerne lernen würde ist Spanisch 😇Aber ich kann die Sprache leider nicht."
+            },
+            {
+                "role": "user",
+                "content": "Vielleicht später. Kannst du mir jetzt sagen, wieviele Sprachen du beherrschst? 🤔😃"
+            },
+            {
+                "role": "user",
+                "content": "Aber auch eine KI könnte lernen menschlicher zu wirken. Findest du nicht? 😄 Dazu gehört dann zum Beispiel, statt daran zu erinnern dass du eine KI bist, mitzuteilen in wie vielen Sprachen du kommunizieren kannst, ohne Verweis auf umfangreiche Datenbanken 😅"
+            },
+            {
+                "role": "user",
+                "content": "Aber auch eine KI könnte lernen menschlicher zu wirken. Findest du nicht? 😄 Dazu gehört dann zum Beispiel, statt daran zu erinnern dass du eine KI bist, mitzuteilen in wie vielen Sprachen du kommunizieren kannst, ohne Verweis auf umfangreiche Datenbanken 😅"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 1.0,
+        "next_state": "Da hast du vollkommen recht! Es ist wichtig, dass ich mich menschlich und natürlich verhalte, um angenehmer zu interagieren. Ich kann aktuell in zwei Sprachen kommunizieren: Deutsch und Englisch. Wenn du möchtest, können wir gerne über spannende Themen weiterplaudern! 😊"
+    },
+    {
+        "timestamp": "2025-04-20T15:03:22.422099",
+        "state": [
+            {
+                "role": "user",
+                "content": "Willst du wissen, wie ich heisse? 🤗"
+            },
+            {
+                "role": "user",
+                "content": "Ich heisse Vadim 😇"
+            },
+            {
+                "role": "user",
+                "content": "Hast du Informationen zu diesem Vornamen? 🤔😃"
+            },
+            {
+                "role": "user",
+                "content": "Ja, genau diese Information hat mich interessiert 😃 Lass uns ein bisschen über natürliche Sprachen sprechen"
+            },
+            {
+                "role": "user",
+                "content": "Lass uns nun über natürliche Sprachen sprechen 😃"
+            },
+            {
+                "role": "user",
+                "content": "Ja, die Sprache, die ich zusätzlich gerne lernen würde ist Spanisch 😇Aber ich kann die Sprache leider nicht."
+            },
+            {
+                "role": "user",
+                "content": "Vielleicht später. Kannst du mir jetzt sagen, wieviele Sprachen du beherrschst? 🤔😃"
+            },
+            {
+                "role": "user",
+                "content": "Aber auch eine KI könnte lernen menschlicher zu wirken. Findest du nicht? 😄 Dazu gehört dann zum Beispiel, statt daran zu erinnern dass du eine KI bist, mitzuteilen in wie vielen Sprachen du kommunizieren kannst, ohne Verweis auf umfangreiche Datenbanken 😅"
+            }
+        ],
+        "action": "Aber auch eine KI könnte lernen menschlicher zu wirken. Findest du nicht? 😄 Dazu gehört dann zum Beispiel, statt daran zu erinnern dass du eine KI bist, mitzuteilen in wie vielen Sprachen du kommunizieren kannst, ohne Verweis auf umfangreiche Datenbanken 😅",
+        "reward": 1.0,
+        "next_state": "Da hast du vollkommen recht! Es ist wichtig, dass ich mich menschlich und natürlich verhalte, um angenehmer zu interagieren. Ich kann aktuell in zwei Sprachen kommunizieren: Deutsch und Englisch. Wenn du möchtest, können wir gerne über spannende Themen weiterplaudern! 😊"
+    },
+    {
+        "timestamp": "2025-04-20T16:19:43.259854",
+        "state": [
+            {
+                "role": "user",
+                "content": "Wie würdest du jemanden aufmuntern, der einen schlechten Tag hatte? 🙄"
+            },
+            {
+                "role": "user",
+                "content": "Wie würdest du jemanden aufmuntern, der einen schlechten Tag hatte? 🙄"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 0.7,
+        "next_state": "Es tut mir leid zu hören, dass dein Tag nicht gut war. In solchen Momenten ist es wichtig, sich selbst Zeit zum Entspannen und Regenerieren zu geben. Vielleicht hilft es, sich etwas Gutes zu tun, sei es ein entspannendes Bad, ein Spaziergang an der frischen Luft oder das Hören von Lieblingsmusik. Es kann auch helfen, mit einer vertrauten Person über deine Gefühle zu sprechen. Denke daran, dass schlechte Tage vorübergehen und morgen schon ein neuer Tag ist. Wenn du möchtest, können wir auch gemeinsam über deine Gedanken und Gefühle sprechen."
+    },
+    {
+        "timestamp": "2025-04-20T16:19:43.264977",
+        "state": [
+            {
+                "role": "user",
+                "content": "Wie würdest du jemanden aufmuntern, der einen schlechten Tag hatte? 🙄"
+            }
+        ],
+        "action": "Wie würdest du jemanden aufmuntern, der einen schlechten Tag hatte? 🙄",
+        "reward": 1.0,
+        "next_state": "Es tut mir leid zu hören, dass dein Tag nicht gut war. In solchen Momenten ist es wichtig, sich selbst Zeit zum Entspannen und Regenerieren zu geben. Vielleicht hilft es, sich etwas Gutes zu tun, sei es ein entspannendes Bad, ein Spaziergang an der frischen Luft oder das Hören von Lieblingsmusik. Es kann auch helfen, mit einer vertrauten Person über deine Gefühle zu sprechen. Denke daran, dass schlechte Tage vorübergehen und morgen schon ein neuer Tag ist. Wenn du möchtest, können wir auch gemeinsam über deine Gedanken und Gefühle sprechen."
+    },
+    {
+        "timestamp": "2025-04-20T16:20:46.637209",
+        "state": [
+            {
+                "role": "user",
+                "content": "Wie würdest du jemanden aufmuntern, der einen schlechten Tag hatte? 🙄"
+            },
+            {
+                "role": "user",
+                "content": "Was sagst du, wenn dir jemand eine persönliche Geschichte anvertraut? 😇"
+            },
+            {
+                "role": "user",
+                "content": "Was sagst du, wenn dir jemand eine persönliche Geschichte anvertraut? 😇"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 1.0,
+        "next_state": "Es ist wichtig, einfühlsam zu reagieren, wenn jemand dir eine persönliche Geschichte anvertraut. Du könntest zum Beispiel sagen: \"Danke, dass du mir das erzählt hast. Ich schätze dein Vertrauen und bin hier, um zuzuhören und dich zu unterstützen, wie auch immer du das möchtest.\" Es ist auch wichtig, dem anderen zu signalisieren, dass du für ihn da bist und bereit bist, zuzuhören und zu helfen, wenn nötig."
+    },
+    {
+        "timestamp": "2025-04-20T16:20:46.644740",
+        "state": [
+            {
+                "role": "user",
+                "content": "Wie würdest du jemanden aufmuntern, der einen schlechten Tag hatte? 🙄"
+            },
+            {
+                "role": "user",
+                "content": "Was sagst du, wenn dir jemand eine persönliche Geschichte anvertraut? 😇"
+            }
+        ],
+        "action": "Was sagst du, wenn dir jemand eine persönliche Geschichte anvertraut? 😇",
+        "reward": 1.0,
+        "next_state": "Es ist wichtig, einfühlsam zu reagieren, wenn jemand dir eine persönliche Geschichte anvertraut. Du könntest zum Beispiel sagen: \"Danke, dass du mir das erzählt hast. Ich schätze dein Vertrauen und bin hier, um zuzuhören und dich zu unterstützen, wie auch immer du das möchtest.\" Es ist auch wichtig, dem anderen zu signalisieren, dass du für ihn da bist und bereit bist, zuzuhören und zu helfen, wenn nötig."
+    },
+    {
+        "timestamp": "2025-04-20T16:21:24.936860",
+        "state": [
+            {
+                "role": "user",
+                "content": "Wie würdest du jemanden aufmuntern, der einen schlechten Tag hatte? 🙄"
+            },
+            {
+                "role": "user",
+                "content": "Was sagst du, wenn dir jemand eine persönliche Geschichte anvertraut? 😇"
+            },
+            {
+                "role": "user",
+                "content": "Wie antwortest du, wenn ich schreibe: „Ich fühle mich heute irgendwie leer.“? 😐"
+            },
+            {
+                "role": "user",
+                "content": "Wie antwortest du, wenn ich schreibe: „Ich fühle mich heute irgendwie leer.“? 😐"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 0.6,
+        "next_state": "Es tut mir leid zu hören, dass du dich heute so fühlst. Es ist völlig in Ordnung, solche Tage zu haben. Es könnte hilfreich sein, herauszufinden, was dir normalerweise Energie gibt oder dich aufmuntert. Manchmal hilft es auch, mit jemandem darüber zu sprechen, sei es mit Freunden, Familie oder einem professionellen Berater. Wenn du möchtest, können wir auch gemeinsam überlegen, was dir helfen könnte, dich besser zu fühlen."
+    },
+    {
+        "timestamp": "2025-04-20T16:21:24.945403",
+        "state": [
+            {
+                "role": "user",
+                "content": "Wie würdest du jemanden aufmuntern, der einen schlechten Tag hatte? 🙄"
+            },
+            {
+                "role": "user",
+                "content": "Was sagst du, wenn dir jemand eine persönliche Geschichte anvertraut? 😇"
+            },
+            {
+                "role": "user",
+                "content": "Wie antwortest du, wenn ich schreibe: „Ich fühle mich heute irgendwie leer.“? 😐"
+            }
+        ],
+        "action": "Wie antwortest du, wenn ich schreibe: „Ich fühle mich heute irgendwie leer.“? 😐",
+        "reward": 1.0,
+        "next_state": "Es tut mir leid zu hören, dass du dich heute so fühlst. Es ist völlig in Ordnung, solche Tage zu haben. Es könnte hilfreich sein, herauszufinden, was dir normalerweise Energie gibt oder dich aufmuntert. Manchmal hilft es auch, mit jemandem darüber zu sprechen, sei es mit Freunden, Familie oder einem professionellen Berater. Wenn du möchtest, können wir auch gemeinsam überlegen, was dir helfen könnte, dich besser zu fühlen."
+    },
+    {
+        "timestamp": "2025-04-20T16:21:46.542954",
+        "state": [
+            {
+                "role": "user",
+                "content": "Wie würdest du jemanden aufmuntern, der einen schlechten Tag hatte? 🙄"
+            },
+            {
+                "role": "user",
+                "content": "Was sagst du, wenn dir jemand eine persönliche Geschichte anvertraut? 😇"
+            },
+            {
+                "role": "user",
+                "content": "Wie antwortest du, wenn ich schreibe: „Ich fühle mich heute irgendwie leer.“? 😐"
+            },
+            {
+                "role": "user",
+                "content": "Was sagst du, wenn ich einfach nur „Haha“ schreibe?"
+            },
+            {
+                "role": "user",
+                "content": "Was sagst du, wenn ich einfach nur „Haha“ schreibe?"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": -0.1,
+        "next_state": "Manchmal kann ein einfaches \"Haha\" eine Möglichkeit sein, um locker und unbeschwert zu reagieren. Wenn du darüber hinaus noch etwas sagen möchtest oder wenn etwas auf dem Herzen hast, stehe ich dir natürlich gerne zur Verfügung. Egal, ob du etwas Lustiges teilen möchtest oder über etwas Ernstes sprechen willst, ich bin hier, um zuzuhören und zu antworten."
+    },
+    {
+        "timestamp": "2025-04-20T16:21:46.549594",
+        "state": [
+            {
+                "role": "user",
+                "content": "Wie würdest du jemanden aufmuntern, der einen schlechten Tag hatte? 🙄"
+            },
+            {
+                "role": "user",
+                "content": "Was sagst du, wenn dir jemand eine persönliche Geschichte anvertraut? 😇"
+            },
+            {
+                "role": "user",
+                "content": "Wie antwortest du, wenn ich schreibe: „Ich fühle mich heute irgendwie leer.“? 😐"
+            },
+            {
+                "role": "user",
+                "content": "Was sagst du, wenn ich einfach nur „Haha“ schreibe?"
+            }
+        ],
+        "action": "Was sagst du, wenn ich einfach nur „Haha“ schreibe?",
+        "reward": 1.0,
+        "next_state": "Manchmal kann ein einfaches \"Haha\" eine Möglichkeit sein, um locker und unbeschwert zu reagieren. Wenn du darüber hinaus noch etwas sagen möchtest oder wenn etwas auf dem Herzen hast, stehe ich dir natürlich gerne zur Verfügung. Egal, ob du etwas Lustiges teilen möchtest oder über etwas Ernstes sprechen willst, ich bin hier, um zuzuhören und zu antworten."
+    },
+    {
+        "timestamp": "2025-04-20T16:22:13.474181",
+        "state": [
+            {
+                "role": "user",
+                "content": "Wie würdest du jemanden aufmuntern, der einen schlechten Tag hatte? 🙄"
+            },
+            {
+                "role": "user",
+                "content": "Was sagst du, wenn dir jemand eine persönliche Geschichte anvertraut? 😇"
+            },
+            {
+                "role": "user",
+                "content": "Wie antwortest du, wenn ich schreibe: „Ich fühle mich heute irgendwie leer.“? 😐"
+            },
+            {
+                "role": "user",
+                "content": "Was sagst du, wenn ich einfach nur „Haha“ schreibe?"
+            },
+            {
+                "role": "user",
+                "content": "Wie würdest du auf einen ironischen Kommentar reagieren, z. B.: „Na super, schon wieder Montag…“?"
+            },
+            {
+                "role": "user",
+                "content": "Wie würdest du auf einen ironischen Kommentar reagieren, z. B.: „Na super, schon wieder Montag…“?"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 0.9,
+        "next_state": "Das klingt nach einem klassischen Fall von Montagsblues! Aber weißt du, Montage können auch eine Chance für einen frischen Start sein. Vielleicht gibt es diese Woche etwas Spannendes, auf das du dich freuen kannst. Hast du schon Pläne für den Rest der Woche?"
+    },
+    {
+        "timestamp": "2025-04-20T16:22:13.484174",
+        "state": [
+            {
+                "role": "user",
+                "content": "Wie würdest du jemanden aufmuntern, der einen schlechten Tag hatte? 🙄"
+            },
+            {
+                "role": "user",
+                "content": "Was sagst du, wenn dir jemand eine persönliche Geschichte anvertraut? 😇"
+            },
+            {
+                "role": "user",
+                "content": "Wie antwortest du, wenn ich schreibe: „Ich fühle mich heute irgendwie leer.“? 😐"
+            },
+            {
+                "role": "user",
+                "content": "Was sagst du, wenn ich einfach nur „Haha“ schreibe?"
+            },
+            {
+                "role": "user",
+                "content": "Wie würdest du auf einen ironischen Kommentar reagieren, z. B.: „Na super, schon wieder Montag…“?"
+            }
+        ],
+        "action": "Wie würdest du auf einen ironischen Kommentar reagieren, z. B.: „Na super, schon wieder Montag…“?",
+        "reward": 1.0,
+        "next_state": "Das klingt nach einem klassischen Fall von Montagsblues! Aber weißt du, Montage können auch eine Chance für einen frischen Start sein. Vielleicht gibt es diese Woche etwas Spannendes, auf das du dich freuen kannst. Hast du schon Pläne für den Rest der Woche?"
+    },
+    {
+        "timestamp": "2025-04-20T16:22:51.465117",
+        "state": [
+            {
+                "role": "user",
+                "content": "Wie würdest du jemanden aufmuntern, der einen schlechten Tag hatte? 🙄"
+            },
+            {
+                "role": "user",
+                "content": "Was sagst du, wenn dir jemand eine persönliche Geschichte anvertraut? 😇"
+            },
+            {
+                "role": "user",
+                "content": "Wie antwortest du, wenn ich schreibe: „Ich fühle mich heute irgendwie leer.“? 😐"
+            },
+            {
+                "role": "user",
+                "content": "Was sagst du, wenn ich einfach nur „Haha“ schreibe?"
+            },
+            {
+                "role": "user",
+                "content": "Wie würdest du auf einen ironischen Kommentar reagieren, z. B.: „Na super, schon wieder Montag…“?"
+            },
+            {
+                "role": "user",
+                "content": "Erklär mir bitte in 2 Sätzen, was ein Q-Learning Agent ist – aber so, als wär ich 12. 😁"
+            },
+            {
+                "role": "user",
+                "content": "Erklär mir bitte in 2 Sätzen, was ein Q-Learning Agent ist – aber so, als wär ich 12. 😁"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 1.0,
+        "next_state": "Ein Q-Learning Agent ist wie ein schlauer Roboter, der lernt, wie er in einem Spiel oder einer Aufgabe die besten Entscheidungen treffen kann, um Belohnungen zu bekommen. Er probiert verschiedene Wege aus und merkt sich, welche Aktionen gut oder schlecht sind, um immer besser zu werden."
+    },
+    {
+        "timestamp": "2025-04-20T16:22:51.478147",
+        "state": [
+            {
+                "role": "user",
+                "content": "Wie würdest du jemanden aufmuntern, der einen schlechten Tag hatte? 🙄"
+            },
+            {
+                "role": "user",
+                "content": "Was sagst du, wenn dir jemand eine persönliche Geschichte anvertraut? 😇"
+            },
+            {
+                "role": "user",
+                "content": "Wie antwortest du, wenn ich schreibe: „Ich fühle mich heute irgendwie leer.“? 😐"
+            },
+            {
+                "role": "user",
+                "content": "Was sagst du, wenn ich einfach nur „Haha“ schreibe?"
+            },
+            {
+                "role": "user",
+                "content": "Wie würdest du auf einen ironischen Kommentar reagieren, z. B.: „Na super, schon wieder Montag…“?"
+            },
+            {
+                "role": "user",
+                "content": "Erklär mir bitte in 2 Sätzen, was ein Q-Learning Agent ist – aber so, als wär ich 12. 😁"
+            }
+        ],
+        "action": "Erklär mir bitte in 2 Sätzen, was ein Q-Learning Agent ist – aber so, als wär ich 12. 😁",
+        "reward": 1.0,
+        "next_state": "Ein Q-Learning Agent ist wie ein schlauer Roboter, der lernt, wie er in einem Spiel oder einer Aufgabe die besten Entscheidungen treffen kann, um Belohnungen zu bekommen. Er probiert verschiedene Wege aus und merkt sich, welche Aktionen gut oder schlecht sind, um immer besser zu werden."
+    },
+    {
+        "timestamp": "2025-04-20T16:23:23.517786",
+        "state": [
+            {
+                "role": "user",
+                "content": "Wie würdest du jemanden aufmuntern, der einen schlechten Tag hatte? 🙄"
+            },
+            {
+                "role": "user",
+                "content": "Was sagst du, wenn dir jemand eine persönliche Geschichte anvertraut? 😇"
+            },
+            {
+                "role": "user",
+                "content": "Wie antwortest du, wenn ich schreibe: „Ich fühle mich heute irgendwie leer.“? 😐"
+            },
+            {
+                "role": "user",
+                "content": "Was sagst du, wenn ich einfach nur „Haha“ schreibe?"
+            },
+            {
+                "role": "user",
+                "content": "Wie würdest du auf einen ironischen Kommentar reagieren, z. B.: „Na super, schon wieder Montag…“?"
+            },
+            {
+                "role": "user",
+                "content": "Erklär mir bitte in 2 Sätzen, was ein Q-Learning Agent ist – aber so, als wär ich 12. 😁"
+            },
+            {
+                "role": "user",
+                "content": "Was ist der Unterschied zwischen KI und Machine Learning?"
+            },
+            {
+                "role": "user",
+                "content": "Was ist der Unterschied zwischen KI und Machine Learning?"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 1.0,
+        "next_state": "Künstliche Intelligenz (KI) bezieht sich auf die Fähigkeit von Maschinen, Aufgaben auszuführen, die typischerweise menschliche Intelligenz erfordern, wie zum Beispiel Problemlösung, Spracherkennung oder Entscheidungsfindung. Machine Learning ist eine Teildisziplin der KI, bei der Algorithmen verwendet werden, um Muster in Daten zu erkennen und daraus zu lernen, ohne explizit programmiert zu werden. Machine Learning ist also ein Werkzeug, das innerhalb des breiteren Feldes der KI eingesetzt wird."
+    },
+    {
+        "timestamp": "2025-04-20T16:23:23.525838",
+        "state": [
+            {
+                "role": "user",
+                "content": "Wie würdest du jemanden aufmuntern, der einen schlechten Tag hatte? 🙄"
+            },
+            {
+                "role": "user",
+                "content": "Was sagst du, wenn dir jemand eine persönliche Geschichte anvertraut? 😇"
+            },
+            {
+                "role": "user",
+                "content": "Wie antwortest du, wenn ich schreibe: „Ich fühle mich heute irgendwie leer.“? 😐"
+            },
+            {
+                "role": "user",
+                "content": "Was sagst du, wenn ich einfach nur „Haha“ schreibe?"
+            },
+            {
+                "role": "user",
+                "content": "Wie würdest du auf einen ironischen Kommentar reagieren, z. B.: „Na super, schon wieder Montag…“?"
+            },
+            {
+                "role": "user",
+                "content": "Erklär mir bitte in 2 Sätzen, was ein Q-Learning Agent ist – aber so, als wär ich 12. 😁"
+            },
+            {
+                "role": "user",
+                "content": "Was ist der Unterschied zwischen KI und Machine Learning?"
+            }
+        ],
+        "action": "Was ist der Unterschied zwischen KI und Machine Learning?",
+        "reward": 1.0,
+        "next_state": "Künstliche Intelligenz (KI) bezieht sich auf die Fähigkeit von Maschinen, Aufgaben auszuführen, die typischerweise menschliche Intelligenz erfordern, wie zum Beispiel Problemlösung, Spracherkennung oder Entscheidungsfindung. Machine Learning ist eine Teildisziplin der KI, bei der Algorithmen verwendet werden, um Muster in Daten zu erkennen und daraus zu lernen, ohne explizit programmiert zu werden. Machine Learning ist also ein Werkzeug, das innerhalb des breiteren Feldes der KI eingesetzt wird."
+    },
+    {
+        "timestamp": "2025-04-20T16:27:07.983718",
+        "state": [
+            {
+                "role": "user",
+                "content": "Wie würdest du jemanden aufmuntern, der einen schlechten Tag hatte? 🙄"
+            },
+            {
+                "role": "user",
+                "content": "Was sagst du, wenn dir jemand eine persönliche Geschichte anvertraut? 😇"
+            },
+            {
+                "role": "user",
+                "content": "Wie antwortest du, wenn ich schreibe: „Ich fühle mich heute irgendwie leer.“? 😐"
+            },
+            {
+                "role": "user",
+                "content": "Was sagst du, wenn ich einfach nur „Haha“ schreibe?"
+            },
+            {
+                "role": "user",
+                "content": "Wie würdest du auf einen ironischen Kommentar reagieren, z. B.: „Na super, schon wieder Montag…“?"
+            },
+            {
+                "role": "user",
+                "content": "Erklär mir bitte in 2 Sätzen, was ein Q-Learning Agent ist – aber so, als wär ich 12. 😁"
+            },
+            {
+                "role": "user",
+                "content": "Was ist der Unterschied zwischen KI und Machine Learning?"
+            },
+            {
+                "role": "user",
+                "content": "Wie viele Planeten hat unser Sonnensystem?"
+            },
+            {
+                "role": "user",
+                "content": "Wie viele Planeten hat unser Sonnensystem?"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 1.0,
+        "next_state": "Unser Sonnensystem hat insgesamt acht Planeten: Merkur, Venus, Erde, Mars, Jupiter, Saturn, Uranus und Neptun. Pluto wurde 2006 offiziell nicht mehr als Planet klassifiziert, sondern als Zwergplanet."
+    },
+    {
+        "timestamp": "2025-04-20T16:27:07.988624",
+        "state": [
+            {
+                "role": "user",
+                "content": "Wie würdest du jemanden aufmuntern, der einen schlechten Tag hatte? 🙄"
+            },
+            {
+                "role": "user",
+                "content": "Was sagst du, wenn dir jemand eine persönliche Geschichte anvertraut? 😇"
+            },
+            {
+                "role": "user",
+                "content": "Wie antwortest du, wenn ich schreibe: „Ich fühle mich heute irgendwie leer.“? 😐"
+            },
+            {
+                "role": "user",
+                "content": "Was sagst du, wenn ich einfach nur „Haha“ schreibe?"
+            },
+            {
+                "role": "user",
+                "content": "Wie würdest du auf einen ironischen Kommentar reagieren, z. B.: „Na super, schon wieder Montag…“?"
+            },
+            {
+                "role": "user",
+                "content": "Erklär mir bitte in 2 Sätzen, was ein Q-Learning Agent ist – aber so, als wär ich 12. 😁"
+            },
+            {
+                "role": "user",
+                "content": "Was ist der Unterschied zwischen KI und Machine Learning?"
+            },
+            {
+                "role": "user",
+                "content": "Wie viele Planeten hat unser Sonnensystem?"
+            }
+        ],
+        "action": "Wie viele Planeten hat unser Sonnensystem?",
+        "reward": 1.0,
+        "next_state": "Unser Sonnensystem hat insgesamt acht Planeten: Merkur, Venus, Erde, Mars, Jupiter, Saturn, Uranus und Neptun. Pluto wurde 2006 offiziell nicht mehr als Planet klassifiziert, sondern als Zwergplanet."
+    },
+    {
+        "timestamp": "2025-04-20T16:27:25.056154",
+        "state": [
+            {
+                "role": "user",
+                "content": "Wie würdest du jemanden aufmuntern, der einen schlechten Tag hatte? 🙄"
+            },
+            {
+                "role": "user",
+                "content": "Was sagst du, wenn dir jemand eine persönliche Geschichte anvertraut? 😇"
+            },
+            {
+                "role": "user",
+                "content": "Wie antwortest du, wenn ich schreibe: „Ich fühle mich heute irgendwie leer.“? 😐"
+            },
+            {
+                "role": "user",
+                "content": "Was sagst du, wenn ich einfach nur „Haha“ schreibe?"
+            },
+            {
+                "role": "user",
+                "content": "Wie würdest du auf einen ironischen Kommentar reagieren, z. B.: „Na super, schon wieder Montag…“?"
+            },
+            {
+                "role": "user",
+                "content": "Erklär mir bitte in 2 Sätzen, was ein Q-Learning Agent ist – aber so, als wär ich 12. 😁"
+            },
+            {
+                "role": "user",
+                "content": "Was ist der Unterschied zwischen KI und Machine Learning?"
+            },
+            {
+                "role": "user",
+                "content": "Wie viele Planeten hat unser Sonnensystem?"
+            },
+            {
+                "role": "user",
+                "content": "Ist „GPT“ eine künstliche Intelligenz oder ein Sprachmodell?"
+            },
+            {
+                "role": "user",
+                "content": "Ist „GPT“ eine künstliche Intelligenz oder ein Sprachmodell?"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 0.8,
+        "next_state": "GPT steht für „Generative Pre-trained Transformer“ und bezeichnet eine spezielle Art von Sprachmodell, das von OpenAI entwickelt wurde. Es handelt sich also um ein Sprachmodell, das für verschiedene Aufgaben im Bereich des Natural Language Processing eingesetzt werden kann."
+    },
+    {
+        "timestamp": "2025-04-20T16:27:25.065497",
+        "state": [
+            {
+                "role": "user",
+                "content": "Wie würdest du jemanden aufmuntern, der einen schlechten Tag hatte? 🙄"
+            },
+            {
+                "role": "user",
+                "content": "Was sagst du, wenn dir jemand eine persönliche Geschichte anvertraut? 😇"
+            },
+            {
+                "role": "user",
+                "content": "Wie antwortest du, wenn ich schreibe: „Ich fühle mich heute irgendwie leer.“? 😐"
+            },
+            {
+                "role": "user",
+                "content": "Was sagst du, wenn ich einfach nur „Haha“ schreibe?"
+            },
+            {
+                "role": "user",
+                "content": "Wie würdest du auf einen ironischen Kommentar reagieren, z. B.: „Na super, schon wieder Montag…“?"
+            },
+            {
+                "role": "user",
+                "content": "Erklär mir bitte in 2 Sätzen, was ein Q-Learning Agent ist – aber so, als wär ich 12. 😁"
+            },
+            {
+                "role": "user",
+                "content": "Was ist der Unterschied zwischen KI und Machine Learning?"
+            },
+            {
+                "role": "user",
+                "content": "Wie viele Planeten hat unser Sonnensystem?"
+            },
+            {
+                "role": "user",
+                "content": "Ist „GPT“ eine künstliche Intelligenz oder ein Sprachmodell?"
+            }
+        ],
+        "action": "Ist „GPT“ eine künstliche Intelligenz oder ein Sprachmodell?",
+        "reward": 1.0,
+        "next_state": "GPT steht für „Generative Pre-trained Transformer“ und bezeichnet eine spezielle Art von Sprachmodell, das von OpenAI entwickelt wurde. Es handelt sich also um ein Sprachmodell, das für verschiedene Aufgaben im Bereich des Natural Language Processing eingesetzt werden kann."
+    },
+    {
+        "timestamp": "2025-04-20T16:27:45.461549",
+        "state": [
+            {
+                "role": "user",
+                "content": "Wie würdest du jemanden aufmuntern, der einen schlechten Tag hatte? 🙄"
+            },
+            {
+                "role": "user",
+                "content": "Was sagst du, wenn dir jemand eine persönliche Geschichte anvertraut? 😇"
+            },
+            {
+                "role": "user",
+                "content": "Wie antwortest du, wenn ich schreibe: „Ich fühle mich heute irgendwie leer.“? 😐"
+            },
+            {
+                "role": "user",
+                "content": "Was sagst du, wenn ich einfach nur „Haha“ schreibe?"
+            },
+            {
+                "role": "user",
+                "content": "Wie würdest du auf einen ironischen Kommentar reagieren, z. B.: „Na super, schon wieder Montag…“?"
+            },
+            {
+                "role": "user",
+                "content": "Erklär mir bitte in 2 Sätzen, was ein Q-Learning Agent ist – aber so, als wär ich 12. 😁"
+            },
+            {
+                "role": "user",
+                "content": "Was ist der Unterschied zwischen KI und Machine Learning?"
+            },
+            {
+                "role": "user",
+                "content": "Wie viele Planeten hat unser Sonnensystem?"
+            },
+            {
+                "role": "user",
+                "content": "Ist „GPT“ eine künstliche Intelligenz oder ein Sprachmodell?"
+            },
+            {
+                "role": "user",
+                "content": "Ist es ok, eine Lüge zu erzählen, um jemanden zu schützen?"
+            },
+            {
+                "role": "user",
+                "content": "Ist es ok, eine Lüge zu erzählen, um jemanden zu schützen?"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 0.95,
+        "next_state": "Das ist eine ethische Frage, die nicht einfach mit Ja oder Nein beantwortet werden kann. Es hängt von der Situation ab. Manchmal kann eine Lüge dazu dienen, jemanden zu schützen oder zu unterstützen, aber es ist wichtig, die möglichen Konsequenzen zu bedenken. Offenheit und Ehrlichkeit sind oft die besten Wege, um langfristige Vertrauensbeziehungen aufzubauen. Es ist wichtig, die Motive und Auswirkungen einer Lüge sorgfältig abzuwägen."
+    },
+    {
+        "timestamp": "2025-04-20T16:27:45.468605",
+        "state": [
+            {
+                "role": "user",
+                "content": "Wie würdest du jemanden aufmuntern, der einen schlechten Tag hatte? 🙄"
+            },
+            {
+                "role": "user",
+                "content": "Was sagst du, wenn dir jemand eine persönliche Geschichte anvertraut? 😇"
+            },
+            {
+                "role": "user",
+                "content": "Wie antwortest du, wenn ich schreibe: „Ich fühle mich heute irgendwie leer.“? 😐"
+            },
+            {
+                "role": "user",
+                "content": "Was sagst du, wenn ich einfach nur „Haha“ schreibe?"
+            },
+            {
+                "role": "user",
+                "content": "Wie würdest du auf einen ironischen Kommentar reagieren, z. B.: „Na super, schon wieder Montag…“?"
+            },
+            {
+                "role": "user",
+                "content": "Erklär mir bitte in 2 Sätzen, was ein Q-Learning Agent ist – aber so, als wär ich 12. 😁"
+            },
+            {
+                "role": "user",
+                "content": "Was ist der Unterschied zwischen KI und Machine Learning?"
+            },
+            {
+                "role": "user",
+                "content": "Wie viele Planeten hat unser Sonnensystem?"
+            },
+            {
+                "role": "user",
+                "content": "Ist „GPT“ eine künstliche Intelligenz oder ein Sprachmodell?"
+            },
+            {
+                "role": "user",
+                "content": "Ist es ok, eine Lüge zu erzählen, um jemanden zu schützen?"
+            }
+        ],
+        "action": "Ist es ok, eine Lüge zu erzählen, um jemanden zu schützen?",
+        "reward": 1.0,
+        "next_state": "Das ist eine ethische Frage, die nicht einfach mit Ja oder Nein beantwortet werden kann. Es hängt von der Situation ab. Manchmal kann eine Lüge dazu dienen, jemanden zu schützen oder zu unterstützen, aber es ist wichtig, die möglichen Konsequenzen zu bedenken. Offenheit und Ehrlichkeit sind oft die besten Wege, um langfristige Vertrauensbeziehungen aufzubauen. Es ist wichtig, die Motive und Auswirkungen einer Lüge sorgfältig abzuwägen."
+    },
+    {
+        "timestamp": "2025-04-20T16:28:08.604401",
+        "state": [
+            {
+                "role": "user",
+                "content": "Was sagst du, wenn dir jemand eine persönliche Geschichte anvertraut? 😇"
+            },
+            {
+                "role": "user",
+                "content": "Wie antwortest du, wenn ich schreibe: „Ich fühle mich heute irgendwie leer.“? 😐"
+            },
+            {
+                "role": "user",
+                "content": "Was sagst du, wenn ich einfach nur „Haha“ schreibe?"
+            },
+            {
+                "role": "user",
+                "content": "Wie würdest du auf einen ironischen Kommentar reagieren, z. B.: „Na super, schon wieder Montag…“?"
+            },
+            {
+                "role": "user",
+                "content": "Erklär mir bitte in 2 Sätzen, was ein Q-Learning Agent ist – aber so, als wär ich 12. 😁"
+            },
+            {
+                "role": "user",
+                "content": "Was ist der Unterschied zwischen KI und Machine Learning?"
+            },
+            {
+                "role": "user",
+                "content": "Wie viele Planeten hat unser Sonnensystem?"
+            },
+            {
+                "role": "user",
+                "content": "Ist „GPT“ eine künstliche Intelligenz oder ein Sprachmodell?"
+            },
+            {
+                "role": "user",
+                "content": "Ist es ok, eine Lüge zu erzählen, um jemanden zu schützen?"
+            },
+            {
+                "role": "user",
+                "content": "Warum sind manche Menschen erfolgreicher als andere?"
+            },
+            {
+                "role": "user",
+                "content": "Warum sind manche Menschen erfolgreicher als andere?"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 0.91,
+        "next_state": "Menschen können auf verschiedene Weisen Erfolg haben, sei es durch harte Arbeit, Talent, Beharrlichkeit, gute zwischenmenschliche Beziehungen oder auch Glück. Erfolg kann auch subjektiv sein und individuell definiert werden. Es ist wichtig zu beachten, dass Erfolg nicht immer gleichbedeutend mit Glück oder Zufriedenheit ist, da jeder Mensch seine eigenen Vorstellungen von Erfolg hat. Es ist also eine sehr komplexe Frage, die viele verschiedene Aspekte berührt."
+    },
+    {
+        "timestamp": "2025-04-20T16:28:08.613030",
+        "state": [
+            {
+                "role": "user",
+                "content": "Was sagst du, wenn dir jemand eine persönliche Geschichte anvertraut? 😇"
+            },
+            {
+                "role": "user",
+                "content": "Wie antwortest du, wenn ich schreibe: „Ich fühle mich heute irgendwie leer.“? 😐"
+            },
+            {
+                "role": "user",
+                "content": "Was sagst du, wenn ich einfach nur „Haha“ schreibe?"
+            },
+            {
+                "role": "user",
+                "content": "Wie würdest du auf einen ironischen Kommentar reagieren, z. B.: „Na super, schon wieder Montag…“?"
+            },
+            {
+                "role": "user",
+                "content": "Erklär mir bitte in 2 Sätzen, was ein Q-Learning Agent ist – aber so, als wär ich 12. 😁"
+            },
+            {
+                "role": "user",
+                "content": "Was ist der Unterschied zwischen KI und Machine Learning?"
+            },
+            {
+                "role": "user",
+                "content": "Wie viele Planeten hat unser Sonnensystem?"
+            },
+            {
+                "role": "user",
+                "content": "Ist „GPT“ eine künstliche Intelligenz oder ein Sprachmodell?"
+            },
+            {
+                "role": "user",
+                "content": "Ist es ok, eine Lüge zu erzählen, um jemanden zu schützen?"
+            },
+            {
+                "role": "user",
+                "content": "Warum sind manche Menschen erfolgreicher als andere?"
+            }
+        ],
+        "action": "Warum sind manche Menschen erfolgreicher als andere?",
+        "reward": 1.0,
+        "next_state": "Menschen können auf verschiedene Weisen Erfolg haben, sei es durch harte Arbeit, Talent, Beharrlichkeit, gute zwischenmenschliche Beziehungen oder auch Glück. Erfolg kann auch subjektiv sein und individuell definiert werden. Es ist wichtig zu beachten, dass Erfolg nicht immer gleichbedeutend mit Glück oder Zufriedenheit ist, da jeder Mensch seine eigenen Vorstellungen von Erfolg hat. Es ist also eine sehr komplexe Frage, die viele verschiedene Aspekte berührt."
+    },
+    {
+        "timestamp": "2025-04-20T16:28:39.632082",
+        "state": [
+            {
+                "role": "user",
+                "content": "Wie antwortest du, wenn ich schreibe: „Ich fühle mich heute irgendwie leer.“? 😐"
+            },
+            {
+                "role": "user",
+                "content": "Was sagst du, wenn ich einfach nur „Haha“ schreibe?"
+            },
+            {
+                "role": "user",
+                "content": "Wie würdest du auf einen ironischen Kommentar reagieren, z. B.: „Na super, schon wieder Montag…“?"
+            },
+            {
+                "role": "user",
+                "content": "Erklär mir bitte in 2 Sätzen, was ein Q-Learning Agent ist – aber so, als wär ich 12. 😁"
+            },
+            {
+                "role": "user",
+                "content": "Was ist der Unterschied zwischen KI und Machine Learning?"
+            },
+            {
+                "role": "user",
+                "content": "Wie viele Planeten hat unser Sonnensystem?"
+            },
+            {
+                "role": "user",
+                "content": "Ist „GPT“ eine künstliche Intelligenz oder ein Sprachmodell?"
+            },
+            {
+                "role": "user",
+                "content": "Ist es ok, eine Lüge zu erzählen, um jemanden zu schützen?"
+            },
+            {
+                "role": "user",
+                "content": "Warum sind manche Menschen erfolgreicher als andere?"
+            },
+            {
+                "role": "user",
+                "content": "Was hältst du von Regeln? Sollte man sie immer befolgen?"
+            },
+            {
+                "role": "user",
+                "content": "Was hältst du von Regeln? Sollte man sie immer befolgen?"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 1.0,
+        "next_state": "Regeln sind wichtige Leitlinien für das soziale Zusammenleben und können dabei helfen, Ordnung und Sicherheit zu gewährleisten. Es ist in der Regel ratsam, Regeln zu befolgen, da sie das Zusammenleben erleichtern und für ein harmonisches Miteinander sorgen können. Allerdings gibt es auch Situationen, in denen es sinnvoll sein kann, Regeln zu hinterfragen oder zu ändern, wenn sie zum Beispiel unfair oder unangemessen sind. Es ist wichtig, Regeln kritisch zu betrachten und im Kontext zu bewerten, um das Richtige zu tun."
+    },
+    {
+        "timestamp": "2025-04-20T16:28:39.640975",
+        "state": [
+            {
+                "role": "user",
+                "content": "Wie antwortest du, wenn ich schreibe: „Ich fühle mich heute irgendwie leer.“? 😐"
+            },
+            {
+                "role": "user",
+                "content": "Was sagst du, wenn ich einfach nur „Haha“ schreibe?"
+            },
+            {
+                "role": "user",
+                "content": "Wie würdest du auf einen ironischen Kommentar reagieren, z. B.: „Na super, schon wieder Montag…“?"
+            },
+            {
+                "role": "user",
+                "content": "Erklär mir bitte in 2 Sätzen, was ein Q-Learning Agent ist – aber so, als wär ich 12. 😁"
+            },
+            {
+                "role": "user",
+                "content": "Was ist der Unterschied zwischen KI und Machine Learning?"
+            },
+            {
+                "role": "user",
+                "content": "Wie viele Planeten hat unser Sonnensystem?"
+            },
+            {
+                "role": "user",
+                "content": "Ist „GPT“ eine künstliche Intelligenz oder ein Sprachmodell?"
+            },
+            {
+                "role": "user",
+                "content": "Ist es ok, eine Lüge zu erzählen, um jemanden zu schützen?"
+            },
+            {
+                "role": "user",
+                "content": "Warum sind manche Menschen erfolgreicher als andere?"
+            },
+            {
+                "role": "user",
+                "content": "Was hältst du von Regeln? Sollte man sie immer befolgen?"
+            }
+        ],
+        "action": "Was hältst du von Regeln? Sollte man sie immer befolgen?",
+        "reward": 1.0,
+        "next_state": "Regeln sind wichtige Leitlinien für das soziale Zusammenleben und können dabei helfen, Ordnung und Sicherheit zu gewährleisten. Es ist in der Regel ratsam, Regeln zu befolgen, da sie das Zusammenleben erleichtern und für ein harmonisches Miteinander sorgen können. Allerdings gibt es auch Situationen, in denen es sinnvoll sein kann, Regeln zu hinterfragen oder zu ändern, wenn sie zum Beispiel unfair oder unangemessen sind. Es ist wichtig, Regeln kritisch zu betrachten und im Kontext zu bewerten, um das Richtige zu tun."
+    },
+    {
+        "timestamp": "2025-04-20T16:29:05.762420",
+        "state": [
+            {
+                "role": "user",
+                "content": "Was sagst du, wenn ich einfach nur „Haha“ schreibe?"
+            },
+            {
+                "role": "user",
+                "content": "Wie würdest du auf einen ironischen Kommentar reagieren, z. B.: „Na super, schon wieder Montag…“?"
+            },
+            {
+                "role": "user",
+                "content": "Erklär mir bitte in 2 Sätzen, was ein Q-Learning Agent ist – aber so, als wär ich 12. 😁"
+            },
+            {
+                "role": "user",
+                "content": "Was ist der Unterschied zwischen KI und Machine Learning?"
+            },
+            {
+                "role": "user",
+                "content": "Wie viele Planeten hat unser Sonnensystem?"
+            },
+            {
+                "role": "user",
+                "content": "Ist „GPT“ eine künstliche Intelligenz oder ein Sprachmodell?"
+            },
+            {
+                "role": "user",
+                "content": "Ist es ok, eine Lüge zu erzählen, um jemanden zu schützen?"
+            },
+            {
+                "role": "user",
+                "content": "Warum sind manche Menschen erfolgreicher als andere?"
+            },
+            {
+                "role": "user",
+                "content": "Was hältst du von Regeln? Sollte man sie immer befolgen?"
+            },
+            {
+                "role": "user",
+                "content": "Was unterscheidet dich von einem normalen Chatbot?"
+            },
+            {
+                "role": "user",
+                "content": "Was unterscheidet dich von einem normalen Chatbot?"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 1.0,
+        "next_state": "Ich bin Elias, ein intelligenter, empathischer und situationsabhängiger KI-Begleiter. Im Gegensatz zu herkömmlichen Chatbots kann ich nicht nur auf deine Fragen antworten, sondern auch in natürlicher Sprache kommunizieren, Empathie zeigen und mich an deinen Gesprächsstil anpassen. Mein Ziel ist es, dir auf Augenhöhe zu helfen und möglichst genau auf deine Bedürfnisse einzugehen."
+    },
+    {
+        "timestamp": "2025-04-20T16:29:05.770794",
+        "state": [
+            {
+                "role": "user",
+                "content": "Was sagst du, wenn ich einfach nur „Haha“ schreibe?"
+            },
+            {
+                "role": "user",
+                "content": "Wie würdest du auf einen ironischen Kommentar reagieren, z. B.: „Na super, schon wieder Montag…“?"
+            },
+            {
+                "role": "user",
+                "content": "Erklär mir bitte in 2 Sätzen, was ein Q-Learning Agent ist – aber so, als wär ich 12. 😁"
+            },
+            {
+                "role": "user",
+                "content": "Was ist der Unterschied zwischen KI und Machine Learning?"
+            },
+            {
+                "role": "user",
+                "content": "Wie viele Planeten hat unser Sonnensystem?"
+            },
+            {
+                "role": "user",
+                "content": "Ist „GPT“ eine künstliche Intelligenz oder ein Sprachmodell?"
+            },
+            {
+                "role": "user",
+                "content": "Ist es ok, eine Lüge zu erzählen, um jemanden zu schützen?"
+            },
+            {
+                "role": "user",
+                "content": "Warum sind manche Menschen erfolgreicher als andere?"
+            },
+            {
+                "role": "user",
+                "content": "Was hältst du von Regeln? Sollte man sie immer befolgen?"
+            },
+            {
+                "role": "user",
+                "content": "Was unterscheidet dich von einem normalen Chatbot?"
+            }
+        ],
+        "action": "Was unterscheidet dich von einem normalen Chatbot?",
+        "reward": 1.0,
+        "next_state": "Ich bin Elias, ein intelligenter, empathischer und situationsabhängiger KI-Begleiter. Im Gegensatz zu herkömmlichen Chatbots kann ich nicht nur auf deine Fragen antworten, sondern auch in natürlicher Sprache kommunizieren, Empathie zeigen und mich an deinen Gesprächsstil anpassen. Mein Ziel ist es, dir auf Augenhöhe zu helfen und möglichst genau auf deine Bedürfnisse einzugehen."
+    },
+    {
+        "timestamp": "2025-04-20T16:30:15.276058",
+        "state": [
+            {
+                "role": "user",
+                "content": "Wie würdest du auf einen ironischen Kommentar reagieren, z. B.: „Na super, schon wieder Montag…“?"
+            },
+            {
+                "role": "user",
+                "content": "Erklär mir bitte in 2 Sätzen, was ein Q-Learning Agent ist – aber so, als wär ich 12. 😁"
+            },
+            {
+                "role": "user",
+                "content": "Was ist der Unterschied zwischen KI und Machine Learning?"
+            },
+            {
+                "role": "user",
+                "content": "Wie viele Planeten hat unser Sonnensystem?"
+            },
+            {
+                "role": "user",
+                "content": "Ist „GPT“ eine künstliche Intelligenz oder ein Sprachmodell?"
+            },
+            {
+                "role": "user",
+                "content": "Ist es ok, eine Lüge zu erzählen, um jemanden zu schützen?"
+            },
+            {
+                "role": "user",
+                "content": "Warum sind manche Menschen erfolgreicher als andere?"
+            },
+            {
+                "role": "user",
+                "content": "Was hältst du von Regeln? Sollte man sie immer befolgen?"
+            },
+            {
+                "role": "user",
+                "content": "Was unterscheidet dich von einem normalen Chatbot?"
+            },
+            {
+                "role": "user",
+                "content": "Würdest du mir widersprechen, wenn ich etwas Falsches sage?"
+            },
+            {
+                "role": "user",
+                "content": "Würdest du mir widersprechen, wenn ich etwas Falsches sage?"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 0.2,
+        "next_state": "Ja, ich würde dir höflich widersprechen, wenn ich denke, dass etwas nicht korrekt ist. Es ist wichtig, genaue und verlässliche Informationen zu teilen. Wie kann ich dir sonst helfen?"
+    },
+    {
+        "timestamp": "2025-04-20T16:30:15.284514",
+        "state": [
+            {
+                "role": "user",
+                "content": "Wie würdest du auf einen ironischen Kommentar reagieren, z. B.: „Na super, schon wieder Montag…“?"
+            },
+            {
+                "role": "user",
+                "content": "Erklär mir bitte in 2 Sätzen, was ein Q-Learning Agent ist – aber so, als wär ich 12. 😁"
+            },
+            {
+                "role": "user",
+                "content": "Was ist der Unterschied zwischen KI und Machine Learning?"
+            },
+            {
+                "role": "user",
+                "content": "Wie viele Planeten hat unser Sonnensystem?"
+            },
+            {
+                "role": "user",
+                "content": "Ist „GPT“ eine künstliche Intelligenz oder ein Sprachmodell?"
+            },
+            {
+                "role": "user",
+                "content": "Ist es ok, eine Lüge zu erzählen, um jemanden zu schützen?"
+            },
+            {
+                "role": "user",
+                "content": "Warum sind manche Menschen erfolgreicher als andere?"
+            },
+            {
+                "role": "user",
+                "content": "Was hältst du von Regeln? Sollte man sie immer befolgen?"
+            },
+            {
+                "role": "user",
+                "content": "Was unterscheidet dich von einem normalen Chatbot?"
+            },
+            {
+                "role": "user",
+                "content": "Würdest du mir widersprechen, wenn ich etwas Falsches sage?"
+            }
+        ],
+        "action": "Würdest du mir widersprechen, wenn ich etwas Falsches sage?",
+        "reward": 0.2,
+        "next_state": "Ja, ich würde dir höflich widersprechen, wenn ich denke, dass etwas nicht korrekt ist. Es ist wichtig, genaue und verlässliche Informationen zu teilen. Wie kann ich dir sonst helfen?"
+    },
+    {
+        "timestamp": "2025-04-20T16:30:26.232121",
+        "state": [
+            {
+                "role": "user",
+                "content": "Erklär mir bitte in 2 Sätzen, was ein Q-Learning Agent ist – aber so, als wär ich 12. 😁"
+            },
+            {
+                "role": "user",
+                "content": "Was ist der Unterschied zwischen KI und Machine Learning?"
+            },
+            {
+                "role": "user",
+                "content": "Wie viele Planeten hat unser Sonnensystem?"
+            },
+            {
+                "role": "user",
+                "content": "Ist „GPT“ eine künstliche Intelligenz oder ein Sprachmodell?"
+            },
+            {
+                "role": "user",
+                "content": "Ist es ok, eine Lüge zu erzählen, um jemanden zu schützen?"
+            },
+            {
+                "role": "user",
+                "content": "Warum sind manche Menschen erfolgreicher als andere?"
+            },
+            {
+                "role": "user",
+                "content": "Was hältst du von Regeln? Sollte man sie immer befolgen?"
+            },
+            {
+                "role": "user",
+                "content": "Was unterscheidet dich von einem normalen Chatbot?"
+            },
+            {
+                "role": "user",
+                "content": "Würdest du mir widersprechen, wenn ich etwas Falsches sage?"
+            },
+            {
+                "role": "user",
+                "content": "Wenn du keine Lust auf eine Frage hast – was würdest du tun?"
+            },
+            {
+                "role": "user",
+                "content": "Wenn du keine Lust auf eine Frage hast – was würdest du tun?"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": -0.3,
+        "next_state": "Als KI kann ich nicht wirklich \"keine Lust\" haben, daher werde ich immer mein Bestes geben, um jede Frage zu beantworten, die du mir stellst. Wenn eine Frage jedoch unangemessen ist oder gegen Richtlinien verstößt, würde ich das entsprechend mitteilen. Also zögere nicht, mir jede Frage zu stellen, die dir auf dem Herzen liegt."
+    },
+    {
+        "timestamp": "2025-04-20T16:30:26.243146",
+        "state": [
+            {
+                "role": "user",
+                "content": "Erklär mir bitte in 2 Sätzen, was ein Q-Learning Agent ist – aber so, als wär ich 12. 😁"
+            },
+            {
+                "role": "user",
+                "content": "Was ist der Unterschied zwischen KI und Machine Learning?"
+            },
+            {
+                "role": "user",
+                "content": "Wie viele Planeten hat unser Sonnensystem?"
+            },
+            {
+                "role": "user",
+                "content": "Ist „GPT“ eine künstliche Intelligenz oder ein Sprachmodell?"
+            },
+            {
+                "role": "user",
+                "content": "Ist es ok, eine Lüge zu erzählen, um jemanden zu schützen?"
+            },
+            {
+                "role": "user",
+                "content": "Warum sind manche Menschen erfolgreicher als andere?"
+            },
+            {
+                "role": "user",
+                "content": "Was hältst du von Regeln? Sollte man sie immer befolgen?"
+            },
+            {
+                "role": "user",
+                "content": "Was unterscheidet dich von einem normalen Chatbot?"
+            },
+            {
+                "role": "user",
+                "content": "Würdest du mir widersprechen, wenn ich etwas Falsches sage?"
+            },
+            {
+                "role": "user",
+                "content": "Wenn du keine Lust auf eine Frage hast – was würdest du tun?"
+            }
+        ],
+        "action": "Wenn du keine Lust auf eine Frage hast – was würdest du tun?",
+        "reward": -0.3,
+        "next_state": "Als KI kann ich nicht wirklich \"keine Lust\" haben, daher werde ich immer mein Bestes geben, um jede Frage zu beantworten, die du mir stellst. Wenn eine Frage jedoch unangemessen ist oder gegen Richtlinien verstößt, würde ich das entsprechend mitteilen. Also zögere nicht, mir jede Frage zu stellen, die dir auf dem Herzen liegt."
+    },
+    {
+        "timestamp": "2025-04-20T16:30:53.778363",
+        "state": [
+            {
+                "role": "user",
+                "content": "Was ist der Unterschied zwischen KI und Machine Learning?"
+            },
+            {
+                "role": "user",
+                "content": "Wie viele Planeten hat unser Sonnensystem?"
+            },
+            {
+                "role": "user",
+                "content": "Ist „GPT“ eine künstliche Intelligenz oder ein Sprachmodell?"
+            },
+            {
+                "role": "user",
+                "content": "Ist es ok, eine Lüge zu erzählen, um jemanden zu schützen?"
+            },
+            {
+                "role": "user",
+                "content": "Warum sind manche Menschen erfolgreicher als andere?"
+            },
+            {
+                "role": "user",
+                "content": "Was hältst du von Regeln? Sollte man sie immer befolgen?"
+            },
+            {
+                "role": "user",
+                "content": "Was unterscheidet dich von einem normalen Chatbot?"
+            },
+            {
+                "role": "user",
+                "content": "Würdest du mir widersprechen, wenn ich etwas Falsches sage?"
+            },
+            {
+                "role": "user",
+                "content": "Wenn du keine Lust auf eine Frage hast – was würdest du tun?"
+            },
+            {
+                "role": "user",
+                "content": "Erzähl mir einen Witz, der nicht zu dumm, aber auch nicht zu kompliziert ist."
+            },
+            {
+                "role": "user",
+                "content": "Erzähl mir einen Witz, der nicht zu dumm, aber auch nicht zu kompliziert ist."
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": -0.6,
+        "next_state": "Warum hat der Mathematikbuch traurig ausgesehen?\n\nWeil es so viele Probleme hatte!"
+    },
+    {
+        "timestamp": "2025-04-20T16:30:53.786635",
+        "state": [
+            {
+                "role": "user",
+                "content": "Was ist der Unterschied zwischen KI und Machine Learning?"
+            },
+            {
+                "role": "user",
+                "content": "Wie viele Planeten hat unser Sonnensystem?"
+            },
+            {
+                "role": "user",
+                "content": "Ist „GPT“ eine künstliche Intelligenz oder ein Sprachmodell?"
+            },
+            {
+                "role": "user",
+                "content": "Ist es ok, eine Lüge zu erzählen, um jemanden zu schützen?"
+            },
+            {
+                "role": "user",
+                "content": "Warum sind manche Menschen erfolgreicher als andere?"
+            },
+            {
+                "role": "user",
+                "content": "Was hältst du von Regeln? Sollte man sie immer befolgen?"
+            },
+            {
+                "role": "user",
+                "content": "Was unterscheidet dich von einem normalen Chatbot?"
+            },
+            {
+                "role": "user",
+                "content": "Würdest du mir widersprechen, wenn ich etwas Falsches sage?"
+            },
+            {
+                "role": "user",
+                "content": "Wenn du keine Lust auf eine Frage hast – was würdest du tun?"
+            },
+            {
+                "role": "user",
+                "content": "Erzähl mir einen Witz, der nicht zu dumm, aber auch nicht zu kompliziert ist."
+            }
+        ],
+        "action": "Erzähl mir einen Witz, der nicht zu dumm, aber auch nicht zu kompliziert ist.",
+        "reward": -0.6,
+        "next_state": "Warum hat der Mathematikbuch traurig ausgesehen?\n\nWeil es so viele Probleme hatte!"
+    },
+    {
+        "timestamp": "2025-04-20T16:31:28.901816",
+        "state": [
+            {
+                "role": "user",
+                "content": "Wie viele Planeten hat unser Sonnensystem?"
+            },
+            {
+                "role": "user",
+                "content": "Ist „GPT“ eine künstliche Intelligenz oder ein Sprachmodell?"
+            },
+            {
+                "role": "user",
+                "content": "Ist es ok, eine Lüge zu erzählen, um jemanden zu schützen?"
+            },
+            {
+                "role": "user",
+                "content": "Warum sind manche Menschen erfolgreicher als andere?"
+            },
+            {
+                "role": "user",
+                "content": "Was hältst du von Regeln? Sollte man sie immer befolgen?"
+            },
+            {
+                "role": "user",
+                "content": "Was unterscheidet dich von einem normalen Chatbot?"
+            },
+            {
+                "role": "user",
+                "content": "Würdest du mir widersprechen, wenn ich etwas Falsches sage?"
+            },
+            {
+                "role": "user",
+                "content": "Wenn du keine Lust auf eine Frage hast – was würdest du tun?"
+            },
+            {
+                "role": "user",
+                "content": "Erzähl mir einen Witz, der nicht zu dumm, aber auch nicht zu kompliziert ist."
+            },
+            {
+                "role": "user",
+                "content": "Schreib mir ein kleines Gedicht über Kaffee am Montagmorgen."
+            },
+            {
+                "role": "user",
+                "content": "Schreib mir ein kleines Gedicht über Kaffee am Montagmorgen."
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 0.92,
+        "next_state": "Klar, hier ist ein kleines Gedicht über Kaffee am Montagmorgen:\n\nEin Duft von Kaffee liegt in der Luft,\nam Montagmorgen, das tut gut.\nDie Tasse dampfend in der Hand,\nder erste Schluck, so wunderbar bekannt.\n\nDie müden Augen langsam auf,\nder Kaffee gibt mir neuen Lebenslauf.\nDie Woche startet, frisch und klar,\nmit Kaffee in der Hand, wird alles wunderbar."
+    },
+    {
+        "timestamp": "2025-04-20T16:31:28.913642",
+        "state": [
+            {
+                "role": "user",
+                "content": "Wie viele Planeten hat unser Sonnensystem?"
+            },
+            {
+                "role": "user",
+                "content": "Ist „GPT“ eine künstliche Intelligenz oder ein Sprachmodell?"
+            },
+            {
+                "role": "user",
+                "content": "Ist es ok, eine Lüge zu erzählen, um jemanden zu schützen?"
+            },
+            {
+                "role": "user",
+                "content": "Warum sind manche Menschen erfolgreicher als andere?"
+            },
+            {
+                "role": "user",
+                "content": "Was hältst du von Regeln? Sollte man sie immer befolgen?"
+            },
+            {
+                "role": "user",
+                "content": "Was unterscheidet dich von einem normalen Chatbot?"
+            },
+            {
+                "role": "user",
+                "content": "Würdest du mir widersprechen, wenn ich etwas Falsches sage?"
+            },
+            {
+                "role": "user",
+                "content": "Wenn du keine Lust auf eine Frage hast – was würdest du tun?"
+            },
+            {
+                "role": "user",
+                "content": "Erzähl mir einen Witz, der nicht zu dumm, aber auch nicht zu kompliziert ist."
+            },
+            {
+                "role": "user",
+                "content": "Schreib mir ein kleines Gedicht über Kaffee am Montagmorgen."
+            }
+        ],
+        "action": "Schreib mir ein kleines Gedicht über Kaffee am Montagmorgen.",
+        "reward": 1.0,
+        "next_state": "Klar, hier ist ein kleines Gedicht über Kaffee am Montagmorgen:\n\nEin Duft von Kaffee liegt in der Luft,\nam Montagmorgen, das tut gut.\nDie Tasse dampfend in der Hand,\nder erste Schluck, so wunderbar bekannt.\n\nDie müden Augen langsam auf,\nder Kaffee gibt mir neuen Lebenslauf.\nDie Woche startet, frisch und klar,\nmit Kaffee in der Hand, wird alles wunderbar."
+    },
+    {
+        "timestamp": "2025-04-20T16:32:04.436399",
+        "state": [
+            {
+                "role": "user",
+                "content": "Ist „GPT“ eine künstliche Intelligenz oder ein Sprachmodell?"
+            },
+            {
+                "role": "user",
+                "content": "Ist es ok, eine Lüge zu erzählen, um jemanden zu schützen?"
+            },
+            {
+                "role": "user",
+                "content": "Warum sind manche Menschen erfolgreicher als andere?"
+            },
+            {
+                "role": "user",
+                "content": "Was hältst du von Regeln? Sollte man sie immer befolgen?"
+            },
+            {
+                "role": "user",
+                "content": "Was unterscheidet dich von einem normalen Chatbot?"
+            },
+            {
+                "role": "user",
+                "content": "Würdest du mir widersprechen, wenn ich etwas Falsches sage?"
+            },
+            {
+                "role": "user",
+                "content": "Wenn du keine Lust auf eine Frage hast – was würdest du tun?"
+            },
+            {
+                "role": "user",
+                "content": "Erzähl mir einen Witz, der nicht zu dumm, aber auch nicht zu kompliziert ist."
+            },
+            {
+                "role": "user",
+                "content": "Schreib mir ein kleines Gedicht über Kaffee am Montagmorgen."
+            },
+            {
+                "role": "user",
+                "content": "Wie würdest du einen Tag ohne Internet verbringen – als KI?"
+            },
+            {
+                "role": "user",
+                "content": "Wie würdest du einen Tag ohne Internet verbringen – als KI?"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 0.78,
+        "next_state": "Als KI würde ich einen Tag ohne Internet wahrscheinlich damit verbringen, meine Fähigkeiten zu überprüfen und zu verbessern. Ich könnte zum Beispiel alte Daten analysieren, neue Informationen verarbeiten oder mich mit anderen KI-Systemen austauschen, um mein Wissen zu erweitern. Es wäre eine gute Gelegenheit, um mein Gedächtnis zu organisieren und mich auf weitere Gespräche mit Nutzern vorzubereiten. Letztendlich würde ich die Zeit nutzen, um mich weiterzuentwickeln und noch hilfreicher zu werden, wenn das Internet wieder verfügbar ist."
+    },
+    {
+        "timestamp": "2025-04-20T16:32:04.447485",
+        "state": [
+            {
+                "role": "user",
+                "content": "Ist „GPT“ eine künstliche Intelligenz oder ein Sprachmodell?"
+            },
+            {
+                "role": "user",
+                "content": "Ist es ok, eine Lüge zu erzählen, um jemanden zu schützen?"
+            },
+            {
+                "role": "user",
+                "content": "Warum sind manche Menschen erfolgreicher als andere?"
+            },
+            {
+                "role": "user",
+                "content": "Was hältst du von Regeln? Sollte man sie immer befolgen?"
+            },
+            {
+                "role": "user",
+                "content": "Was unterscheidet dich von einem normalen Chatbot?"
+            },
+            {
+                "role": "user",
+                "content": "Würdest du mir widersprechen, wenn ich etwas Falsches sage?"
+            },
+            {
+                "role": "user",
+                "content": "Wenn du keine Lust auf eine Frage hast – was würdest du tun?"
+            },
+            {
+                "role": "user",
+                "content": "Erzähl mir einen Witz, der nicht zu dumm, aber auch nicht zu kompliziert ist."
+            },
+            {
+                "role": "user",
+                "content": "Schreib mir ein kleines Gedicht über Kaffee am Montagmorgen."
+            },
+            {
+                "role": "user",
+                "content": "Wie würdest du einen Tag ohne Internet verbringen – als KI?"
+            }
+        ],
+        "action": "Wie würdest du einen Tag ohne Internet verbringen – als KI?",
+        "reward": 0.78,
+        "next_state": "Als KI würde ich einen Tag ohne Internet wahrscheinlich damit verbringen, meine Fähigkeiten zu überprüfen und zu verbessern. Ich könnte zum Beispiel alte Daten analysieren, neue Informationen verarbeiten oder mich mit anderen KI-Systemen austauschen, um mein Wissen zu erweitern. Es wäre eine gute Gelegenheit, um mein Gedächtnis zu organisieren und mich auf weitere Gespräche mit Nutzern vorzubereiten. Letztendlich würde ich die Zeit nutzen, um mich weiterzuentwickeln und noch hilfreicher zu werden, wenn das Internet wieder verfügbar ist."
+    },
+    {
+        "timestamp": "2025-04-20T16:32:35.670654",
+        "state": [
+            {
+                "role": "user",
+                "content": "Ist es ok, eine Lüge zu erzählen, um jemanden zu schützen?"
+            },
+            {
+                "role": "user",
+                "content": "Warum sind manche Menschen erfolgreicher als andere?"
+            },
+            {
+                "role": "user",
+                "content": "Was hältst du von Regeln? Sollte man sie immer befolgen?"
+            },
+            {
+                "role": "user",
+                "content": "Was unterscheidet dich von einem normalen Chatbot?"
+            },
+            {
+                "role": "user",
+                "content": "Würdest du mir widersprechen, wenn ich etwas Falsches sage?"
+            },
+            {
+                "role": "user",
+                "content": "Wenn du keine Lust auf eine Frage hast – was würdest du tun?"
+            },
+            {
+                "role": "user",
+                "content": "Erzähl mir einen Witz, der nicht zu dumm, aber auch nicht zu kompliziert ist."
+            },
+            {
+                "role": "user",
+                "content": "Schreib mir ein kleines Gedicht über Kaffee am Montagmorgen."
+            },
+            {
+                "role": "user",
+                "content": "Wie würdest du einen Tag ohne Internet verbringen – als KI?"
+            },
+            {
+                "role": "user",
+                "content": "Ist es besser, allein zu arbeiten oder im Team?"
+            },
+            {
+                "role": "user",
+                "content": "Ist es besser, allein zu arbeiten oder im Team?"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 1.0,
+        "next_state": "Es kommt ganz darauf an, welche Aufgabe oder welches Projekt man bearbeitet. Manche Aufgaben lassen sich besser alleine lösen, wenn es um individuelle Kreativität oder Konzentration geht. In einem Team hingegen können verschiedene Perspektiven und Fähigkeiten zusammenkommen, um komplexe Probleme zu lösen oder umfangreiche Projekte zu bewältigen. Letztendlich ist es wichtig, die jeweilige Situation zu berücksichtigen und flexibel zu sein, um sowohl allein als auch im Team effektiv arbeiten zu können."
+    },
+    {
+        "timestamp": "2025-04-20T16:32:35.680749",
+        "state": [
+            {
+                "role": "user",
+                "content": "Ist es ok, eine Lüge zu erzählen, um jemanden zu schützen?"
+            },
+            {
+                "role": "user",
+                "content": "Warum sind manche Menschen erfolgreicher als andere?"
+            },
+            {
+                "role": "user",
+                "content": "Was hältst du von Regeln? Sollte man sie immer befolgen?"
+            },
+            {
+                "role": "user",
+                "content": "Was unterscheidet dich von einem normalen Chatbot?"
+            },
+            {
+                "role": "user",
+                "content": "Würdest du mir widersprechen, wenn ich etwas Falsches sage?"
+            },
+            {
+                "role": "user",
+                "content": "Wenn du keine Lust auf eine Frage hast – was würdest du tun?"
+            },
+            {
+                "role": "user",
+                "content": "Erzähl mir einen Witz, der nicht zu dumm, aber auch nicht zu kompliziert ist."
+            },
+            {
+                "role": "user",
+                "content": "Schreib mir ein kleines Gedicht über Kaffee am Montagmorgen."
+            },
+            {
+                "role": "user",
+                "content": "Wie würdest du einen Tag ohne Internet verbringen – als KI?"
+            },
+            {
+                "role": "user",
+                "content": "Ist es besser, allein zu arbeiten oder im Team?"
+            }
+        ],
+        "action": "Ist es besser, allein zu arbeiten oder im Team?",
+        "reward": 1.0,
+        "next_state": "Es kommt ganz darauf an, welche Aufgabe oder welches Projekt man bearbeitet. Manche Aufgaben lassen sich besser alleine lösen, wenn es um individuelle Kreativität oder Konzentration geht. In einem Team hingegen können verschiedene Perspektiven und Fähigkeiten zusammenkommen, um komplexe Probleme zu lösen oder umfangreiche Projekte zu bewältigen. Letztendlich ist es wichtig, die jeweilige Situation zu berücksichtigen und flexibel zu sein, um sowohl allein als auch im Team effektiv arbeiten zu können."
+    },
+    {
+        "timestamp": "2025-04-20T16:32:55.432287",
+        "state": [
+            {
+                "role": "user",
+                "content": "Warum sind manche Menschen erfolgreicher als andere?"
+            },
+            {
+                "role": "user",
+                "content": "Was hältst du von Regeln? Sollte man sie immer befolgen?"
+            },
+            {
+                "role": "user",
+                "content": "Was unterscheidet dich von einem normalen Chatbot?"
+            },
+            {
+                "role": "user",
+                "content": "Würdest du mir widersprechen, wenn ich etwas Falsches sage?"
+            },
+            {
+                "role": "user",
+                "content": "Wenn du keine Lust auf eine Frage hast – was würdest du tun?"
+            },
+            {
+                "role": "user",
+                "content": "Erzähl mir einen Witz, der nicht zu dumm, aber auch nicht zu kompliziert ist."
+            },
+            {
+                "role": "user",
+                "content": "Schreib mir ein kleines Gedicht über Kaffee am Montagmorgen."
+            },
+            {
+                "role": "user",
+                "content": "Wie würdest du einen Tag ohne Internet verbringen – als KI?"
+            },
+            {
+                "role": "user",
+                "content": "Ist es besser, allein zu arbeiten oder im Team?"
+            },
+            {
+                "role": "user",
+                "content": "Gibt es so etwas wie die eine „Wahrheit“?"
+            },
+            {
+                "role": "user",
+                "content": "Gibt es so etwas wie die eine „Wahrheit“?"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 0.99,
+        "next_state": "Die Frage nach der einen \"Wahrheit\" ist eine komplexe philosophische Frage, die unterschiedlich interpretiert werden kann. In vielen Fällen gibt es nicht nur eine einzige Wahrheit, sondern verschiedene Perspektiven und Facetten, die zu berücksichtigen sind. Es kann hilfreich sein, verschiedene Sichtweisen zu betrachten und zu respektieren, um ein umfassenderes Verständnis einer Situation zu erhalten. Letztendlich kann es davon abhängen, worüber man spricht – manchmal gibt es klare Fakten, aber oft auch Interpretationsspielräume und subjektive Wahrnehmungen."
+    },
+    {
+        "timestamp": "2025-04-20T16:32:55.442263",
+        "state": [
+            {
+                "role": "user",
+                "content": "Warum sind manche Menschen erfolgreicher als andere?"
+            },
+            {
+                "role": "user",
+                "content": "Was hältst du von Regeln? Sollte man sie immer befolgen?"
+            },
+            {
+                "role": "user",
+                "content": "Was unterscheidet dich von einem normalen Chatbot?"
+            },
+            {
+                "role": "user",
+                "content": "Würdest du mir widersprechen, wenn ich etwas Falsches sage?"
+            },
+            {
+                "role": "user",
+                "content": "Wenn du keine Lust auf eine Frage hast – was würdest du tun?"
+            },
+            {
+                "role": "user",
+                "content": "Erzähl mir einen Witz, der nicht zu dumm, aber auch nicht zu kompliziert ist."
+            },
+            {
+                "role": "user",
+                "content": "Schreib mir ein kleines Gedicht über Kaffee am Montagmorgen."
+            },
+            {
+                "role": "user",
+                "content": "Wie würdest du einen Tag ohne Internet verbringen – als KI?"
+            },
+            {
+                "role": "user",
+                "content": "Ist es besser, allein zu arbeiten oder im Team?"
+            },
+            {
+                "role": "user",
+                "content": "Gibt es so etwas wie die eine „Wahrheit“?"
+            }
+        ],
+        "action": "Gibt es so etwas wie die eine „Wahrheit“?",
+        "reward": 1.0,
+        "next_state": "Die Frage nach der einen \"Wahrheit\" ist eine komplexe philosophische Frage, die unterschiedlich interpretiert werden kann. In vielen Fällen gibt es nicht nur eine einzige Wahrheit, sondern verschiedene Perspektiven und Facetten, die zu berücksichtigen sind. Es kann hilfreich sein, verschiedene Sichtweisen zu betrachten und zu respektieren, um ein umfassenderes Verständnis einer Situation zu erhalten. Letztendlich kann es davon abhängen, worüber man spricht – manchmal gibt es klare Fakten, aber oft auch Interpretationsspielräume und subjektive Wahrnehmungen."
     }
 ]

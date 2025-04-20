@@ -9,7 +9,7 @@ from PySide6.QtCore import Qt, QSize
 from PySide6.QtGui import QGuiApplication, QPixmap
 from modules.namesoul import NameSoul
 from modules.memory import Memory
-from modules.rlhf.rlhf_engine import update_priorities
+from modules.rlhf.rlhf_engine import apply_td_errors_to_buffer
 from modules.rlhf.rlhf_engine import log_interaction
 from modules.rlhf.rlhf_engine import update_reward_for_last_interaction
 import os

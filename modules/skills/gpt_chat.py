@@ -1,3 +1,4 @@
+import json
 from openai import OpenAI
 
 def run(messages, name):
@@ -16,8 +17,10 @@ def run(messages, name):
     short_history = messages[-10:] if len(messages) > 10 else messages
 
     try:
+        with open("data/config/config.json", "r", encoding="utf-8") as f:
+            config = json.load(f)
         response = client.chat.completions.create(
-            model="gpt-3.5-turbo",
+            model = config.get("model", "gpt-3.5-turbo"),
             messages=[system_prompt] + short_history,
             temperature=0.7,
             max_tokens=300

@@ -102,6 +102,12 @@ Ziel: Prototyp innerhalb von 14 Tagen
    - Klicks auf Buttons aktualisieren automatisch den RLHF-Reward in `interactions.json`
    - RLHF-Engine speichert Zustand, Aktion, Reward und nächste Antwort zur späteren Modellierung
    - Visualisierung der Buttons verbessert: kleinere Darstellung, direkte Positionierung unter Elias' Antwort
+   - Trainingsroutine mit Prioritized Experience Replay (PER) eingebaut
+   - ReplayBuffer speichert automatisch Reward-Feedback mit TD-Fehler als Priorität
+   - Automatisches On-the-fly-Training bei jeder Reward-Vergabe
+   - Fehlerbehandlung im Buffer-Training eingebaut (z. B. zu wenig Daten, falsche Typen)
+   - Reward-Zusammenfassung & interaktive Nachbewertung via Konsole implementiert
+   - Leeren des Logs per Kommando möglich für gezielten Neuanfang
 
 5. GUI finalisieren:
    - Eingabefeld & Button-Alignment perfektionieren
@@ -118,6 +124,12 @@ Dieses Projekt steht unter der MIT License. Es darf frei genutzt, verändert und
 
 Designed & Developed by Vadim Ott  
 GitHub: https://github.com/voml77/SymBro  
+
+## Trainingsphase ab Tag 14
+
+SymBro wird ab sofort mit bewerteten Nutzerdialogen trainiert – Ziel: ein smarter, interaktiver Desktop-Begleiter mit echtem Lerneffekt.  
+Die ersten 50 bewusst bewerteten Interaktionen bilden das Fundament für ein individuelles, responsives Verhalten.  
+Elias lernt – in enger Symbiose mit dem User.  
 
 Dieses Projekt ist Teil einer persönlichen Vision:  
 > Am heutigen Tag wurde die erste Version des RLHF-Systems aktiviert – inklusive Reward-Logging und Feedback-Mechanismus 🧠✨

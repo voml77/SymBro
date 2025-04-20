@@ -9,6 +9,7 @@ from PySide6.QtCore import Qt, QSize
 from PySide6.QtGui import QGuiApplication, QPixmap
 from modules.namesoul import NameSoul
 from modules.memory import Memory
+from modules.rlhf.rlhf_engine import update_priorities
 from modules.rlhf.rlhf_engine import log_interaction
 from modules.rlhf.rlhf_engine import update_reward_for_last_interaction
 import os
@@ -150,10 +151,10 @@ class MainWindow(QMainWindow):
         right_layout.addWidget(self.message_list)
 
         self.input_field = QLineEdit()
-        self.input_field.setFixedHeight(40)
+        self.input_field.setFixedHeight(42)
         self.input_field.setStyleSheet("background-color: #1a1a1a; color: white; border-radius: 10px; border: 2px solid #1f4449; padding-right: 30px;")
 
-        icon_size = QSize(28, 28)
+        icon_size = QSize(32, 32)
         
         send_pixmap = QPixmap("gui_pyside/icons/send_icon.png").scaled(icon_size, Qt.KeepAspectRatio, Qt.SmoothTransformation)
         send_icon = QIcon(send_pixmap)
@@ -321,7 +322,7 @@ class MainWindow(QMainWindow):
             elias_response = format_markdown(raw_response.replace("\n", "\n\n"))
             elias_item = QListWidgetItem(f"{self.name} ({datetime.datetime.now().strftime('%H:%M')}):\n{elias_response}")
             elias_item.setIcon(QIcon("gui_pyside/icons/ai_selfview.png"))
-            self.message_list.setIconSize(QSize(37, 37))
+            self.message_list.setIconSize(QSize(47, 47))
             self.message_list.addItem(elias_item)
             # Feedback-Buttons (visuell optimiert)
             feedback_layout = QWidget()
@@ -332,17 +333,39 @@ class MainWindow(QMainWindow):
 
             positive_btn = QPushButton()
             positive_btn.setIcon(QIcon("gui_pyside/icons/thumbs_up.png"))
-            positive_btn.setIconSize(QSize(20, 20))
+            positive_btn.setIconSize(QSize(16, 16))
             positive_btn.setFixedSize(24, 24)
             positive_btn.setStyleSheet("background-color: transparent; border: none;")
-            positive_btn.clicked.connect(lambda: update_reward_for_last_interaction(+1.0))
+            def positive_feedback():
+                from modules.rlhf.replay_buffer import PrioritizedReplayBuffer
+                from modules.rlhf.rlhf_engine import buffer as replay_buffer_instance
+                
+                update_reward_for_last_interaction(+1.0)
+                
+                indices = [0]  # oder dynamisch setzen, falls du Zugriff auf Sampling hast
+                priorities = [1.0]  # Beispielwert, kann durch TD-Error ersetzt werden
+                replay_buffer_instance.update_priorities_from_indices(indices, priorities)
+                
+                positive_btn.setStyleSheet("background-color: #4caf50; border: none;")
+            positive_btn.clicked.connect(positive_feedback)
 
             negative_btn = QPushButton()
             negative_btn.setIcon(QIcon("gui_pyside/icons/thumbs_down.png"))
-            negative_btn.setIconSize(QSize(20, 20))
+            negative_btn.setIconSize(QSize(16, 16))
             negative_btn.setFixedSize(24, 24)
             negative_btn.setStyleSheet("background-color: transparent; border: none;")
-            negative_btn.clicked.connect(lambda: update_reward_for_last_interaction(-1.0))
+            def negative_feedback():
+                from modules.rlhf.replay_buffer import PrioritizedReplayBuffer
+                from modules.rlhf.rlhf_engine import buffer as replay_buffer_instance
+                
+                update_reward_for_last_interaction(-1.0)
+                
+                indices = [0]  # oder dynamisch setzen, falls du Zugriff auf Sampling hast
+                priorities = [1.0]  # Beispielwert, kann durch TD-Error ersetzt werden
+                replay_buffer_instance.update_priorities_from_indices(indices, priorities)
+                
+                negative_btn.setStyleSheet("background-color: #f44336; border: none;")
+            negative_btn.clicked.connect(negative_feedback)
 
             feedback_buttons.addWidget(positive_btn)
             feedback_buttons.addWidget(negative_btn)

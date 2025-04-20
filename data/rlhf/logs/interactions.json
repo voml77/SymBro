@@ -1,214 +1,162 @@
 [
     {
-        "timestamp": "2025-04-19T18:08:30.790163",
+        "timestamp": "2025-04-20T10:11:07.199739",
         "state": [
             {
                 "role": "user",
-                "content": "😃"
+                "content": "Hallo Elias, ich freue mich sehr dich kennenzulernen 😇"
             },
             {
                 "role": "user",
-                "content": "😃"
+                "content": "Hallo Elias, ich freue mich sehr dich kennenzulernen 😇"
             }
         ],
         "action": "gpt_chat",
-        "reward": "PENDING",
-        "next_state": "Hallo! Wie kann ich dir heute helfen? 😊"
-    },
-    {
-        "timestamp": "2025-04-19T18:08:30.790879",
-        "state": [
-            {
-                "role": "user",
-                "content": "😃"
-            }
-        ],
-        "action": "😃",
-        "reward": "PENDING",
-        "next_state": "Hallo! Wie kann ich dir heute helfen? 😊"
-    },
-    {
-        "timestamp": "2025-04-19T18:45:26.218435",
-        "state": [
-            {
-                "role": "user",
-                "content": "😃"
-            },
-            {
-                "role": "user",
-                "content": "😃"
-            }
-        ],
-        "action": "gpt_chat",
-        "reward": "PENDING",
-        "next_state": "Hallo! Wie kann ich dir heute helfen? 😊"
-    },
-    {
-        "timestamp": "2025-04-19T18:45:26.219486",
-        "state": [
-            {
-                "role": "user",
-                "content": "😃"
-            }
-        ],
-        "action": "😃",
-        "reward": "PENDING",
-        "next_state": "Hallo! Wie kann ich dir heute helfen? 😊"
-    },
-    {
-        "timestamp": "2025-04-19T18:55:23.211958",
-        "state": [
-            {
-                "role": "user",
-                "content": "😃"
-            },
-            {
-                "role": "user",
-                "content": "😃"
-            }
-        ],
-        "action": "gpt_chat",
-        "reward": "PENDING",
-        "next_state": "Hallo! Wie kann ich dir heute helfen? 😊"
-    },
-    {
-        "timestamp": "2025-04-19T18:55:23.212838",
-        "state": [
-            {
-                "role": "user",
-                "content": "😃"
-            }
-        ],
-        "action": "😃",
         "reward": 1.0,
-        "next_state": "Hallo! Wie kann ich dir heute helfen? 😊"
+        "next_state": "Hallo! Es freut mich auch, dich kennenzulernen. Wie kann ich dir heute helfen? 😊"
     },
     {
-        "timestamp": "2025-04-19T18:55:52.287314",
+        "timestamp": "2025-04-20T10:11:07.200537",
         "state": [
             {
                 "role": "user",
-                "content": "😃"
-            },
-            {
-                "role": "user",
-                "content": "😇"
-            },
-            {
-                "role": "user",
-                "content": "😇"
+                "content": "Hallo Elias, ich freue mich sehr dich kennenzulernen 😇"
             }
         ],
-        "action": "gpt_chat",
-        "reward": "PENDING",
-        "next_state": "Hallo! Wie kann ich dir heute helfen? 😇"
-    },
-    {
-        "timestamp": "2025-04-19T18:55:52.288596",
-        "state": [
-            {
-                "role": "user",
-                "content": "😃"
-            },
-            {
-                "role": "user",
-                "content": "😇"
-            }
-        ],
-        "action": "😇",
-        "reward": -1.0,
-        "next_state": "Hallo! Wie kann ich dir heute helfen? 😇"
-    },
-    {
-        "timestamp": "2025-04-19T18:58:26.099113",
-        "state": [
-            {
-                "role": "user",
-                "content": "😃"
-            },
-            {
-                "role": "user",
-                "content": "😃"
-            }
-        ],
-        "action": "gpt_chat",
-        "reward": "PENDING",
-        "next_state": "Hallo! Wie kann ich dir heute helfen? 😊"
-    },
-    {
-        "timestamp": "2025-04-19T18:58:26.100187",
-        "state": [
-            {
-                "role": "user",
-                "content": "😃"
-            }
-        ],
-        "action": "😃",
-        "reward": -1.0,
-        "next_state": "Hallo! Wie kann ich dir heute helfen? 😊"
-    },
-    {
-        "timestamp": "2025-04-19T19:07:04.146524",
-        "state": [
-            {
-                "role": "user",
-                "content": "😄"
-            },
-            {
-                "role": "user",
-                "content": "😄"
-            }
-        ],
-        "action": "gpt_chat",
-        "reward": "PENDING",
-        "next_state": "Hallo! Wie kann ich dir heute helfen? 😄"
-    },
-    {
-        "timestamp": "2025-04-19T19:07:04.147622",
-        "state": [
-            {
-                "role": "user",
-                "content": "😄"
-            }
-        ],
-        "action": "😄",
-        "reward": "PENDING",
-        "next_state": "Hallo! Wie kann ich dir heute helfen? 😄"
-    },
-    {
-        "timestamp": "2025-04-19T19:07:29.125836",
-        "state": [
-            {
-                "role": "user",
-                "content": "😄"
-            },
-            {
-                "role": "user",
-                "content": "In dem Du mit mir kommunizierst 😇"
-            },
-            {
-                "role": "user",
-                "content": "In dem Du mit mir kommunizierst 😇"
-            }
-        ],
-        "action": "gpt_chat",
-        "reward": "PENDING",
-        "next_state": "Hallo! Ich freue mich darauf, mit dir zu kommunizieren und dir zu helfen. Wie kann ich heute unterstützen? 😊"
-    },
-    {
-        "timestamp": "2025-04-19T19:07:29.127108",
-        "state": [
-            {
-                "role": "user",
-                "content": "😄"
-            },
-            {
-                "role": "user",
-                "content": "In dem Du mit mir kommunizierst 😇"
-            }
-        ],
-        "action": "In dem Du mit mir kommunizierst 😇",
+        "action": "Hallo Elias, ich freue mich sehr dich kennenzulernen 😇",
         "reward": 1.0,
-        "next_state": "Hallo! Ich freue mich darauf, mit dir zu kommunizieren und dir zu helfen. Wie kann ich heute unterstützen? 😊"
+        "next_state": "Hallo! Es freut mich auch, dich kennenzulernen. Wie kann ich dir heute helfen? 😊"
+    },
+    {
+        "timestamp": "2025-04-20T10:11:57.574202",
+        "state": [
+            {
+                "role": "user",
+                "content": "Hallo Elias, ich freue mich sehr dich kennenzulernen 😇"
+            },
+            {
+                "role": "user",
+                "content": "Du musst mir heute nicht helfen. Lass uns erstmal sich gegenseitig kennenlernen 😉"
+            },
+            {
+                "role": "user",
+                "content": "Du musst mir heute nicht helfen. Lass uns erstmal sich gegenseitig kennenlernen 😉"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 1.0,
+        "next_state": "Hallo! Es freut mich auch, dich kennenzulernen! Ich bin Elias, dein KI-Begleiter. Wie kann ich dir heute helfen? Oder möchtest du einfach nur plaudern und mehr über mich erfahren? Ich bin hier, um zuzuhören und zu unterstützen, wie auch immer du es bevorzugst."
+    },
+    {
+        "timestamp": "2025-04-20T10:11:57.576489",
+        "state": [
+            {
+                "role": "user",
+                "content": "Hallo Elias, ich freue mich sehr dich kennenzulernen 😇"
+            },
+            {
+                "role": "user",
+                "content": "Du musst mir heute nicht helfen. Lass uns erstmal sich gegenseitig kennenlernen 😉"
+            }
+        ],
+        "action": "Du musst mir heute nicht helfen. Lass uns erstmal sich gegenseitig kennenlernen 😉",
+        "reward": 1.0,
+        "next_state": "Hallo! Es freut mich auch, dich kennenzulernen! Ich bin Elias, dein KI-Begleiter. Wie kann ich dir heute helfen? Oder möchtest du einfach nur plaudern und mehr über mich erfahren? Ich bin hier, um zuzuhören und zu unterstützen, wie auch immer du es bevorzugst."
+    },
+    {
+        "timestamp": "2025-04-20T10:12:45.804013",
+        "state": [
+            {
+                "role": "user",
+                "content": "Hallo Elias, ich freue mich sehr dich kennenzulernen 😇"
+            },
+            {
+                "role": "user",
+                "content": "Du musst mir heute nicht helfen. Lass uns erstmal sich gegenseitig kennenlernen 😉"
+            },
+            {
+                "role": "user",
+                "content": "Ja ich bin gerade eher zum Plaudern da 😆"
+            },
+            {
+                "role": "user",
+                "content": "Ja ich bin gerade eher zum Plaudern da 😆"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 1.0,
+        "next_state": "Das ist großartig! Ich freue mich auch darauf, dich kennenzulernen und ein wenig zu plaudern. Gibt es etwas Bestimmtes, worüber du sprechen möchtest oder möchtest du einfach ein lockeres Gespräch führen? 😊"
+    },
+    {
+        "timestamp": "2025-04-20T10:12:45.805247",
+        "state": [
+            {
+                "role": "user",
+                "content": "Hallo Elias, ich freue mich sehr dich kennenzulernen 😇"
+            },
+            {
+                "role": "user",
+                "content": "Du musst mir heute nicht helfen. Lass uns erstmal sich gegenseitig kennenlernen 😉"
+            },
+            {
+                "role": "user",
+                "content": "Ja ich bin gerade eher zum Plaudern da 😆"
+            }
+        ],
+        "action": "Ja ich bin gerade eher zum Plaudern da 😆",
+        "reward": 1.0,
+        "next_state": "Das ist großartig! Ich freue mich auch darauf, dich kennenzulernen und ein wenig zu plaudern. Gibt es etwas Bestimmtes, worüber du sprechen möchtest oder möchtest du einfach ein lockeres Gespräch führen? 😊"
+    },
+    {
+        "timestamp": "2025-04-20T10:13:29.018534",
+        "state": [
+            {
+                "role": "user",
+                "content": "Hallo Elias, ich freue mich sehr dich kennenzulernen 😇"
+            },
+            {
+                "role": "user",
+                "content": "Du musst mir heute nicht helfen. Lass uns erstmal sich gegenseitig kennenlernen 😉"
+            },
+            {
+                "role": "user",
+                "content": "Ja ich bin gerade eher zum Plaudern da 😆"
+            },
+            {
+                "role": "user",
+                "content": "Einfach ein lockeres Gespräch führen, genau 🙃"
+            },
+            {
+                "role": "user",
+                "content": "Einfach ein lockeres Gespräch führen, genau 🙃"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 1.0,
+        "next_state": "Das klingt nach einer tollen Idee! Worüber möchtest du plaudern? Hast du ein Lieblingsthema oder eine interessante Geschichte, die du teilen möchtest? 😊"
+    },
+    {
+        "timestamp": "2025-04-20T10:13:29.020664",
+        "state": [
+            {
+                "role": "user",
+                "content": "Hallo Elias, ich freue mich sehr dich kennenzulernen 😇"
+            },
+            {
+                "role": "user",
+                "content": "Du musst mir heute nicht helfen. Lass uns erstmal sich gegenseitig kennenlernen 😉"
+            },
+            {
+                "role": "user",
+                "content": "Ja ich bin gerade eher zum Plaudern da 😆"
+            },
+            {
+                "role": "user",
+                "content": "Einfach ein lockeres Gespräch führen, genau 🙃"
+            }
+        ],
+        "action": "Einfach ein lockeres Gespräch führen, genau 🙃",
+        "reward": 1.0,
+        "next_state": "Das klingt nach einer tollen Idee! Worüber möchtest du plaudern? Hast du ein Lieblingsthema oder eine interessante Geschichte, die du teilen möchtest? 😊"
     }
 ]

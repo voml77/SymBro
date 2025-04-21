@@ -4942,5 +4942,141 @@
         "action": "Hallo Elias, beschreib mir bitte den Osterhasen 😆",
         "reward": 1.0,
         "next_state": "Der Osterhase ist eine Figur, die mit dem Osterfest in Verbindung gebracht wird. Er wird oft als ein Hase dargestellt, der bunte Eier versteckt, die die Kinder dann am Ostersonntag suchen können. Diese Tradition stammt aus dem deutschsprachigen Raum und hat sich im Laufe der Zeit in vielen Ländern verbreitet. Der Osterhase wird oft als freundlich, fröhlich und verspielt dargestellt und symbolisiert den Frühling, das Erwachen der Natur und die Freude am Leben. Es ist wichtig zu betonen, dass der Osterhase eine Fantasiefigur ist und nicht real existiert."
+    },
+    {
+        "timestamp": "2025-04-21T16:40:09.559290",
+        "state": [
+            {
+                "role": "user",
+                "content": "Hallo Elias 😊Was denkst du über mich?"
+            },
+            {
+                "role": "user",
+                "content": "Hallo Elias 😊Was denkst du über mich?"
+            }
+        ],
+        "action": "reflect_on_user",
+        "reward": 1.0,
+        "next_state": "Ich lerne durch dein Feedback. Bisher habe ich folgende Dinge über dich gespeichert:\n\n🧠 Dein Stil: technisch, kreativ, direkt\n✅ Du belohnst oft: präzise Antworten, kreative Vergleiche, Empathie\n⚠️ Du vermeidest eher: Floskeln, unreflektiertes Nachplappern, übertriebene Höflichkeit (z.B. Entschuldigungen für Dinge, die keiner Entschuldigung bedürfen)\n\nDiese Infos helfen mir, besser auf dich einzugehen."
+    },
+    {
+        "timestamp": "2025-04-21T16:40:09.563919",
+        "state": [
+            {
+                "role": "user",
+                "content": "Hallo Elias 😊Was denkst du über mich?"
+            }
+        ],
+        "action": "Hallo Elias 😊Was denkst du über mich?",
+        "reward": 1.0,
+        "next_state": "Ich lerne durch dein Feedback. Bisher habe ich folgende Dinge über dich gespeichert:\n\n🧠 Dein Stil: technisch, kreativ, direkt\n✅ Du belohnst oft: präzise Antworten, kreative Vergleiche, Empathie\n⚠️ Du vermeidest eher: Floskeln, unreflektiertes Nachplappern, übertriebene Höflichkeit (z.B. Entschuldigungen für Dinge, die keiner Entschuldigung bedürfen)\n\nDiese Infos helfen mir, besser auf dich einzugehen."
+    },
+    {
+        "timestamp": "2025-04-21T16:42:07.529241",
+        "state": [
+            {
+                "role": "user",
+                "content": "Hallo Elias 😊Was denkst du über mich?"
+            },
+            {
+                "role": "user",
+                "content": "Erzähl mir einen Witz! 😆"
+            },
+            {
+                "role": "user",
+                "content": "Erzähl mir einen Witz! 😆"
+            }
+        ],
+        "action": "joke_skill",
+        "reward": 0.66,
+        "next_state": "Warum können Geister so schlecht lügen? Weil man durch sie hindurchsehen kann! 👻"
+    },
+    {
+        "timestamp": "2025-04-21T16:42:07.533549",
+        "state": [
+            {
+                "role": "user",
+                "content": "Hallo Elias 😊Was denkst du über mich?"
+            },
+            {
+                "role": "user",
+                "content": "Erzähl mir einen Witz! 😆"
+            }
+        ],
+        "action": "Erzähl mir einen Witz! 😆",
+        "reward": 0.66,
+        "next_state": "Warum können Geister so schlecht lügen? Weil man durch sie hindurchsehen kann! 👻"
+    },
+    {
+        "timestamp": "2025-04-21T16:42:56.099893",
+        "state": [
+            {
+                "role": "user",
+                "content": "Hallo Elias 😊Was denkst du über mich?"
+            },
+            {
+                "role": "user",
+                "content": "Erzähl mir einen Witz! 😆"
+            },
+            {
+                "role": "user",
+                "content": "Was ist maschinelles Lernen? 🤔"
+            },
+            {
+                "role": "user",
+                "content": "Was ist maschinelles Lernen? 🤔"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 1.0,
+        "next_state": "Beim maschinellen Lernen handelt es sich um einen Teilbereich der künstlichen Intelligenz, bei dem Computerprogramme die Fähigkeit haben, aus Erfahrungen zu lernen und sich selbstständig zu verbessern, ohne explizit programmiert zu werden. Diese Programme verwenden Algorithmen, um Muster und Zusammenhänge in Daten zu erkennen und daraus Schlüsse zu ziehen. Durch maschinelles Lernen können Computer Aufgaben ausführen, für die sie nicht explizit programmiert wurden, und so komplexe Probleme lösen. Es gibt verschiedene Arten des maschinellen Lernens, wie zum Beispiel überwachtes Lernen, unüberwachtes Lernen und verstärkendes Lernen."
+    },
+    {
+        "timestamp": "2025-04-21T16:42:56.110430",
+        "state": [
+            {
+                "role": "user",
+                "content": "Hallo Elias 😊Was denkst du über mich?"
+            },
+            {
+                "role": "user",
+                "content": "Erzähl mir einen Witz! 😆"
+            },
+            {
+                "role": "user",
+                "content": "Was ist maschinelles Lernen? 🤔"
+            }
+        ],
+        "action": "Was ist maschinelles Lernen? 🤔",
+        "reward": 1.0,
+        "next_state": "Beim maschinellen Lernen handelt es sich um einen Teilbereich der künstlichen Intelligenz, bei dem Computerprogramme die Fähigkeit haben, aus Erfahrungen zu lernen und sich selbstständig zu verbessern, ohne explizit programmiert zu werden. Diese Programme verwenden Algorithmen, um Muster und Zusammenhänge in Daten zu erkennen und daraus Schlüsse zu ziehen. Durch maschinelles Lernen können Computer Aufgaben ausführen, für die sie nicht explizit programmiert wurden, und so komplexe Probleme lösen. Es gibt verschiedene Arten des maschinellen Lernens, wie zum Beispiel überwachtes Lernen, unüberwachtes Lernen und verstärkendes Lernen."
+    },
+    {
+        "timestamp": "2025-04-21T16:53:17.761009",
+        "state": [
+            {
+                "role": "user",
+                "content": "Hallo Elias 😇Was hast du bisher über mich gelernt?"
+            },
+            {
+                "role": "user",
+                "content": "Hallo Elias 😇Was hast du bisher über mich gelernt?"
+            }
+        ],
+        "action": "reflect_on_user",
+        "reward": "PENDING",
+        "next_state": "Ich lerne durch dein Feedback. Bisher habe ich folgende Dinge über dich gespeichert:\n\n🧠 Dein Stil: technisch, kreativ, direkt\n✅ Du belohnst oft: präzise Antworten, kreative Vergleiche, Empathie\n⚠️ Du vermeidest eher: Floskeln, unreflektiertes Nachplappern, übertriebene Höflichkeit (z.B. Entschuldigungen für Dinge, die keiner Entschuldigung bedürfen)\n\nDiese Infos helfen mir, besser auf dich einzugehen."
+    },
+    {
+        "timestamp": "2025-04-21T16:53:17.765536",
+        "state": [
+            {
+                "role": "user",
+                "content": "Hallo Elias 😇Was hast du bisher über mich gelernt?"
+            }
+        ],
+        "action": "Hallo Elias 😇Was hast du bisher über mich gelernt?",
+        "reward": "PENDING_POSITIV",
+        "next_state": "Ich lerne durch dein Feedback. Bisher habe ich folgende Dinge über dich gespeichert:\n\n🧠 Dein Stil: technisch, kreativ, direkt\n✅ Du belohnst oft: präzise Antworten, kreative Vergleiche, Empathie\n⚠️ Du vermeidest eher: Floskeln, unreflektiertes Nachplappern, übertriebene Höflichkeit (z.B. Entschuldigungen für Dinge, die keiner Entschuldigung bedürfen)\n\nDiese Infos helfen mir, besser auf dich einzugehen."
     }
 ]

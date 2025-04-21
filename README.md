@@ -161,3 +161,20 @@ SymBro — mehr als nur ein Bot. Ein smarter Begleiter, der Individualität, Ler
   - Erkennt neue PENDING-Typen und wandelt sie differenziert um
 - Ziel: differenzierte Reward-Zwischenlösung bis zur Einführung des DDQN-Systems
 - Vorbereitung für Setup-Wizard (zukünftig): automatische Initialbefragung zur Erstellung von `user_insight.json`
+
+---
+
+## Fortschritt Tag 18
+
+- Semantische Skill-Erkennung implementiert:
+  - Einführung eines `intent_selector.py` auf Basis von `sentence-transformers`
+  - Elias erkennt jetzt automatisch, welcher Skill (z. B. `reflect_on_user`, `gpt_chat`, `joke_skill`) dem Nutzerinput semantisch entspricht
+  - Cosine Similarity als Entscheidungsgrundlage, mit lernfähiger Schwelle
+  - Skill-Auswahl ersetzt hartkodierte Abfragen durch vektorbasierte Entscheidungslogik
+- Embeddings für Beispielintentionen werden beim ersten Start erzeugt und lokal gespeichert (`data/embeddings/`)
+- Lazy Loading des Transformer-Modells zur Beschleunigung des Programmstarts
+- Vorbereitungen für langfristige Intention Classification und RL-basiertes Skill-Routing (vorgemerkt)
+- Technisches Feedback auf macOS vollständig behandelt:
+  - CPU/GPU-Autoerkennung für Embeddings
+  - Tokenizer-Warnungen werden künftig unterdrückt (geplant)
+- Kontextuelles Denken („Was hast du über mich gelernt?“ → Reflexion) wird semantisch und adaptiv umgesetzt

@@ -311,7 +311,12 @@ class MainWindow(QMainWindow):
             message_history = message_history[-10:]  # Kontextlogik: Nur die letzten 10 Nachrichten übergeben
             message_history.append({"role": "user", "content": message})
             
-            raw_response = self.skill_manager.run("gpt_chat", message_history, self.name)
+            from modules.skills.intent_selector import select_skill
+            
+            selected_skill = select_skill(message)
+            print(f"🧠 Erkannter Skill: {selected_skill}")
+            
+            raw_response = self.skill_manager.run(selected_skill, message_history, self.name)
             log_interaction(
                 state=message_history[:-1],  # Vorherige Nachrichten (ohne aktuelle User-Eingabe)
                 action=message,              # Benutzeranfrage

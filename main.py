@@ -1,9 +1,11 @@
 from PySide6.QtWidgets import QApplication
 from gui_pyside.main_window import MainWindow
 from modules.skills.skill_manager import SkillManager
-import sys
+import sys, os
 from modules.rlhf.replay_buffer import PrioritizedReplayBuffer
 from modules.rlhf.rlhf_engine import load_logs_to_replay_buffer, summarize_log_rewards, clear_interaction_log
+
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 def main():
     skill_manager = SkillManager()  # Skills initialisieren

@@ -344,7 +344,7 @@ class MainWindow(QMainWindow):
                 
                 indices = [0]  # oder dynamisch setzen, falls du Zugriff auf Sampling hast
                 priorities = [1.0]  # Beispielwert, kann durch TD-Error ersetzt werden
-                replay_buffer_instance.update_priorities_from_indices(indices, priorities)
+                apply_td_errors_to_buffer(indices, priorities)
                 
                 positive_btn.setStyleSheet("background-color: #4caf50; border: none;")
             positive_btn.clicked.connect(positive_feedback)
@@ -362,7 +362,7 @@ class MainWindow(QMainWindow):
                 
                 indices = [0]  # oder dynamisch setzen, falls du Zugriff auf Sampling hast
                 priorities = [1.0]  # Beispielwert, kann durch TD-Error ersetzt werden
-                replay_buffer_instance.update_priorities_from_indices(indices, priorities)
+                apply_td_errors_to_buffer(indices, priorities)
                 
                 negative_btn.setStyleSheet("background-color: #f44336; border: none;")
             negative_btn.clicked.connect(negative_feedback)

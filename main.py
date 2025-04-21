@@ -11,11 +11,11 @@ def main():
     #clear_interaction_log()
     buffer = PrioritizedReplayBuffer(capacity=1000)
     load_logs_to_replay_buffer(buffer)
-    summarize_log_rewards()
     app = QApplication(sys.argv)
     window = MainWindow(skill_manager)
     window.show()
     sys.exit(app.exec())
 
 if __name__ == "__main__":
+    summarize_log_rewards()
     main()

@@ -147,3 +147,17 @@ SymBro — mehr als nur ein Bot. Ein smarter Begleiter, der Individualität, Ler
 - Fragenkatalog mit 20 realistischen, offen bewertbaren Gesprächsszenarien erstellt und verwendet
 - Training und Bewertung erfolgen vollständig interaktiv und on-the-fly
 - System vollständig vorbereitet für langfristige Verhaltensdifferenzierung & Lernen durch Feedback
+
+## Fortschritt Tag 16
+
+- Feedback-Logik erweitert: Bewertung über Daumen hoch/runter speichert nun `"PENDING_POSITIV"` bzw. `"PENDING_NEGATIV"` statt fixer numerischer Werte
+- Neue Bewertungsstrategie:
+  - `"PENDING_POSITIV"` wird beim nächsten Start zu `0.1`
+  - `"PENDING_NEGATIV"` wird zu `-0.1`
+  - `"PENDING"` wird zu `0.0`, falls nicht manuell bewertet
+- Manuelle Nachbewertung über `summarize_log_rewards()` möglich (interaktive CLI)
+- Funktion `summarize_log_rewards()` überarbeitet:
+  - Zählt positive & negative Bewertungen separat
+  - Erkennt neue PENDING-Typen und wandelt sie differenziert um
+- Ziel: differenzierte Reward-Zwischenlösung bis zur Einführung des DDQN-Systems
+- Vorbereitung für Setup-Wizard (zukünftig): automatische Initialbefragung zur Erstellung von `user_insight.json`

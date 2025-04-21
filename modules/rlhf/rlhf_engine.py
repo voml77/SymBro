@@ -99,7 +99,12 @@ def update_reward_for_last_interaction(reward):
             print("⚠️ Keine Einträge in der Logdatei.")
             return
 
-        logs[-1]["reward"] = reward
+        if reward == 1.0:
+            logs[-1]["reward"] = "PENDING_POSITIV"
+        elif reward == -1.0:
+            logs[-1]["reward"] = "PENDING_NEGATIV"
+        else:
+            logs[-1]["reward"] = "PENDING"
 
         with open(log_file, "w", encoding="utf-8") as f:
             json.dump(logs, f, ensure_ascii=False, indent=4)
@@ -203,17 +208,24 @@ def summarize_log_rewards():
         with open(path, "r", encoding="utf-8") as f:
             logs = json.load(f)
 
-        pending, rated = 0, 0
+        pending, rated, positive, negative = 0, 0, 0, 0
         for entry in logs:
             reward = entry.get("reward")
             if isinstance(reward, (int, float)):
                 rated += 1
+                if reward > 0:
+                    positive += 1
+                elif reward < 0:
+                    negative += 1
             else:
                 pending += 1
 
-        print(f"📊 Log-Zusammenfassung: {rated} bewertet, {pending} noch offen.")
+        print(f"\n📊 Log-Zusammenfassung: {rated} bewertet, {pending} noch offen.")
+        print(f"✅ Positive Bewertungen: {positive}")
+        print(f"⚠️ Negative Bewertungen: {negative}\n")
+
         if pending > 0:
-            print("\n🔍 Möchtest du jetzt offene 'PENDING'-Einträge manuell bewerten?")
+            print("🔍 Möchtest du jetzt offene 'PENDING'-Einträge manuell bewerten?")
             response = input("➡️  Eingabe 'j' zum Starten, sonst Enter drücken: ").strip().lower()
             if response == "j":
                 for i, entry in enumerate(logs):
@@ -234,6 +246,19 @@ def summarize_log_rewards():
                 with open(path, "w", encoding="utf-8") as f:
                     json.dump(logs, f, ensure_ascii=False, indent=4)
                 print("\n💾 Alle neuen Bewertungen wurden gespeichert.")
+            else:
+                for entry in logs:
+                    reward = entry.get("reward")
+                    if reward == "PENDING_POSITIV":
+                        entry["reward"] = 0.1
+                    elif reward == "PENDING_NEGATIV":
+                        entry["reward"] = -0.1
+                    elif reward == "PENDING":
+                        entry["reward"] = 0.0
+
+                with open(path, "w", encoding="utf-8") as f:
+                    json.dump(logs, f, ensure_ascii=False, indent=4)
+                print("\n🧠 Automatische Bewertung durchgeführt (0.1 / -0.1 / 0.0).")
     except Exception as e:
         print(f"Fehler beim Zusammenfassen der Logdatei: {e}")
 

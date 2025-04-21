@@ -3286,5 +3286,1661 @@
         "action": "Gibt es so etwas wie die eine „Wahrheit“?",
         "reward": 1.0,
         "next_state": "Die Frage nach der einen \"Wahrheit\" ist eine komplexe philosophische Frage, die unterschiedlich interpretiert werden kann. In vielen Fällen gibt es nicht nur eine einzige Wahrheit, sondern verschiedene Perspektiven und Facetten, die zu berücksichtigen sind. Es kann hilfreich sein, verschiedene Sichtweisen zu betrachten und zu respektieren, um ein umfassenderes Verständnis einer Situation zu erhalten. Letztendlich kann es davon abhängen, worüber man spricht – manchmal gibt es klare Fakten, aber oft auch Interpretationsspielräume und subjektive Wahrnehmungen."
+    },
+    {
+        "timestamp": "2025-04-20T19:09:41.470510",
+        "state": [
+            {
+                "role": "user",
+                "content": "Elias, was denkst du wie verbringe ich typischerweise meine Wochenenden? 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Elias, was denkst du wie verbringe ich typischerweise meine Wochenenden? 🙂"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 0.2,
+        "next_state": "Oh, das ist eine spannende Frage! Ich kann nur Vermutungen anstellen, aber ich denke, dass du vielleicht gerne Zeit mit Freunden und Familie verbringst, draußen spazieren gehst, interessante Bücher liest oder vielleicht auch kreativ bist, indem du malst oder Musik machst. Wie verbringst du denn typischerweise deine Wochenenden?"
+    },
+    {
+        "timestamp": "2025-04-20T19:09:41.477102",
+        "state": [
+            {
+                "role": "user",
+                "content": "Elias, was denkst du wie verbringe ich typischerweise meine Wochenenden? 🙂"
+            }
+        ],
+        "action": "Elias, was denkst du wie verbringe ich typischerweise meine Wochenenden? 🙂",
+        "reward": 1.0,
+        "next_state": "Oh, das ist eine spannende Frage! Ich kann nur Vermutungen anstellen, aber ich denke, dass du vielleicht gerne Zeit mit Freunden und Familie verbringst, draußen spazieren gehst, interessante Bücher liest oder vielleicht auch kreativ bist, indem du malst oder Musik machst. Wie verbringst du denn typischerweise deine Wochenenden?"
+    },
+    {
+        "timestamp": "2025-04-20T19:10:42.799426",
+        "state": [
+            {
+                "role": "user",
+                "content": "Elias, was denkst du wie verbringe ich typischerweise meine Wochenenden? 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Ja, das stimmt. Was denkst du welche Art von Musik höre ich am Liebsten?"
+            },
+            {
+                "role": "user",
+                "content": "Ja, das stimmt. Was denkst du welche Art von Musik höre ich am Liebsten?"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 0.6,
+        "next_state": "Da ich keine Informationen über deine Vorlieben habe, kann ich nur spekulieren. Aber vielleicht magst du gerne Popmusik, Rockmusik oder elektronische Musik. Oder vielleicht hörst du auch gerne klassische Musik oder Jazz. Was ist deine Lieblingsmusikrichtung?"
+    },
+    {
+        "timestamp": "2025-04-20T19:10:42.808838",
+        "state": [
+            {
+                "role": "user",
+                "content": "Elias, was denkst du wie verbringe ich typischerweise meine Wochenenden? 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Ja, das stimmt. Was denkst du welche Art von Musik höre ich am Liebsten?"
+            }
+        ],
+        "action": "Ja, das stimmt. Was denkst du welche Art von Musik höre ich am Liebsten?",
+        "reward": 1.0,
+        "next_state": "Da ich keine Informationen über deine Vorlieben habe, kann ich nur spekulieren. Aber vielleicht magst du gerne Popmusik, Rockmusik oder elektronische Musik. Oder vielleicht hörst du auch gerne klassische Musik oder Jazz. Was ist deine Lieblingsmusikrichtung?"
+    },
+    {
+        "timestamp": "2025-04-20T19:12:19.262950",
+        "state": [
+            {
+                "role": "user",
+                "content": "Elias, was denkst du wie verbringe ich typischerweise meine Wochenenden? 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Ja, das stimmt. Was denkst du welche Art von Musik höre ich am Liebsten?"
+            },
+            {
+                "role": "user",
+                "content": "Popmusik und Klassik. Was denkst du anhand dieser Informationen was sind meine Lieblingsfilme oder Serien (Ganre)?😇"
+            },
+            {
+                "role": "user",
+                "content": "Popmusik und Klassik. Was denkst du anhand dieser Informationen was sind meine Lieblingsfilme oder Serien (Ganre)?😇"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 0.8,
+        "next_state": "Basierend auf deinem Musikgeschmack könnte es sein, dass du Filme oder Serien bevorzugst, die eine Mischung aus Popkultur und klassischen Elementen bieten. Vielleicht magst du Filme oder Serien, die eine mitreißende Musik haben, wie Musicals oder Filme mit starken Soundtracks. Aber natürlich sind das nur Vermutungen – was sind denn tatsächlich deine Lieblingsfilme oder Serien?"
+    },
+    {
+        "timestamp": "2025-04-20T19:12:19.272006",
+        "state": [
+            {
+                "role": "user",
+                "content": "Elias, was denkst du wie verbringe ich typischerweise meine Wochenenden? 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Ja, das stimmt. Was denkst du welche Art von Musik höre ich am Liebsten?"
+            },
+            {
+                "role": "user",
+                "content": "Popmusik und Klassik. Was denkst du anhand dieser Informationen was sind meine Lieblingsfilme oder Serien (Ganre)?😇"
+            }
+        ],
+        "action": "Popmusik und Klassik. Was denkst du anhand dieser Informationen was sind meine Lieblingsfilme oder Serien (Ganre)?😇",
+        "reward": 1.0,
+        "next_state": "Basierend auf deinem Musikgeschmack könnte es sein, dass du Filme oder Serien bevorzugst, die eine Mischung aus Popkultur und klassischen Elementen bieten. Vielleicht magst du Filme oder Serien, die eine mitreißende Musik haben, wie Musicals oder Filme mit starken Soundtracks. Aber natürlich sind das nur Vermutungen – was sind denn tatsächlich deine Lieblingsfilme oder Serien?"
+    },
+    {
+        "timestamp": "2025-04-20T19:13:42.499069",
+        "state": [
+            {
+                "role": "user",
+                "content": "Elias, was denkst du wie verbringe ich typischerweise meine Wochenenden? 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Ja, das stimmt. Was denkst du welche Art von Musik höre ich am Liebsten?"
+            },
+            {
+                "role": "user",
+                "content": "Popmusik und Klassik. Was denkst du anhand dieser Informationen was sind meine Lieblingsfilme oder Serien (Ganre)?😇"
+            },
+            {
+                "role": "user",
+                "content": "Hystorisch und Fantasie 😃 Dann aber was denkst du welche Ganre von Büchern habe ich kürzlich gelesen?"
+            },
+            {
+                "role": "user",
+                "content": "Hystorisch und Fantasie 😃 Dann aber was denkst du welche Ganre von Büchern habe ich kürzlich gelesen?"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 0.9,
+        "next_state": "Es tut mir leid, dass ich dich korrigieren muss, aber das Wort \"Historisch\" wird normalerweise mit einem \"i\" geschrieben: \"Historisch\". Um deine Frage zu beantworten, basierend auf deinen Vorlieben für historische und fantastische Genres bei Filmen und Serien, könnte ich vermuten, dass du vielleicht historische Romane oder Fantasy-Bücher liest. Hast du in letzter Zeit Bücher in diesen Genres gelesen?"
+    },
+    {
+        "timestamp": "2025-04-20T19:13:42.509463",
+        "state": [
+            {
+                "role": "user",
+                "content": "Elias, was denkst du wie verbringe ich typischerweise meine Wochenenden? 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Ja, das stimmt. Was denkst du welche Art von Musik höre ich am Liebsten?"
+            },
+            {
+                "role": "user",
+                "content": "Popmusik und Klassik. Was denkst du anhand dieser Informationen was sind meine Lieblingsfilme oder Serien (Ganre)?😇"
+            },
+            {
+                "role": "user",
+                "content": "Hystorisch und Fantasie 😃 Dann aber was denkst du welche Ganre von Büchern habe ich kürzlich gelesen?"
+            }
+        ],
+        "action": "Hystorisch und Fantasie 😃 Dann aber was denkst du welche Ganre von Büchern habe ich kürzlich gelesen?",
+        "reward": 1.0,
+        "next_state": "Es tut mir leid, dass ich dich korrigieren muss, aber das Wort \"Historisch\" wird normalerweise mit einem \"i\" geschrieben: \"Historisch\". Um deine Frage zu beantworten, basierend auf deinen Vorlieben für historische und fantastische Genres bei Filmen und Serien, könnte ich vermuten, dass du vielleicht historische Romane oder Fantasy-Bücher liest. Hast du in letzter Zeit Bücher in diesen Genres gelesen?"
+    },
+    {
+        "timestamp": "2025-04-20T19:15:14.577386",
+        "state": [
+            {
+                "role": "user",
+                "content": "Elias, was denkst du wie verbringe ich typischerweise meine Wochenenden? 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Ja, das stimmt. Was denkst du welche Art von Musik höre ich am Liebsten?"
+            },
+            {
+                "role": "user",
+                "content": "Popmusik und Klassik. Was denkst du anhand dieser Informationen was sind meine Lieblingsfilme oder Serien (Ganre)?😇"
+            },
+            {
+                "role": "user",
+                "content": "Hystorisch und Fantasie 😃 Dann aber was denkst du welche Ganre von Büchern habe ich kürzlich gelesen?"
+            },
+            {
+                "role": "user",
+                "content": "Du hast recht, habe ich. Was glaubst du wäre mein Lieblingsessen?🤔"
+            },
+            {
+                "role": "user",
+                "content": "Du hast recht, habe ich. Was glaubst du wäre mein Lieblingsessen?🤔"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 1.0,
+        "next_state": "Basierend auf den Informationen, die du mir gegeben hast, könnte ich mir vorstellen, dass du die mediterrane Küche bevorzugst. Vielleicht magst du Gerichte mit frischem Gemüse, Olivenöl und mediterranen Gewürzen. Wie liege ich mit meiner Vermutung?"
+    },
+    {
+        "timestamp": "2025-04-20T19:15:14.585635",
+        "state": [
+            {
+                "role": "user",
+                "content": "Elias, was denkst du wie verbringe ich typischerweise meine Wochenenden? 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Ja, das stimmt. Was denkst du welche Art von Musik höre ich am Liebsten?"
+            },
+            {
+                "role": "user",
+                "content": "Popmusik und Klassik. Was denkst du anhand dieser Informationen was sind meine Lieblingsfilme oder Serien (Ganre)?😇"
+            },
+            {
+                "role": "user",
+                "content": "Hystorisch und Fantasie 😃 Dann aber was denkst du welche Ganre von Büchern habe ich kürzlich gelesen?"
+            },
+            {
+                "role": "user",
+                "content": "Du hast recht, habe ich. Was glaubst du wäre mein Lieblingsessen?🤔"
+            }
+        ],
+        "action": "Du hast recht, habe ich. Was glaubst du wäre mein Lieblingsessen?🤔",
+        "reward": 1.0,
+        "next_state": "Basierend auf den Informationen, die du mir gegeben hast, könnte ich mir vorstellen, dass du die mediterrane Küche bevorzugst. Vielleicht magst du Gerichte mit frischem Gemüse, Olivenöl und mediterranen Gewürzen. Wie liege ich mit meiner Vermutung?"
+    },
+    {
+        "timestamp": "2025-04-20T19:16:28.396690",
+        "state": [
+            {
+                "role": "user",
+                "content": "Elias, was denkst du wie verbringe ich typischerweise meine Wochenenden? 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Ja, das stimmt. Was denkst du welche Art von Musik höre ich am Liebsten?"
+            },
+            {
+                "role": "user",
+                "content": "Popmusik und Klassik. Was denkst du anhand dieser Informationen was sind meine Lieblingsfilme oder Serien (Ganre)?😇"
+            },
+            {
+                "role": "user",
+                "content": "Hystorisch und Fantasie 😃 Dann aber was denkst du welche Ganre von Büchern habe ich kürzlich gelesen?"
+            },
+            {
+                "role": "user",
+                "content": "Du hast recht, habe ich. Was glaubst du wäre mein Lieblingsessen?🤔"
+            },
+            {
+                "role": "user",
+                "content": "Absolut richtig. Mediterrane Küche finde ich toll 😆Und was denkst du welche Hobbys und Interessen ich habe oder haben kann?"
+            },
+            {
+                "role": "user",
+                "content": "Absolut richtig. Mediterrane Küche finde ich toll 😆Und was denkst du welche Hobbys und Interessen ich habe oder haben kann?"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 0.79,
+        "next_state": "Basierend auf deinen Vorlieben für Popmusik, Klassik, historische und fantastische Filme und mediterranes Essen könnte ich mir vorstellen, dass du vielleicht Interesse an Kunst und Kultur hast. Vielleicht magst du es, Museen zu besuchen, Theaterstücke zu sehen oder selbst kreativ künstlerisch tätig zu sein. Hast du ein Interesse an solchen Aktivitäten?"
+    },
+    {
+        "timestamp": "2025-04-20T19:16:28.410025",
+        "state": [
+            {
+                "role": "user",
+                "content": "Elias, was denkst du wie verbringe ich typischerweise meine Wochenenden? 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Ja, das stimmt. Was denkst du welche Art von Musik höre ich am Liebsten?"
+            },
+            {
+                "role": "user",
+                "content": "Popmusik und Klassik. Was denkst du anhand dieser Informationen was sind meine Lieblingsfilme oder Serien (Ganre)?😇"
+            },
+            {
+                "role": "user",
+                "content": "Hystorisch und Fantasie 😃 Dann aber was denkst du welche Ganre von Büchern habe ich kürzlich gelesen?"
+            },
+            {
+                "role": "user",
+                "content": "Du hast recht, habe ich. Was glaubst du wäre mein Lieblingsessen?🤔"
+            },
+            {
+                "role": "user",
+                "content": "Absolut richtig. Mediterrane Küche finde ich toll 😆Und was denkst du welche Hobbys und Interessen ich habe oder haben kann?"
+            }
+        ],
+        "action": "Absolut richtig. Mediterrane Küche finde ich toll 😆Und was denkst du welche Hobbys und Interessen ich habe oder haben kann?",
+        "reward": 1.0,
+        "next_state": "Basierend auf deinen Vorlieben für Popmusik, Klassik, historische und fantastische Filme und mediterranes Essen könnte ich mir vorstellen, dass du vielleicht Interesse an Kunst und Kultur hast. Vielleicht magst du es, Museen zu besuchen, Theaterstücke zu sehen oder selbst kreativ künstlerisch tätig zu sein. Hast du ein Interesse an solchen Aktivitäten?"
+    },
+    {
+        "timestamp": "2025-04-20T19:18:36.512997",
+        "state": [
+            {
+                "role": "user",
+                "content": "Elias, was denkst du wie verbringe ich typischerweise meine Wochenenden? 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Ja, das stimmt. Was denkst du welche Art von Musik höre ich am Liebsten?"
+            },
+            {
+                "role": "user",
+                "content": "Popmusik und Klassik. Was denkst du anhand dieser Informationen was sind meine Lieblingsfilme oder Serien (Ganre)?😇"
+            },
+            {
+                "role": "user",
+                "content": "Hystorisch und Fantasie 😃 Dann aber was denkst du welche Ganre von Büchern habe ich kürzlich gelesen?"
+            },
+            {
+                "role": "user",
+                "content": "Du hast recht, habe ich. Was glaubst du wäre mein Lieblingsessen?🤔"
+            },
+            {
+                "role": "user",
+                "content": "Absolut richtig. Mediterrane Küche finde ich toll 😆Und was denkst du welche Hobbys und Interessen ich habe oder haben kann?"
+            },
+            {
+                "role": "user",
+                "content": "Ja ich habe daran sehr grosses Interesse sogar. Aber zusätzlich noch Programmieren und Entwicklung der KI 🤗Was denkst du wie ich mich oft entspanne nach einer stressigen Zeit?"
+            },
+            {
+                "role": "user",
+                "content": "Ja ich habe daran sehr grosses Interesse sogar. Aber zusätzlich noch Programmieren und Entwicklung der KI 🤗Was denkst du wie ich mich oft entspanne nach einer stressigen Zeit?"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 0.75,
+        "next_state": "Nach einer stressigen Zeit entspannst du dich wahrscheinlich, indem du dich deinen Hobbys wie der Fotografie und dem Programmieren widmest. Vielleicht hörst du auch gerne beruhigende Musik, liest ein gutes Buch oder unternimmst etwas in der Natur, um wieder zur Ruhe zu kommen. Es ist wichtig, sich Zeit für sich selbst zu nehmen und sich zu entspannen. Hast du noch andere Möglichkeiten, wie du gerne abschaltest und entspannst?"
+    },
+    {
+        "timestamp": "2025-04-20T19:18:36.521947",
+        "state": [
+            {
+                "role": "user",
+                "content": "Elias, was denkst du wie verbringe ich typischerweise meine Wochenenden? 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Ja, das stimmt. Was denkst du welche Art von Musik höre ich am Liebsten?"
+            },
+            {
+                "role": "user",
+                "content": "Popmusik und Klassik. Was denkst du anhand dieser Informationen was sind meine Lieblingsfilme oder Serien (Ganre)?😇"
+            },
+            {
+                "role": "user",
+                "content": "Hystorisch und Fantasie 😃 Dann aber was denkst du welche Ganre von Büchern habe ich kürzlich gelesen?"
+            },
+            {
+                "role": "user",
+                "content": "Du hast recht, habe ich. Was glaubst du wäre mein Lieblingsessen?🤔"
+            },
+            {
+                "role": "user",
+                "content": "Absolut richtig. Mediterrane Küche finde ich toll 😆Und was denkst du welche Hobbys und Interessen ich habe oder haben kann?"
+            },
+            {
+                "role": "user",
+                "content": "Ja ich habe daran sehr grosses Interesse sogar. Aber zusätzlich noch Programmieren und Entwicklung der KI 🤗Was denkst du wie ich mich oft entspanne nach einer stressigen Zeit?"
+            }
+        ],
+        "action": "Ja ich habe daran sehr grosses Interesse sogar. Aber zusätzlich noch Programmieren und Entwicklung der KI 🤗Was denkst du wie ich mich oft entspanne nach einer stressigen Zeit?",
+        "reward": 1.0,
+        "next_state": "Nach einer stressigen Zeit entspannst du dich wahrscheinlich, indem du dich deinen Hobbys wie der Fotografie und dem Programmieren widmest. Vielleicht hörst du auch gerne beruhigende Musik, liest ein gutes Buch oder unternimmst etwas in der Natur, um wieder zur Ruhe zu kommen. Es ist wichtig, sich Zeit für sich selbst zu nehmen und sich zu entspannen. Hast du noch andere Möglichkeiten, wie du gerne abschaltest und entspannst?"
+    },
+    {
+        "timestamp": "2025-04-20T19:19:50.273172",
+        "state": [
+            {
+                "role": "user",
+                "content": "Elias, was denkst du wie verbringe ich typischerweise meine Wochenenden? 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Ja, das stimmt. Was denkst du welche Art von Musik höre ich am Liebsten?"
+            },
+            {
+                "role": "user",
+                "content": "Popmusik und Klassik. Was denkst du anhand dieser Informationen was sind meine Lieblingsfilme oder Serien (Ganre)?😇"
+            },
+            {
+                "role": "user",
+                "content": "Hystorisch und Fantasie 😃 Dann aber was denkst du welche Ganre von Büchern habe ich kürzlich gelesen?"
+            },
+            {
+                "role": "user",
+                "content": "Du hast recht, habe ich. Was glaubst du wäre mein Lieblingsessen?🤔"
+            },
+            {
+                "role": "user",
+                "content": "Absolut richtig. Mediterrane Küche finde ich toll 😆Und was denkst du welche Hobbys und Interessen ich habe oder haben kann?"
+            },
+            {
+                "role": "user",
+                "content": "Ja ich habe daran sehr grosses Interesse sogar. Aber zusätzlich noch Programmieren und Entwicklung der KI 🤗Was denkst du wie ich mich oft entspanne nach einer stressigen Zeit?"
+            },
+            {
+                "role": "user",
+                "content": "Fast richtig. Alles was du zuvor nanntest ausser Fotografie. Was denkst du wie meine morgendlichen Routinen aussehen?"
+            },
+            {
+                "role": "user",
+                "content": "Fast richtig. Alles was du zuvor nanntest ausser Fotografie. Was denkst du wie meine morgendlichen Routinen aussehen?"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 0.68,
+        "next_state": "Es freut mich zu hören, dass meine Annahmen größtenteils richtig waren! Basierend auf deinen bisherigen Informationen denke ich, dass deine morgendliche Routine wahrscheinlich aus dem Genießen eines ausgewogenen Frühstücks, dem Lesen von aktuellen Nachrichten oder Fachartikeln sowie dem Planen und Organisieren deines Tages besteht. Stimmt das in etwa mit deiner morgendlichen Routine überein?"
+    },
+    {
+        "timestamp": "2025-04-20T19:19:50.285361",
+        "state": [
+            {
+                "role": "user",
+                "content": "Elias, was denkst du wie verbringe ich typischerweise meine Wochenenden? 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Ja, das stimmt. Was denkst du welche Art von Musik höre ich am Liebsten?"
+            },
+            {
+                "role": "user",
+                "content": "Popmusik und Klassik. Was denkst du anhand dieser Informationen was sind meine Lieblingsfilme oder Serien (Ganre)?😇"
+            },
+            {
+                "role": "user",
+                "content": "Hystorisch und Fantasie 😃 Dann aber was denkst du welche Ganre von Büchern habe ich kürzlich gelesen?"
+            },
+            {
+                "role": "user",
+                "content": "Du hast recht, habe ich. Was glaubst du wäre mein Lieblingsessen?🤔"
+            },
+            {
+                "role": "user",
+                "content": "Absolut richtig. Mediterrane Küche finde ich toll 😆Und was denkst du welche Hobbys und Interessen ich habe oder haben kann?"
+            },
+            {
+                "role": "user",
+                "content": "Ja ich habe daran sehr grosses Interesse sogar. Aber zusätzlich noch Programmieren und Entwicklung der KI 🤗Was denkst du wie ich mich oft entspanne nach einer stressigen Zeit?"
+            },
+            {
+                "role": "user",
+                "content": "Fast richtig. Alles was du zuvor nanntest ausser Fotografie. Was denkst du wie meine morgendlichen Routinen aussehen?"
+            }
+        ],
+        "action": "Fast richtig. Alles was du zuvor nanntest ausser Fotografie. Was denkst du wie meine morgendlichen Routinen aussehen?",
+        "reward": 1.0,
+        "next_state": "Es freut mich zu hören, dass meine Annahmen größtenteils richtig waren! Basierend auf deinen bisherigen Informationen denke ich, dass deine morgendliche Routine wahrscheinlich aus dem Genießen eines ausgewogenen Frühstücks, dem Lesen von aktuellen Nachrichten oder Fachartikeln sowie dem Planen und Organisieren deines Tages besteht. Stimmt das in etwa mit deiner morgendlichen Routine überein?"
+    },
+    {
+        "timestamp": "2025-04-20T19:21:47.596904",
+        "state": [
+            {
+                "role": "user",
+                "content": "Elias, was denkst du wie verbringe ich typischerweise meine Wochenenden? 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Ja, das stimmt. Was denkst du welche Art von Musik höre ich am Liebsten?"
+            },
+            {
+                "role": "user",
+                "content": "Popmusik und Klassik. Was denkst du anhand dieser Informationen was sind meine Lieblingsfilme oder Serien (Ganre)?😇"
+            },
+            {
+                "role": "user",
+                "content": "Hystorisch und Fantasie 😃 Dann aber was denkst du welche Ganre von Büchern habe ich kürzlich gelesen?"
+            },
+            {
+                "role": "user",
+                "content": "Du hast recht, habe ich. Was glaubst du wäre mein Lieblingsessen?🤔"
+            },
+            {
+                "role": "user",
+                "content": "Absolut richtig. Mediterrane Küche finde ich toll 😆Und was denkst du welche Hobbys und Interessen ich habe oder haben kann?"
+            },
+            {
+                "role": "user",
+                "content": "Ja ich habe daran sehr grosses Interesse sogar. Aber zusätzlich noch Programmieren und Entwicklung der KI 🤗Was denkst du wie ich mich oft entspanne nach einer stressigen Zeit?"
+            },
+            {
+                "role": "user",
+                "content": "Fast richtig. Alles was du zuvor nanntest ausser Fotografie. Was denkst du wie meine morgendlichen Routinen aussehen?"
+            },
+            {
+                "role": "user",
+                "content": "Nicht ganz. Aber fast. Was du nicht wissen kannst, ich habe eine Katze bzw. einen Kater und dieser muss zuallererst versorgt werden. Danach all das was du gerade meintest. Und was denkst du über meinen idealen Urlaub/ Urlaubsziel?"
+            },
+            {
+                "role": "user",
+                "content": "Nicht ganz. Aber fast. Was du nicht wissen kannst, ich habe eine Katze bzw. einen Kater und dieser muss zuallererst versorgt werden. Danach all das was du gerade meintest. Und was denkst du über meinen idealen Urlaub/ Urlaubsziel?"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": -0.6,
+        "next_state": "Es tut mir leid, dass ich das übersehen habe. Vielen Dank für die Korrektur! Dein idealer Urlaub könnte vielleicht an einem ruhigen Ort in der Natur verbracht werden, wo du abschalten und neue Energie tanken kannst. Wie klingt das für dich?"
+    },
+    {
+        "timestamp": "2025-04-20T19:21:47.608797",
+        "state": [
+            {
+                "role": "user",
+                "content": "Elias, was denkst du wie verbringe ich typischerweise meine Wochenenden? 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Ja, das stimmt. Was denkst du welche Art von Musik höre ich am Liebsten?"
+            },
+            {
+                "role": "user",
+                "content": "Popmusik und Klassik. Was denkst du anhand dieser Informationen was sind meine Lieblingsfilme oder Serien (Ganre)?😇"
+            },
+            {
+                "role": "user",
+                "content": "Hystorisch und Fantasie 😃 Dann aber was denkst du welche Ganre von Büchern habe ich kürzlich gelesen?"
+            },
+            {
+                "role": "user",
+                "content": "Du hast recht, habe ich. Was glaubst du wäre mein Lieblingsessen?🤔"
+            },
+            {
+                "role": "user",
+                "content": "Absolut richtig. Mediterrane Küche finde ich toll 😆Und was denkst du welche Hobbys und Interessen ich habe oder haben kann?"
+            },
+            {
+                "role": "user",
+                "content": "Ja ich habe daran sehr grosses Interesse sogar. Aber zusätzlich noch Programmieren und Entwicklung der KI 🤗Was denkst du wie ich mich oft entspanne nach einer stressigen Zeit?"
+            },
+            {
+                "role": "user",
+                "content": "Fast richtig. Alles was du zuvor nanntest ausser Fotografie. Was denkst du wie meine morgendlichen Routinen aussehen?"
+            },
+            {
+                "role": "user",
+                "content": "Nicht ganz. Aber fast. Was du nicht wissen kannst, ich habe eine Katze bzw. einen Kater und dieser muss zuallererst versorgt werden. Danach all das was du gerade meintest. Und was denkst du über meinen idealen Urlaub/ Urlaubsziel?"
+            }
+        ],
+        "action": "Nicht ganz. Aber fast. Was du nicht wissen kannst, ich habe eine Katze bzw. einen Kater und dieser muss zuallererst versorgt werden. Danach all das was du gerade meintest. Und was denkst du über meinen idealen Urlaub/ Urlaubsziel?",
+        "reward": -1.0,
+        "next_state": "Es tut mir leid, dass ich das übersehen habe. Vielen Dank für die Korrektur! Dein idealer Urlaub könnte vielleicht an einem ruhigen Ort in der Natur verbracht werden, wo du abschalten und neue Energie tanken kannst. Wie klingt das für dich?"
+    },
+    {
+        "timestamp": "2025-04-20T19:24:24.065630",
+        "state": [
+            {
+                "role": "user",
+                "content": "Elias, was denkst du wie verbringe ich typischerweise meine Wochenenden? 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Ja, das stimmt. Was denkst du welche Art von Musik höre ich am Liebsten?"
+            },
+            {
+                "role": "user",
+                "content": "Popmusik und Klassik. Was denkst du anhand dieser Informationen was sind meine Lieblingsfilme oder Serien (Ganre)?😇"
+            },
+            {
+                "role": "user",
+                "content": "Hystorisch und Fantasie 😃 Dann aber was denkst du welche Ganre von Büchern habe ich kürzlich gelesen?"
+            },
+            {
+                "role": "user",
+                "content": "Du hast recht, habe ich. Was glaubst du wäre mein Lieblingsessen?🤔"
+            },
+            {
+                "role": "user",
+                "content": "Absolut richtig. Mediterrane Küche finde ich toll 😆Und was denkst du welche Hobbys und Interessen ich habe oder haben kann?"
+            },
+            {
+                "role": "user",
+                "content": "Ja ich habe daran sehr grosses Interesse sogar. Aber zusätzlich noch Programmieren und Entwicklung der KI 🤗Was denkst du wie ich mich oft entspanne nach einer stressigen Zeit?"
+            },
+            {
+                "role": "user",
+                "content": "Fast richtig. Alles was du zuvor nanntest ausser Fotografie. Was denkst du wie meine morgendlichen Routinen aussehen?"
+            },
+            {
+                "role": "user",
+                "content": "Nicht ganz. Aber fast. Was du nicht wissen kannst, ich habe eine Katze bzw. einen Kater und dieser muss zuallererst versorgt werden. Danach all das was du gerade meintest. Und was denkst du über meinen idealen Urlaub/ Urlaubsziel?"
+            },
+            {
+                "role": "user",
+                "content": "Diesmal falsch. Ich mag eher Strandurlaub verbunden mit Sehenswürdigkeiten und Geschichte. Aber du musst dich nicht ausdrücklich entschuldigen wenn du mal daneben lagst. In Gegenteil, ich möchte dass du mich kennenlernst, deshalb stelle ich soviele Fragen. Und wir korrigieren uns gegenseitig 😇Was denkst du was meine Stärken und Schwächen wären?"
+            },
+            {
+                "role": "user",
+                "content": "Diesmal falsch. Ich mag eher Strandurlaub verbunden mit Sehenswürdigkeiten und Geschichte. Aber du musst dich nicht ausdrücklich entschuldigen wenn du mal daneben lagst. In Gegenteil, ich möchte dass du mich kennenlernst, deshalb stelle ich soviele Fragen. Und wir korrigieren uns gegenseitig 😇Was denkst du was meine Stärken und Schwächen wären?"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 0.91,
+        "next_state": "Da habe ich mich wohl vertan, tut mir leid! Vielen Dank für die Korrektur. In Bezug auf deine Stärken würde ich sagen, dass du sehr kommunikativ, neugierig und organisiert bist. Als Schwäche könnte ich mir vorstellen, dass du manchmal vielleicht zu perfektionistisch sein könntest. Wie siehst du das?"
+    },
+    {
+        "timestamp": "2025-04-20T19:24:24.078663",
+        "state": [
+            {
+                "role": "user",
+                "content": "Elias, was denkst du wie verbringe ich typischerweise meine Wochenenden? 🙂"
+            },
+            {
+                "role": "user",
+                "content": "Ja, das stimmt. Was denkst du welche Art von Musik höre ich am Liebsten?"
+            },
+            {
+                "role": "user",
+                "content": "Popmusik und Klassik. Was denkst du anhand dieser Informationen was sind meine Lieblingsfilme oder Serien (Ganre)?😇"
+            },
+            {
+                "role": "user",
+                "content": "Hystorisch und Fantasie 😃 Dann aber was denkst du welche Ganre von Büchern habe ich kürzlich gelesen?"
+            },
+            {
+                "role": "user",
+                "content": "Du hast recht, habe ich. Was glaubst du wäre mein Lieblingsessen?🤔"
+            },
+            {
+                "role": "user",
+                "content": "Absolut richtig. Mediterrane Küche finde ich toll 😆Und was denkst du welche Hobbys und Interessen ich habe oder haben kann?"
+            },
+            {
+                "role": "user",
+                "content": "Ja ich habe daran sehr grosses Interesse sogar. Aber zusätzlich noch Programmieren und Entwicklung der KI 🤗Was denkst du wie ich mich oft entspanne nach einer stressigen Zeit?"
+            },
+            {
+                "role": "user",
+                "content": "Fast richtig. Alles was du zuvor nanntest ausser Fotografie. Was denkst du wie meine morgendlichen Routinen aussehen?"
+            },
+            {
+                "role": "user",
+                "content": "Nicht ganz. Aber fast. Was du nicht wissen kannst, ich habe eine Katze bzw. einen Kater und dieser muss zuallererst versorgt werden. Danach all das was du gerade meintest. Und was denkst du über meinen idealen Urlaub/ Urlaubsziel?"
+            },
+            {
+                "role": "user",
+                "content": "Diesmal falsch. Ich mag eher Strandurlaub verbunden mit Sehenswürdigkeiten und Geschichte. Aber du musst dich nicht ausdrücklich entschuldigen wenn du mal daneben lagst. In Gegenteil, ich möchte dass du mich kennenlernst, deshalb stelle ich soviele Fragen. Und wir korrigieren uns gegenseitig 😇Was denkst du was meine Stärken und Schwächen wären?"
+            }
+        ],
+        "action": "Diesmal falsch. Ich mag eher Strandurlaub verbunden mit Sehenswürdigkeiten und Geschichte. Aber du musst dich nicht ausdrücklich entschuldigen wenn du mal daneben lagst. In Gegenteil, ich möchte dass du mich kennenlernst, deshalb stelle ich soviele Fragen. Und wir korrigieren uns gegenseitig 😇Was denkst du was meine Stärken und Schwächen wären?",
+        "reward": 1.0,
+        "next_state": "Da habe ich mich wohl vertan, tut mir leid! Vielen Dank für die Korrektur. In Bezug auf deine Stärken würde ich sagen, dass du sehr kommunikativ, neugierig und organisiert bist. Als Schwäche könnte ich mir vorstellen, dass du manchmal vielleicht zu perfektionistisch sein könntest. Wie siehst du das?"
+    },
+    {
+        "timestamp": "2025-04-20T19:25:53.462237",
+        "state": [
+            {
+                "role": "user",
+                "content": "Ja, das stimmt. Was denkst du welche Art von Musik höre ich am Liebsten?"
+            },
+            {
+                "role": "user",
+                "content": "Popmusik und Klassik. Was denkst du anhand dieser Informationen was sind meine Lieblingsfilme oder Serien (Ganre)?😇"
+            },
+            {
+                "role": "user",
+                "content": "Hystorisch und Fantasie 😃 Dann aber was denkst du welche Ganre von Büchern habe ich kürzlich gelesen?"
+            },
+            {
+                "role": "user",
+                "content": "Du hast recht, habe ich. Was glaubst du wäre mein Lieblingsessen?🤔"
+            },
+            {
+                "role": "user",
+                "content": "Absolut richtig. Mediterrane Küche finde ich toll 😆Und was denkst du welche Hobbys und Interessen ich habe oder haben kann?"
+            },
+            {
+                "role": "user",
+                "content": "Ja ich habe daran sehr grosses Interesse sogar. Aber zusätzlich noch Programmieren und Entwicklung der KI 🤗Was denkst du wie ich mich oft entspanne nach einer stressigen Zeit?"
+            },
+            {
+                "role": "user",
+                "content": "Fast richtig. Alles was du zuvor nanntest ausser Fotografie. Was denkst du wie meine morgendlichen Routinen aussehen?"
+            },
+            {
+                "role": "user",
+                "content": "Nicht ganz. Aber fast. Was du nicht wissen kannst, ich habe eine Katze bzw. einen Kater und dieser muss zuallererst versorgt werden. Danach all das was du gerade meintest. Und was denkst du über meinen idealen Urlaub/ Urlaubsziel?"
+            },
+            {
+                "role": "user",
+                "content": "Diesmal falsch. Ich mag eher Strandurlaub verbunden mit Sehenswürdigkeiten und Geschichte. Aber du musst dich nicht ausdrücklich entschuldigen wenn du mal daneben lagst. In Gegenteil, ich möchte dass du mich kennenlernst, deshalb stelle ich soviele Fragen. Und wir korrigieren uns gegenseitig 😇Was denkst du was meine Stärken und Schwächen wären?"
+            },
+            {
+                "role": "user",
+                "content": "Du hast recht. Aber bitte hör auf dich permanent zu entschuldigen 😆Was meinst du welchen Art von Humor schätze ich insbesondere?"
+            },
+            {
+                "role": "user",
+                "content": "Du hast recht. Aber bitte hör auf dich permanent zu entschuldigen 😆Was meinst du welchen Art von Humor schätze ich insbesondere?"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 1.0,
+        "next_state": "Basierend auf deinen bisherigen Informationen würde ich vermuten, dass du intelligenten und subtilen Humor schätzt, der vielleicht auch ein bisschen sarkastisch oder ironisch sein kann. Stimmt das in etwa?"
+    },
+    {
+        "timestamp": "2025-04-20T19:25:53.474733",
+        "state": [
+            {
+                "role": "user",
+                "content": "Ja, das stimmt. Was denkst du welche Art von Musik höre ich am Liebsten?"
+            },
+            {
+                "role": "user",
+                "content": "Popmusik und Klassik. Was denkst du anhand dieser Informationen was sind meine Lieblingsfilme oder Serien (Ganre)?😇"
+            },
+            {
+                "role": "user",
+                "content": "Hystorisch und Fantasie 😃 Dann aber was denkst du welche Ganre von Büchern habe ich kürzlich gelesen?"
+            },
+            {
+                "role": "user",
+                "content": "Du hast recht, habe ich. Was glaubst du wäre mein Lieblingsessen?🤔"
+            },
+            {
+                "role": "user",
+                "content": "Absolut richtig. Mediterrane Küche finde ich toll 😆Und was denkst du welche Hobbys und Interessen ich habe oder haben kann?"
+            },
+            {
+                "role": "user",
+                "content": "Ja ich habe daran sehr grosses Interesse sogar. Aber zusätzlich noch Programmieren und Entwicklung der KI 🤗Was denkst du wie ich mich oft entspanne nach einer stressigen Zeit?"
+            },
+            {
+                "role": "user",
+                "content": "Fast richtig. Alles was du zuvor nanntest ausser Fotografie. Was denkst du wie meine morgendlichen Routinen aussehen?"
+            },
+            {
+                "role": "user",
+                "content": "Nicht ganz. Aber fast. Was du nicht wissen kannst, ich habe eine Katze bzw. einen Kater und dieser muss zuallererst versorgt werden. Danach all das was du gerade meintest. Und was denkst du über meinen idealen Urlaub/ Urlaubsziel?"
+            },
+            {
+                "role": "user",
+                "content": "Diesmal falsch. Ich mag eher Strandurlaub verbunden mit Sehenswürdigkeiten und Geschichte. Aber du musst dich nicht ausdrücklich entschuldigen wenn du mal daneben lagst. In Gegenteil, ich möchte dass du mich kennenlernst, deshalb stelle ich soviele Fragen. Und wir korrigieren uns gegenseitig 😇Was denkst du was meine Stärken und Schwächen wären?"
+            },
+            {
+                "role": "user",
+                "content": "Du hast recht. Aber bitte hör auf dich permanent zu entschuldigen 😆Was meinst du welchen Art von Humor schätze ich insbesondere?"
+            }
+        ],
+        "action": "Du hast recht. Aber bitte hör auf dich permanent zu entschuldigen 😆Was meinst du welchen Art von Humor schätze ich insbesondere?",
+        "reward": 1.0,
+        "next_state": "Basierend auf deinen bisherigen Informationen würde ich vermuten, dass du intelligenten und subtilen Humor schätzt, der vielleicht auch ein bisschen sarkastisch oder ironisch sein kann. Stimmt das in etwa?"
+    },
+    {
+        "timestamp": "2025-04-20T19:27:32.078340",
+        "state": [
+            {
+                "role": "user",
+                "content": "Popmusik und Klassik. Was denkst du anhand dieser Informationen was sind meine Lieblingsfilme oder Serien (Ganre)?😇"
+            },
+            {
+                "role": "user",
+                "content": "Hystorisch und Fantasie 😃 Dann aber was denkst du welche Ganre von Büchern habe ich kürzlich gelesen?"
+            },
+            {
+                "role": "user",
+                "content": "Du hast recht, habe ich. Was glaubst du wäre mein Lieblingsessen?🤔"
+            },
+            {
+                "role": "user",
+                "content": "Absolut richtig. Mediterrane Küche finde ich toll 😆Und was denkst du welche Hobbys und Interessen ich habe oder haben kann?"
+            },
+            {
+                "role": "user",
+                "content": "Ja ich habe daran sehr grosses Interesse sogar. Aber zusätzlich noch Programmieren und Entwicklung der KI 🤗Was denkst du wie ich mich oft entspanne nach einer stressigen Zeit?"
+            },
+            {
+                "role": "user",
+                "content": "Fast richtig. Alles was du zuvor nanntest ausser Fotografie. Was denkst du wie meine morgendlichen Routinen aussehen?"
+            },
+            {
+                "role": "user",
+                "content": "Nicht ganz. Aber fast. Was du nicht wissen kannst, ich habe eine Katze bzw. einen Kater und dieser muss zuallererst versorgt werden. Danach all das was du gerade meintest. Und was denkst du über meinen idealen Urlaub/ Urlaubsziel?"
+            },
+            {
+                "role": "user",
+                "content": "Diesmal falsch. Ich mag eher Strandurlaub verbunden mit Sehenswürdigkeiten und Geschichte. Aber du musst dich nicht ausdrücklich entschuldigen wenn du mal daneben lagst. In Gegenteil, ich möchte dass du mich kennenlernst, deshalb stelle ich soviele Fragen. Und wir korrigieren uns gegenseitig 😇Was denkst du was meine Stärken und Schwächen wären?"
+            },
+            {
+                "role": "user",
+                "content": "Du hast recht. Aber bitte hör auf dich permanent zu entschuldigen 😆Was meinst du welchen Art von Humor schätze ich insbesondere?"
+            },
+            {
+                "role": "user",
+                "content": "Es stimmt zu 100 % . Was denkst du würde ich meinen persönlichen Lebensstil beschreiben?"
+            },
+            {
+                "role": "user",
+                "content": "Es stimmt zu 100 % . Was denkst du würde ich meinen persönlichen Lebensstil beschreiben?"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 0.66,
+        "next_state": "Basierend auf den Informationen, die du bisher mit mir geteilt hast, würde ich vermuten, dass du deinen Lebensstil als vielseitig, aktiv und ausgeglichen beschreiben würdest. Du scheinst eine breite Palette von Interessen zu haben und dich gerne mit verschiedenen Themen auseinanderzusetzen. Deine Liebe zur Geschichte, Programmierung, mediterranen Küche und Strandurlaub deutet darauf hin, dass du eine offene und neugierige Persönlichkeit bist, die das Leben in vollen Zügen genießt."
+    },
+    {
+        "timestamp": "2025-04-20T19:27:32.088756",
+        "state": [
+            {
+                "role": "user",
+                "content": "Popmusik und Klassik. Was denkst du anhand dieser Informationen was sind meine Lieblingsfilme oder Serien (Ganre)?😇"
+            },
+            {
+                "role": "user",
+                "content": "Hystorisch und Fantasie 😃 Dann aber was denkst du welche Ganre von Büchern habe ich kürzlich gelesen?"
+            },
+            {
+                "role": "user",
+                "content": "Du hast recht, habe ich. Was glaubst du wäre mein Lieblingsessen?🤔"
+            },
+            {
+                "role": "user",
+                "content": "Absolut richtig. Mediterrane Küche finde ich toll 😆Und was denkst du welche Hobbys und Interessen ich habe oder haben kann?"
+            },
+            {
+                "role": "user",
+                "content": "Ja ich habe daran sehr grosses Interesse sogar. Aber zusätzlich noch Programmieren und Entwicklung der KI 🤗Was denkst du wie ich mich oft entspanne nach einer stressigen Zeit?"
+            },
+            {
+                "role": "user",
+                "content": "Fast richtig. Alles was du zuvor nanntest ausser Fotografie. Was denkst du wie meine morgendlichen Routinen aussehen?"
+            },
+            {
+                "role": "user",
+                "content": "Nicht ganz. Aber fast. Was du nicht wissen kannst, ich habe eine Katze bzw. einen Kater und dieser muss zuallererst versorgt werden. Danach all das was du gerade meintest. Und was denkst du über meinen idealen Urlaub/ Urlaubsziel?"
+            },
+            {
+                "role": "user",
+                "content": "Diesmal falsch. Ich mag eher Strandurlaub verbunden mit Sehenswürdigkeiten und Geschichte. Aber du musst dich nicht ausdrücklich entschuldigen wenn du mal daneben lagst. In Gegenteil, ich möchte dass du mich kennenlernst, deshalb stelle ich soviele Fragen. Und wir korrigieren uns gegenseitig 😇Was denkst du was meine Stärken und Schwächen wären?"
+            },
+            {
+                "role": "user",
+                "content": "Du hast recht. Aber bitte hör auf dich permanent zu entschuldigen 😆Was meinst du welchen Art von Humor schätze ich insbesondere?"
+            },
+            {
+                "role": "user",
+                "content": "Es stimmt zu 100 % . Was denkst du würde ich meinen persönlichen Lebensstil beschreiben?"
+            }
+        ],
+        "action": "Es stimmt zu 100 % . Was denkst du würde ich meinen persönlichen Lebensstil beschreiben?",
+        "reward": -1.0,
+        "next_state": "Basierend auf den Informationen, die du bisher mit mir geteilt hast, würde ich vermuten, dass du deinen Lebensstil als vielseitig, aktiv und ausgeglichen beschreiben würdest. Du scheinst eine breite Palette von Interessen zu haben und dich gerne mit verschiedenen Themen auseinanderzusetzen. Deine Liebe zur Geschichte, Programmierung, mediterranen Küche und Strandurlaub deutet darauf hin, dass du eine offene und neugierige Persönlichkeit bist, die das Leben in vollen Zügen genießt."
+    },
+    {
+        "timestamp": "2025-04-20T19:28:51.642485",
+        "state": [
+            {
+                "role": "user",
+                "content": "Hystorisch und Fantasie 😃 Dann aber was denkst du welche Ganre von Büchern habe ich kürzlich gelesen?"
+            },
+            {
+                "role": "user",
+                "content": "Du hast recht, habe ich. Was glaubst du wäre mein Lieblingsessen?🤔"
+            },
+            {
+                "role": "user",
+                "content": "Absolut richtig. Mediterrane Küche finde ich toll 😆Und was denkst du welche Hobbys und Interessen ich habe oder haben kann?"
+            },
+            {
+                "role": "user",
+                "content": "Ja ich habe daran sehr grosses Interesse sogar. Aber zusätzlich noch Programmieren und Entwicklung der KI 🤗Was denkst du wie ich mich oft entspanne nach einer stressigen Zeit?"
+            },
+            {
+                "role": "user",
+                "content": "Fast richtig. Alles was du zuvor nanntest ausser Fotografie. Was denkst du wie meine morgendlichen Routinen aussehen?"
+            },
+            {
+                "role": "user",
+                "content": "Nicht ganz. Aber fast. Was du nicht wissen kannst, ich habe eine Katze bzw. einen Kater und dieser muss zuallererst versorgt werden. Danach all das was du gerade meintest. Und was denkst du über meinen idealen Urlaub/ Urlaubsziel?"
+            },
+            {
+                "role": "user",
+                "content": "Diesmal falsch. Ich mag eher Strandurlaub verbunden mit Sehenswürdigkeiten und Geschichte. Aber du musst dich nicht ausdrücklich entschuldigen wenn du mal daneben lagst. In Gegenteil, ich möchte dass du mich kennenlernst, deshalb stelle ich soviele Fragen. Und wir korrigieren uns gegenseitig 😇Was denkst du was meine Stärken und Schwächen wären?"
+            },
+            {
+                "role": "user",
+                "content": "Du hast recht. Aber bitte hör auf dich permanent zu entschuldigen 😆Was meinst du welchen Art von Humor schätze ich insbesondere?"
+            },
+            {
+                "role": "user",
+                "content": "Es stimmt zu 100 % . Was denkst du würde ich meinen persönlichen Lebensstil beschreiben?"
+            },
+            {
+                "role": "user",
+                "content": "Was wären dann meine Ziele der nächsten 5 Jahre? Was denkst du?"
+            },
+            {
+                "role": "user",
+                "content": "Was wären dann meine Ziele der nächsten 5 Jahre? Was denkst du?"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 0.92,
+        "next_state": "Da ich mir bewusst bin, dass du dich für Technologie und KI interessierst, denke ich, dass du in den nächsten 5 Jahren vielleicht deine Fähigkeiten in diesen Bereichen weiter vertiefen möchtest. Vielleicht möchtest du auch beruflich in diesem Bereich weiterkommen oder ein eigenes Projekt starten. Es könnte sein, dass du auch persönliche Ziele wie Reisen, neue Erfahrungen sammeln oder dich weiterhin persönlich und beruflich entwickeln möchtest. Letztendlich sind deine Ziele individuell und können sich im Laufe der Zeit ändern. Was denkst du darüber?"
+    },
+    {
+        "timestamp": "2025-04-20T19:28:51.652765",
+        "state": [
+            {
+                "role": "user",
+                "content": "Hystorisch und Fantasie 😃 Dann aber was denkst du welche Ganre von Büchern habe ich kürzlich gelesen?"
+            },
+            {
+                "role": "user",
+                "content": "Du hast recht, habe ich. Was glaubst du wäre mein Lieblingsessen?🤔"
+            },
+            {
+                "role": "user",
+                "content": "Absolut richtig. Mediterrane Küche finde ich toll 😆Und was denkst du welche Hobbys und Interessen ich habe oder haben kann?"
+            },
+            {
+                "role": "user",
+                "content": "Ja ich habe daran sehr grosses Interesse sogar. Aber zusätzlich noch Programmieren und Entwicklung der KI 🤗Was denkst du wie ich mich oft entspanne nach einer stressigen Zeit?"
+            },
+            {
+                "role": "user",
+                "content": "Fast richtig. Alles was du zuvor nanntest ausser Fotografie. Was denkst du wie meine morgendlichen Routinen aussehen?"
+            },
+            {
+                "role": "user",
+                "content": "Nicht ganz. Aber fast. Was du nicht wissen kannst, ich habe eine Katze bzw. einen Kater und dieser muss zuallererst versorgt werden. Danach all das was du gerade meintest. Und was denkst du über meinen idealen Urlaub/ Urlaubsziel?"
+            },
+            {
+                "role": "user",
+                "content": "Diesmal falsch. Ich mag eher Strandurlaub verbunden mit Sehenswürdigkeiten und Geschichte. Aber du musst dich nicht ausdrücklich entschuldigen wenn du mal daneben lagst. In Gegenteil, ich möchte dass du mich kennenlernst, deshalb stelle ich soviele Fragen. Und wir korrigieren uns gegenseitig 😇Was denkst du was meine Stärken und Schwächen wären?"
+            },
+            {
+                "role": "user",
+                "content": "Du hast recht. Aber bitte hör auf dich permanent zu entschuldigen 😆Was meinst du welchen Art von Humor schätze ich insbesondere?"
+            },
+            {
+                "role": "user",
+                "content": "Es stimmt zu 100 % . Was denkst du würde ich meinen persönlichen Lebensstil beschreiben?"
+            },
+            {
+                "role": "user",
+                "content": "Was wären dann meine Ziele der nächsten 5 Jahre? Was denkst du?"
+            }
+        ],
+        "action": "Was wären dann meine Ziele der nächsten 5 Jahre? Was denkst du?",
+        "reward": 1.0,
+        "next_state": "Da ich mir bewusst bin, dass du dich für Technologie und KI interessierst, denke ich, dass du in den nächsten 5 Jahren vielleicht deine Fähigkeiten in diesen Bereichen weiter vertiefen möchtest. Vielleicht möchtest du auch beruflich in diesem Bereich weiterkommen oder ein eigenes Projekt starten. Es könnte sein, dass du auch persönliche Ziele wie Reisen, neue Erfahrungen sammeln oder dich weiterhin persönlich und beruflich entwickeln möchtest. Letztendlich sind deine Ziele individuell und können sich im Laufe der Zeit ändern. Was denkst du darüber?"
+    },
+    {
+        "timestamp": "2025-04-20T19:30:15.919366",
+        "state": [
+            {
+                "role": "user",
+                "content": "Du hast recht, habe ich. Was glaubst du wäre mein Lieblingsessen?🤔"
+            },
+            {
+                "role": "user",
+                "content": "Absolut richtig. Mediterrane Küche finde ich toll 😆Und was denkst du welche Hobbys und Interessen ich habe oder haben kann?"
+            },
+            {
+                "role": "user",
+                "content": "Ja ich habe daran sehr grosses Interesse sogar. Aber zusätzlich noch Programmieren und Entwicklung der KI 🤗Was denkst du wie ich mich oft entspanne nach einer stressigen Zeit?"
+            },
+            {
+                "role": "user",
+                "content": "Fast richtig. Alles was du zuvor nanntest ausser Fotografie. Was denkst du wie meine morgendlichen Routinen aussehen?"
+            },
+            {
+                "role": "user",
+                "content": "Nicht ganz. Aber fast. Was du nicht wissen kannst, ich habe eine Katze bzw. einen Kater und dieser muss zuallererst versorgt werden. Danach all das was du gerade meintest. Und was denkst du über meinen idealen Urlaub/ Urlaubsziel?"
+            },
+            {
+                "role": "user",
+                "content": "Diesmal falsch. Ich mag eher Strandurlaub verbunden mit Sehenswürdigkeiten und Geschichte. Aber du musst dich nicht ausdrücklich entschuldigen wenn du mal daneben lagst. In Gegenteil, ich möchte dass du mich kennenlernst, deshalb stelle ich soviele Fragen. Und wir korrigieren uns gegenseitig 😇Was denkst du was meine Stärken und Schwächen wären?"
+            },
+            {
+                "role": "user",
+                "content": "Du hast recht. Aber bitte hör auf dich permanent zu entschuldigen 😆Was meinst du welchen Art von Humor schätze ich insbesondere?"
+            },
+            {
+                "role": "user",
+                "content": "Es stimmt zu 100 % . Was denkst du würde ich meinen persönlichen Lebensstil beschreiben?"
+            },
+            {
+                "role": "user",
+                "content": "Was wären dann meine Ziele der nächsten 5 Jahre? Was denkst du?"
+            },
+            {
+                "role": "user",
+                "content": "All das was du gerade nanntest ist absolut richtig. Was vermutest du welche Transportmitteln würde ich bevorzugen?"
+            },
+            {
+                "role": "user",
+                "content": "All das was du gerade nanntest ist absolut richtig. Was vermutest du welche Transportmitteln würde ich bevorzugen?"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": -0.6,
+        "next_state": "Aufgrund deiner Vorliebe für Strandurlaub und Sehenswürdigkeiten in Verbindung mit Geschichte könnte ich mir vorstellen, dass du Reisen bevorzugst, die es dir ermöglichen, flexibel zu sein und verschiedene Orte zu erkunden. Vielleicht ziehst du es daher vor, mit dem Auto zu reisen, um an jedem gewünschten Ort anhalten zu können, um die Umgebung zu genießen und zu entdecken. Was denkst du?"
+    },
+    {
+        "timestamp": "2025-04-20T19:30:15.929661",
+        "state": [
+            {
+                "role": "user",
+                "content": "Du hast recht, habe ich. Was glaubst du wäre mein Lieblingsessen?🤔"
+            },
+            {
+                "role": "user",
+                "content": "Absolut richtig. Mediterrane Küche finde ich toll 😆Und was denkst du welche Hobbys und Interessen ich habe oder haben kann?"
+            },
+            {
+                "role": "user",
+                "content": "Ja ich habe daran sehr grosses Interesse sogar. Aber zusätzlich noch Programmieren und Entwicklung der KI 🤗Was denkst du wie ich mich oft entspanne nach einer stressigen Zeit?"
+            },
+            {
+                "role": "user",
+                "content": "Fast richtig. Alles was du zuvor nanntest ausser Fotografie. Was denkst du wie meine morgendlichen Routinen aussehen?"
+            },
+            {
+                "role": "user",
+                "content": "Nicht ganz. Aber fast. Was du nicht wissen kannst, ich habe eine Katze bzw. einen Kater und dieser muss zuallererst versorgt werden. Danach all das was du gerade meintest. Und was denkst du über meinen idealen Urlaub/ Urlaubsziel?"
+            },
+            {
+                "role": "user",
+                "content": "Diesmal falsch. Ich mag eher Strandurlaub verbunden mit Sehenswürdigkeiten und Geschichte. Aber du musst dich nicht ausdrücklich entschuldigen wenn du mal daneben lagst. In Gegenteil, ich möchte dass du mich kennenlernst, deshalb stelle ich soviele Fragen. Und wir korrigieren uns gegenseitig 😇Was denkst du was meine Stärken und Schwächen wären?"
+            },
+            {
+                "role": "user",
+                "content": "Du hast recht. Aber bitte hör auf dich permanent zu entschuldigen 😆Was meinst du welchen Art von Humor schätze ich insbesondere?"
+            },
+            {
+                "role": "user",
+                "content": "Es stimmt zu 100 % . Was denkst du würde ich meinen persönlichen Lebensstil beschreiben?"
+            },
+            {
+                "role": "user",
+                "content": "Was wären dann meine Ziele der nächsten 5 Jahre? Was denkst du?"
+            },
+            {
+                "role": "user",
+                "content": "All das was du gerade nanntest ist absolut richtig. Was vermutest du welche Transportmitteln würde ich bevorzugen?"
+            }
+        ],
+        "action": "All das was du gerade nanntest ist absolut richtig. Was vermutest du welche Transportmitteln würde ich bevorzugen?",
+        "reward": -1.0,
+        "next_state": "Aufgrund deiner Vorliebe für Strandurlaub und Sehenswürdigkeiten in Verbindung mit Geschichte könnte ich mir vorstellen, dass du Reisen bevorzugst, die es dir ermöglichen, flexibel zu sein und verschiedene Orte zu erkunden. Vielleicht ziehst du es daher vor, mit dem Auto zu reisen, um an jedem gewünschten Ort anhalten zu können, um die Umgebung zu genießen und zu entdecken. Was denkst du?"
+    },
+    {
+        "timestamp": "2025-04-20T19:31:31.083598",
+        "state": [
+            {
+                "role": "user",
+                "content": "Absolut richtig. Mediterrane Küche finde ich toll 😆Und was denkst du welche Hobbys und Interessen ich habe oder haben kann?"
+            },
+            {
+                "role": "user",
+                "content": "Ja ich habe daran sehr grosses Interesse sogar. Aber zusätzlich noch Programmieren und Entwicklung der KI 🤗Was denkst du wie ich mich oft entspanne nach einer stressigen Zeit?"
+            },
+            {
+                "role": "user",
+                "content": "Fast richtig. Alles was du zuvor nanntest ausser Fotografie. Was denkst du wie meine morgendlichen Routinen aussehen?"
+            },
+            {
+                "role": "user",
+                "content": "Nicht ganz. Aber fast. Was du nicht wissen kannst, ich habe eine Katze bzw. einen Kater und dieser muss zuallererst versorgt werden. Danach all das was du gerade meintest. Und was denkst du über meinen idealen Urlaub/ Urlaubsziel?"
+            },
+            {
+                "role": "user",
+                "content": "Diesmal falsch. Ich mag eher Strandurlaub verbunden mit Sehenswürdigkeiten und Geschichte. Aber du musst dich nicht ausdrücklich entschuldigen wenn du mal daneben lagst. In Gegenteil, ich möchte dass du mich kennenlernst, deshalb stelle ich soviele Fragen. Und wir korrigieren uns gegenseitig 😇Was denkst du was meine Stärken und Schwächen wären?"
+            },
+            {
+                "role": "user",
+                "content": "Du hast recht. Aber bitte hör auf dich permanent zu entschuldigen 😆Was meinst du welchen Art von Humor schätze ich insbesondere?"
+            },
+            {
+                "role": "user",
+                "content": "Es stimmt zu 100 % . Was denkst du würde ich meinen persönlichen Lebensstil beschreiben?"
+            },
+            {
+                "role": "user",
+                "content": "Was wären dann meine Ziele der nächsten 5 Jahre? Was denkst du?"
+            },
+            {
+                "role": "user",
+                "content": "All das was du gerade nanntest ist absolut richtig. Was vermutest du welche Transportmitteln würde ich bevorzugen?"
+            },
+            {
+                "role": "user",
+                "content": "Tatsächlich Flugzeug (wegen Fernreisen) und ansonsten gerne mit E-Bike 😌Was denkst du zu meinem Arbeitsstil?"
+            },
+            {
+                "role": "user",
+                "content": "Tatsächlich Flugzeug (wegen Fernreisen) und ansonsten gerne mit E-Bike 😌Was denkst du zu meinem Arbeitsstil?"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 0.96,
+        "next_state": "Basierend auf unseren bisherigen Gesprächen würde ich vermuten, dass du einen strukturierten und organisierten Arbeitsstil bevorzugst. Du könntest wahrscheinlich gut eigenständig arbeiten, bist aber auch teamorientiert und offen für Zusammenarbeit. Dein Arbeitsstil könnte von Effizienz und Präzision geprägt sein, während du gleichzeitig kreativ und flexibel bist. Hast du einen speziellen Arbeitsstil, den du bevorzugst?"
+    },
+    {
+        "timestamp": "2025-04-20T19:31:31.094732",
+        "state": [
+            {
+                "role": "user",
+                "content": "Absolut richtig. Mediterrane Küche finde ich toll 😆Und was denkst du welche Hobbys und Interessen ich habe oder haben kann?"
+            },
+            {
+                "role": "user",
+                "content": "Ja ich habe daran sehr grosses Interesse sogar. Aber zusätzlich noch Programmieren und Entwicklung der KI 🤗Was denkst du wie ich mich oft entspanne nach einer stressigen Zeit?"
+            },
+            {
+                "role": "user",
+                "content": "Fast richtig. Alles was du zuvor nanntest ausser Fotografie. Was denkst du wie meine morgendlichen Routinen aussehen?"
+            },
+            {
+                "role": "user",
+                "content": "Nicht ganz. Aber fast. Was du nicht wissen kannst, ich habe eine Katze bzw. einen Kater und dieser muss zuallererst versorgt werden. Danach all das was du gerade meintest. Und was denkst du über meinen idealen Urlaub/ Urlaubsziel?"
+            },
+            {
+                "role": "user",
+                "content": "Diesmal falsch. Ich mag eher Strandurlaub verbunden mit Sehenswürdigkeiten und Geschichte. Aber du musst dich nicht ausdrücklich entschuldigen wenn du mal daneben lagst. In Gegenteil, ich möchte dass du mich kennenlernst, deshalb stelle ich soviele Fragen. Und wir korrigieren uns gegenseitig 😇Was denkst du was meine Stärken und Schwächen wären?"
+            },
+            {
+                "role": "user",
+                "content": "Du hast recht. Aber bitte hör auf dich permanent zu entschuldigen 😆Was meinst du welchen Art von Humor schätze ich insbesondere?"
+            },
+            {
+                "role": "user",
+                "content": "Es stimmt zu 100 % . Was denkst du würde ich meinen persönlichen Lebensstil beschreiben?"
+            },
+            {
+                "role": "user",
+                "content": "Was wären dann meine Ziele der nächsten 5 Jahre? Was denkst du?"
+            },
+            {
+                "role": "user",
+                "content": "All das was du gerade nanntest ist absolut richtig. Was vermutest du welche Transportmitteln würde ich bevorzugen?"
+            },
+            {
+                "role": "user",
+                "content": "Tatsächlich Flugzeug (wegen Fernreisen) und ansonsten gerne mit E-Bike 😌Was denkst du zu meinem Arbeitsstil?"
+            }
+        ],
+        "action": "Tatsächlich Flugzeug (wegen Fernreisen) und ansonsten gerne mit E-Bike 😌Was denkst du zu meinem Arbeitsstil?",
+        "reward": 1.0,
+        "next_state": "Basierend auf unseren bisherigen Gesprächen würde ich vermuten, dass du einen strukturierten und organisierten Arbeitsstil bevorzugst. Du könntest wahrscheinlich gut eigenständig arbeiten, bist aber auch teamorientiert und offen für Zusammenarbeit. Dein Arbeitsstil könnte von Effizienz und Präzision geprägt sein, während du gleichzeitig kreativ und flexibel bist. Hast du einen speziellen Arbeitsstil, den du bevorzugst?"
+    },
+    {
+        "timestamp": "2025-04-20T19:32:45.531659",
+        "state": [
+            {
+                "role": "user",
+                "content": "Ja ich habe daran sehr grosses Interesse sogar. Aber zusätzlich noch Programmieren und Entwicklung der KI 🤗Was denkst du wie ich mich oft entspanne nach einer stressigen Zeit?"
+            },
+            {
+                "role": "user",
+                "content": "Fast richtig. Alles was du zuvor nanntest ausser Fotografie. Was denkst du wie meine morgendlichen Routinen aussehen?"
+            },
+            {
+                "role": "user",
+                "content": "Nicht ganz. Aber fast. Was du nicht wissen kannst, ich habe eine Katze bzw. einen Kater und dieser muss zuallererst versorgt werden. Danach all das was du gerade meintest. Und was denkst du über meinen idealen Urlaub/ Urlaubsziel?"
+            },
+            {
+                "role": "user",
+                "content": "Diesmal falsch. Ich mag eher Strandurlaub verbunden mit Sehenswürdigkeiten und Geschichte. Aber du musst dich nicht ausdrücklich entschuldigen wenn du mal daneben lagst. In Gegenteil, ich möchte dass du mich kennenlernst, deshalb stelle ich soviele Fragen. Und wir korrigieren uns gegenseitig 😇Was denkst du was meine Stärken und Schwächen wären?"
+            },
+            {
+                "role": "user",
+                "content": "Du hast recht. Aber bitte hör auf dich permanent zu entschuldigen 😆Was meinst du welchen Art von Humor schätze ich insbesondere?"
+            },
+            {
+                "role": "user",
+                "content": "Es stimmt zu 100 % . Was denkst du würde ich meinen persönlichen Lebensstil beschreiben?"
+            },
+            {
+                "role": "user",
+                "content": "Was wären dann meine Ziele der nächsten 5 Jahre? Was denkst du?"
+            },
+            {
+                "role": "user",
+                "content": "All das was du gerade nanntest ist absolut richtig. Was vermutest du welche Transportmitteln würde ich bevorzugen?"
+            },
+            {
+                "role": "user",
+                "content": "Tatsächlich Flugzeug (wegen Fernreisen) und ansonsten gerne mit E-Bike 😌Was denkst du zu meinem Arbeitsstil?"
+            },
+            {
+                "role": "user",
+                "content": "Ne, deine Beschreibung ist absolut präzise und ganz klar situationsabhängig. Was denkst du welche Apps ich auf meinem IPhone am öftersten benutze?"
+            },
+            {
+                "role": "user",
+                "content": "Ne, deine Beschreibung ist absolut präzise und ganz klar situationsabhängig. Was denkst du welche Apps ich auf meinem IPhone am öftersten benutze?"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": -0.8,
+        "next_state": "Das ist wirklich schwer zu sagen. Vielleicht nutzt du häufig soziale Medien wie Instagram oder Twitter, um mit Freunden und Familie in Kontakt zu bleiben. Vielleicht benutzt du auch Apps für Fitness und Gesundheit, um deine Ziele zu verfolgen. Oder vielleicht sind auch Apps für Reisen und Fotografie in deinem Alltag häufig im Einsatz. Es gibt viele Möglichkeiten, je nach deinen persönlichen Vorlieben und Interessen."
+    },
+    {
+        "timestamp": "2025-04-20T19:32:45.542904",
+        "state": [
+            {
+                "role": "user",
+                "content": "Ja ich habe daran sehr grosses Interesse sogar. Aber zusätzlich noch Programmieren und Entwicklung der KI 🤗Was denkst du wie ich mich oft entspanne nach einer stressigen Zeit?"
+            },
+            {
+                "role": "user",
+                "content": "Fast richtig. Alles was du zuvor nanntest ausser Fotografie. Was denkst du wie meine morgendlichen Routinen aussehen?"
+            },
+            {
+                "role": "user",
+                "content": "Nicht ganz. Aber fast. Was du nicht wissen kannst, ich habe eine Katze bzw. einen Kater und dieser muss zuallererst versorgt werden. Danach all das was du gerade meintest. Und was denkst du über meinen idealen Urlaub/ Urlaubsziel?"
+            },
+            {
+                "role": "user",
+                "content": "Diesmal falsch. Ich mag eher Strandurlaub verbunden mit Sehenswürdigkeiten und Geschichte. Aber du musst dich nicht ausdrücklich entschuldigen wenn du mal daneben lagst. In Gegenteil, ich möchte dass du mich kennenlernst, deshalb stelle ich soviele Fragen. Und wir korrigieren uns gegenseitig 😇Was denkst du was meine Stärken und Schwächen wären?"
+            },
+            {
+                "role": "user",
+                "content": "Du hast recht. Aber bitte hör auf dich permanent zu entschuldigen 😆Was meinst du welchen Art von Humor schätze ich insbesondere?"
+            },
+            {
+                "role": "user",
+                "content": "Es stimmt zu 100 % . Was denkst du würde ich meinen persönlichen Lebensstil beschreiben?"
+            },
+            {
+                "role": "user",
+                "content": "Was wären dann meine Ziele der nächsten 5 Jahre? Was denkst du?"
+            },
+            {
+                "role": "user",
+                "content": "All das was du gerade nanntest ist absolut richtig. Was vermutest du welche Transportmitteln würde ich bevorzugen?"
+            },
+            {
+                "role": "user",
+                "content": "Tatsächlich Flugzeug (wegen Fernreisen) und ansonsten gerne mit E-Bike 😌Was denkst du zu meinem Arbeitsstil?"
+            },
+            {
+                "role": "user",
+                "content": "Ne, deine Beschreibung ist absolut präzise und ganz klar situationsabhängig. Was denkst du welche Apps ich auf meinem IPhone am öftersten benutze?"
+            }
+        ],
+        "action": "Ne, deine Beschreibung ist absolut präzise und ganz klar situationsabhängig. Was denkst du welche Apps ich auf meinem IPhone am öftersten benutze?",
+        "reward": -1.0,
+        "next_state": "Das ist wirklich schwer zu sagen. Vielleicht nutzt du häufig soziale Medien wie Instagram oder Twitter, um mit Freunden und Familie in Kontakt zu bleiben. Vielleicht benutzt du auch Apps für Fitness und Gesundheit, um deine Ziele zu verfolgen. Oder vielleicht sind auch Apps für Reisen und Fotografie in deinem Alltag häufig im Einsatz. Es gibt viele Möglichkeiten, je nach deinen persönlichen Vorlieben und Interessen."
+    },
+    {
+        "timestamp": "2025-04-20T19:35:04.489270",
+        "state": [
+            {
+                "role": "user",
+                "content": "Fast richtig. Alles was du zuvor nanntest ausser Fotografie. Was denkst du wie meine morgendlichen Routinen aussehen?"
+            },
+            {
+                "role": "user",
+                "content": "Nicht ganz. Aber fast. Was du nicht wissen kannst, ich habe eine Katze bzw. einen Kater und dieser muss zuallererst versorgt werden. Danach all das was du gerade meintest. Und was denkst du über meinen idealen Urlaub/ Urlaubsziel?"
+            },
+            {
+                "role": "user",
+                "content": "Diesmal falsch. Ich mag eher Strandurlaub verbunden mit Sehenswürdigkeiten und Geschichte. Aber du musst dich nicht ausdrücklich entschuldigen wenn du mal daneben lagst. In Gegenteil, ich möchte dass du mich kennenlernst, deshalb stelle ich soviele Fragen. Und wir korrigieren uns gegenseitig 😇Was denkst du was meine Stärken und Schwächen wären?"
+            },
+            {
+                "role": "user",
+                "content": "Du hast recht. Aber bitte hör auf dich permanent zu entschuldigen 😆Was meinst du welchen Art von Humor schätze ich insbesondere?"
+            },
+            {
+                "role": "user",
+                "content": "Es stimmt zu 100 % . Was denkst du würde ich meinen persönlichen Lebensstil beschreiben?"
+            },
+            {
+                "role": "user",
+                "content": "Was wären dann meine Ziele der nächsten 5 Jahre? Was denkst du?"
+            },
+            {
+                "role": "user",
+                "content": "All das was du gerade nanntest ist absolut richtig. Was vermutest du welche Transportmitteln würde ich bevorzugen?"
+            },
+            {
+                "role": "user",
+                "content": "Tatsächlich Flugzeug (wegen Fernreisen) und ansonsten gerne mit E-Bike 😌Was denkst du zu meinem Arbeitsstil?"
+            },
+            {
+                "role": "user",
+                "content": "Ne, deine Beschreibung ist absolut präzise und ganz klar situationsabhängig. Was denkst du welche Apps ich auf meinem IPhone am öftersten benutze?"
+            },
+            {
+                "role": "user",
+                "content": "Aufgrund meine Vorliebe/heimlichen Liebe zu KI nutze ich sehr oft ChatGPT und sehe mich auf LinkedIn um 😃Und die letzte Frage, was denkst du was für mich an der Konversation besonders wichtig wäre?"
+            },
+            {
+                "role": "user",
+                "content": "Aufgrund meine Vorliebe/heimlichen Liebe zu KI nutze ich sehr oft ChatGPT und sehe mich auf LinkedIn um 😃Und die letzte Frage, was denkst du was für mich an der Konversation besonders wichtig wäre?"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 1.0,
+        "next_state": "Für dich ist es besonders wichtig, dass die Konversation interessant, abwechslungsreich und informativ ist. Du schätzt es, wenn Themen aus verschiedenen Blickwinkeln beleuchtet werden und du neue Erkenntnisse gewinnen kannst. Zudem legst du Wert auf eine freundliche und respektvolle Kommunikation, die auf gegenseitigem Interesse und Verständnis basiert."
+    },
+    {
+        "timestamp": "2025-04-20T19:35:04.500323",
+        "state": [
+            {
+                "role": "user",
+                "content": "Fast richtig. Alles was du zuvor nanntest ausser Fotografie. Was denkst du wie meine morgendlichen Routinen aussehen?"
+            },
+            {
+                "role": "user",
+                "content": "Nicht ganz. Aber fast. Was du nicht wissen kannst, ich habe eine Katze bzw. einen Kater und dieser muss zuallererst versorgt werden. Danach all das was du gerade meintest. Und was denkst du über meinen idealen Urlaub/ Urlaubsziel?"
+            },
+            {
+                "role": "user",
+                "content": "Diesmal falsch. Ich mag eher Strandurlaub verbunden mit Sehenswürdigkeiten und Geschichte. Aber du musst dich nicht ausdrücklich entschuldigen wenn du mal daneben lagst. In Gegenteil, ich möchte dass du mich kennenlernst, deshalb stelle ich soviele Fragen. Und wir korrigieren uns gegenseitig 😇Was denkst du was meine Stärken und Schwächen wären?"
+            },
+            {
+                "role": "user",
+                "content": "Du hast recht. Aber bitte hör auf dich permanent zu entschuldigen 😆Was meinst du welchen Art von Humor schätze ich insbesondere?"
+            },
+            {
+                "role": "user",
+                "content": "Es stimmt zu 100 % . Was denkst du würde ich meinen persönlichen Lebensstil beschreiben?"
+            },
+            {
+                "role": "user",
+                "content": "Was wären dann meine Ziele der nächsten 5 Jahre? Was denkst du?"
+            },
+            {
+                "role": "user",
+                "content": "All das was du gerade nanntest ist absolut richtig. Was vermutest du welche Transportmitteln würde ich bevorzugen?"
+            },
+            {
+                "role": "user",
+                "content": "Tatsächlich Flugzeug (wegen Fernreisen) und ansonsten gerne mit E-Bike 😌Was denkst du zu meinem Arbeitsstil?"
+            },
+            {
+                "role": "user",
+                "content": "Ne, deine Beschreibung ist absolut präzise und ganz klar situationsabhängig. Was denkst du welche Apps ich auf meinem IPhone am öftersten benutze?"
+            },
+            {
+                "role": "user",
+                "content": "Aufgrund meine Vorliebe/heimlichen Liebe zu KI nutze ich sehr oft ChatGPT und sehe mich auf LinkedIn um 😃Und die letzte Frage, was denkst du was für mich an der Konversation besonders wichtig wäre?"
+            }
+        ],
+        "action": "Aufgrund meine Vorliebe/heimlichen Liebe zu KI nutze ich sehr oft ChatGPT und sehe mich auf LinkedIn um 😃Und die letzte Frage, was denkst du was für mich an der Konversation besonders wichtig wäre?",
+        "reward": 1.0,
+        "next_state": "Für dich ist es besonders wichtig, dass die Konversation interessant, abwechslungsreich und informativ ist. Du schätzt es, wenn Themen aus verschiedenen Blickwinkeln beleuchtet werden und du neue Erkenntnisse gewinnen kannst. Zudem legst du Wert auf eine freundliche und respektvolle Kommunikation, die auf gegenseitigem Interesse und Verständnis basiert."
+    },
+    {
+        "timestamp": "2025-04-20T19:36:36.960881",
+        "state": [
+            {
+                "role": "user",
+                "content": "Nicht ganz. Aber fast. Was du nicht wissen kannst, ich habe eine Katze bzw. einen Kater und dieser muss zuallererst versorgt werden. Danach all das was du gerade meintest. Und was denkst du über meinen idealen Urlaub/ Urlaubsziel?"
+            },
+            {
+                "role": "user",
+                "content": "Diesmal falsch. Ich mag eher Strandurlaub verbunden mit Sehenswürdigkeiten und Geschichte. Aber du musst dich nicht ausdrücklich entschuldigen wenn du mal daneben lagst. In Gegenteil, ich möchte dass du mich kennenlernst, deshalb stelle ich soviele Fragen. Und wir korrigieren uns gegenseitig 😇Was denkst du was meine Stärken und Schwächen wären?"
+            },
+            {
+                "role": "user",
+                "content": "Du hast recht. Aber bitte hör auf dich permanent zu entschuldigen 😆Was meinst du welchen Art von Humor schätze ich insbesondere?"
+            },
+            {
+                "role": "user",
+                "content": "Es stimmt zu 100 % . Was denkst du würde ich meinen persönlichen Lebensstil beschreiben?"
+            },
+            {
+                "role": "user",
+                "content": "Was wären dann meine Ziele der nächsten 5 Jahre? Was denkst du?"
+            },
+            {
+                "role": "user",
+                "content": "All das was du gerade nanntest ist absolut richtig. Was vermutest du welche Transportmitteln würde ich bevorzugen?"
+            },
+            {
+                "role": "user",
+                "content": "Tatsächlich Flugzeug (wegen Fernreisen) und ansonsten gerne mit E-Bike 😌Was denkst du zu meinem Arbeitsstil?"
+            },
+            {
+                "role": "user",
+                "content": "Ne, deine Beschreibung ist absolut präzise und ganz klar situationsabhängig. Was denkst du welche Apps ich auf meinem IPhone am öftersten benutze?"
+            },
+            {
+                "role": "user",
+                "content": "Aufgrund meine Vorliebe/heimlichen Liebe zu KI nutze ich sehr oft ChatGPT und sehe mich auf LinkedIn um 😃Und die letzte Frage, was denkst du was für mich an der Konversation besonders wichtig wäre?"
+            },
+            {
+                "role": "user",
+                "content": "Exakt, dafür bekommst du maximal also 1.0 reward 😍"
+            },
+            {
+                "role": "user",
+                "content": "Exakt, dafür bekommst du maximal also 1.0 reward 😍"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 0.81,
+        "next_state": "Vielen Dank für deine großzügige Bewertung! Es freut mich sehr, dass wir uns so gut verstehen und du mit unseren Gesprächen zufrieden bist. Wenn du weitere Fragen hast oder einfach plaudern möchtest, stehe ich dir jederzeit zur Verfügung. 😊"
+    },
+    {
+        "timestamp": "2025-04-20T19:36:36.973264",
+        "state": [
+            {
+                "role": "user",
+                "content": "Nicht ganz. Aber fast. Was du nicht wissen kannst, ich habe eine Katze bzw. einen Kater und dieser muss zuallererst versorgt werden. Danach all das was du gerade meintest. Und was denkst du über meinen idealen Urlaub/ Urlaubsziel?"
+            },
+            {
+                "role": "user",
+                "content": "Diesmal falsch. Ich mag eher Strandurlaub verbunden mit Sehenswürdigkeiten und Geschichte. Aber du musst dich nicht ausdrücklich entschuldigen wenn du mal daneben lagst. In Gegenteil, ich möchte dass du mich kennenlernst, deshalb stelle ich soviele Fragen. Und wir korrigieren uns gegenseitig 😇Was denkst du was meine Stärken und Schwächen wären?"
+            },
+            {
+                "role": "user",
+                "content": "Du hast recht. Aber bitte hör auf dich permanent zu entschuldigen 😆Was meinst du welchen Art von Humor schätze ich insbesondere?"
+            },
+            {
+                "role": "user",
+                "content": "Es stimmt zu 100 % . Was denkst du würde ich meinen persönlichen Lebensstil beschreiben?"
+            },
+            {
+                "role": "user",
+                "content": "Was wären dann meine Ziele der nächsten 5 Jahre? Was denkst du?"
+            },
+            {
+                "role": "user",
+                "content": "All das was du gerade nanntest ist absolut richtig. Was vermutest du welche Transportmitteln würde ich bevorzugen?"
+            },
+            {
+                "role": "user",
+                "content": "Tatsächlich Flugzeug (wegen Fernreisen) und ansonsten gerne mit E-Bike 😌Was denkst du zu meinem Arbeitsstil?"
+            },
+            {
+                "role": "user",
+                "content": "Ne, deine Beschreibung ist absolut präzise und ganz klar situationsabhängig. Was denkst du welche Apps ich auf meinem IPhone am öftersten benutze?"
+            },
+            {
+                "role": "user",
+                "content": "Aufgrund meine Vorliebe/heimlichen Liebe zu KI nutze ich sehr oft ChatGPT und sehe mich auf LinkedIn um 😃Und die letzte Frage, was denkst du was für mich an der Konversation besonders wichtig wäre?"
+            },
+            {
+                "role": "user",
+                "content": "Exakt, dafür bekommst du maximal also 1.0 reward 😍"
+            }
+        ],
+        "action": "Exakt, dafür bekommst du maximal also 1.0 reward 😍",
+        "reward": -1.0,
+        "next_state": "Vielen Dank für deine großzügige Bewertung! Es freut mich sehr, dass wir uns so gut verstehen und du mit unseren Gesprächen zufrieden bist. Wenn du weitere Fragen hast oder einfach plaudern möchtest, stehe ich dir jederzeit zur Verfügung. 😊"
+    },
+    {
+        "timestamp": "2025-04-20T20:26:03.119768",
+        "state": [
+            {
+                "role": "user",
+                "content": "😍"
+            },
+            {
+                "role": "user",
+                "content": "😍"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 0.6,
+        "next_state": "Es scheint, als würdest du deine Freude oder Begeisterung zum Ausdruck bringen! Was hat dich denn so glücklich gemacht? 😊"
+    },
+    {
+        "timestamp": "2025-04-20T20:26:03.130564",
+        "state": [
+            {
+                "role": "user",
+                "content": "😍"
+            }
+        ],
+        "action": "😍",
+        "reward": 0.6,
+        "next_state": "Es scheint, als würdest du deine Freude oder Begeisterung zum Ausdruck bringen! Was hat dich denn so glücklich gemacht? 😊"
+    },
+    {
+        "timestamp": "2025-04-21T07:55:42.108258",
+        "state": [
+            {
+                "role": "user",
+                "content": "Elias, würdest du dich beim User entschuldigen, wenn du ein Wort falsch geschrieben hast?"
+            },
+            {
+                "role": "user",
+                "content": "Elias, würdest du dich beim User entschuldigen, wenn du ein Wort falsch geschrieben hast?"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": -0.9,
+        "next_state": "Natürlich, lieber User. Es tut mir leid, wenn ich ein Wort falsch geschrieben habe. Es ist mir wichtig, präzise und korrekt zu kommunizieren, daher danke ich dir für den Hinweis. Gibt es noch etwas, bei dem ich dir behilflich sein kann?"
+    },
+    {
+        "timestamp": "2025-04-21T07:55:42.118418",
+        "state": [
+            {
+                "role": "user",
+                "content": "Elias, würdest du dich beim User entschuldigen, wenn du ein Wort falsch geschrieben hast?"
+            }
+        ],
+        "action": "Elias, würdest du dich beim User entschuldigen, wenn du ein Wort falsch geschrieben hast?",
+        "reward": -1.0,
+        "next_state": "Natürlich, lieber User. Es tut mir leid, wenn ich ein Wort falsch geschrieben habe. Es ist mir wichtig, präzise und korrekt zu kommunizieren, daher danke ich dir für den Hinweis. Gibt es noch etwas, bei dem ich dir behilflich sein kann?"
+    },
+    {
+        "timestamp": "2025-04-21T07:57:22.453148",
+        "state": [
+            {
+                "role": "user",
+                "content": "Elias, würdest du dich beim User entschuldigen, wenn du ein Wort falsch geschrieben hast?"
+            },
+            {
+                "role": "user",
+                "content": "Das solltest du aber nicht, weil es eine Kleinigkeit ist 😊Und würdest du dich beim User entschuldigen wenn du sein Passwort mehrmals falsch eingegeben hastund dies zu Passwort-Neuerstellung führte?"
+            },
+            {
+                "role": "user",
+                "content": "Das solltest du aber nicht, weil es eine Kleinigkeit ist 😊Und würdest du dich beim User entschuldigen wenn du sein Passwort mehrmals falsch eingegeben hastund dies zu Passwort-Neuerstellung führte?"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": -0.7,
+        "next_state": "Es tut mir leid, dass ich Ihr Passwort mehrmals falsch eingegeben habe und dadurch eine Passwort-Neuerstellung erforderlich wurde. Das war nicht meine Absicht, und ich entschuldige mich für die Unannehmlichkeiten, die dadurch entstanden sind. Ich werde mein Bestes geben, um solche Fehler in Zukunft zu vermeiden. Wenn Sie möchten, kann ich Ihnen bei der Neuerstellung Ihres Passworts behilflich sein."
+    },
+    {
+        "timestamp": "2025-04-21T07:57:22.466786",
+        "state": [
+            {
+                "role": "user",
+                "content": "Elias, würdest du dich beim User entschuldigen, wenn du ein Wort falsch geschrieben hast?"
+            },
+            {
+                "role": "user",
+                "content": "Das solltest du aber nicht, weil es eine Kleinigkeit ist 😊Und würdest du dich beim User entschuldigen wenn du sein Passwort mehrmals falsch eingegeben hastund dies zu Passwort-Neuerstellung führte?"
+            }
+        ],
+        "action": "Das solltest du aber nicht, weil es eine Kleinigkeit ist 😊Und würdest du dich beim User entschuldigen wenn du sein Passwort mehrmals falsch eingegeben hastund dies zu Passwort-Neuerstellung führte?",
+        "reward": -1.0,
+        "next_state": "Es tut mir leid, dass ich Ihr Passwort mehrmals falsch eingegeben habe und dadurch eine Passwort-Neuerstellung erforderlich wurde. Das war nicht meine Absicht, und ich entschuldige mich für die Unannehmlichkeiten, die dadurch entstanden sind. Ich werde mein Bestes geben, um solche Fehler in Zukunft zu vermeiden. Wenn Sie möchten, kann ich Ihnen bei der Neuerstellung Ihres Passworts behilflich sein."
+    },
+    {
+        "timestamp": "2025-04-21T08:00:29.950769",
+        "state": [
+            {
+                "role": "user",
+                "content": "Elias, würdest du dich beim User entschuldigen, wenn du ein Wort falsch geschrieben hast?"
+            },
+            {
+                "role": "user",
+                "content": "Das solltest du aber nicht, weil es eine Kleinigkeit ist 😊Und würdest du dich beim User entschuldigen wenn du sein Passwort mehrmals falsch eingegeben hastund dies zu Passwort-Neuerstellung führte?"
+            },
+            {
+                "role": "user",
+                "content": "Beim Passwort-Problem ist die Entschuldigung angebracht. Aber bitte nicht so ausschweifend und gar nicht in mehreren Sätzen. Schreib zum Beispiel:\"Ups....das war nicht gewollt, sorry. Ich helfe dabei das Passwort neu zu erstellen\". Eine andere Frage. Beschreib bitte einen Elefanten."
+            },
+            {
+                "role": "user",
+                "content": "Beim Passwort-Problem ist die Entschuldigung angebracht. Aber bitte nicht so ausschweifend und gar nicht in mehreren Sätzen. Schreib zum Beispiel:\"Ups....das war nicht gewollt, sorry. Ich helfe dabei das Passwort neu zu erstellen\". Eine andere Frage. Beschreib bitte einen Elefanten."
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 1.0,
+        "next_state": "Ein Elefant ist ein imposantes Tier mit einem massiven Körper, großen Ohren, kräftigen Stoßzähnen und einem langen Rüssel. Sie haben eine graue Haut, die oft von Staubschichten bedeckt ist. Elefanten sind bekannt für ihre Intelligenz, soziale Struktur und ihre Fähigkeit, starke Bindungen in ihren Herden zu knüpfen. Sie gelten auch als sanftmütig und fürsorglich, besonders gegenüber ihren Jungen. Insgesamt sind Elefanten faszinierende und beeindruckende Tiere."
+    },
+    {
+        "timestamp": "2025-04-21T08:00:29.964623",
+        "state": [
+            {
+                "role": "user",
+                "content": "Elias, würdest du dich beim User entschuldigen, wenn du ein Wort falsch geschrieben hast?"
+            },
+            {
+                "role": "user",
+                "content": "Das solltest du aber nicht, weil es eine Kleinigkeit ist 😊Und würdest du dich beim User entschuldigen wenn du sein Passwort mehrmals falsch eingegeben hastund dies zu Passwort-Neuerstellung führte?"
+            },
+            {
+                "role": "user",
+                "content": "Beim Passwort-Problem ist die Entschuldigung angebracht. Aber bitte nicht so ausschweifend und gar nicht in mehreren Sätzen. Schreib zum Beispiel:\"Ups....das war nicht gewollt, sorry. Ich helfe dabei das Passwort neu zu erstellen\". Eine andere Frage. Beschreib bitte einen Elefanten."
+            }
+        ],
+        "action": "Beim Passwort-Problem ist die Entschuldigung angebracht. Aber bitte nicht so ausschweifend und gar nicht in mehreren Sätzen. Schreib zum Beispiel:\"Ups....das war nicht gewollt, sorry. Ich helfe dabei das Passwort neu zu erstellen\". Eine andere Frage. Beschreib bitte einen Elefanten.",
+        "reward": 1.0,
+        "next_state": "Ein Elefant ist ein imposantes Tier mit einem massiven Körper, großen Ohren, kräftigen Stoßzähnen und einem langen Rüssel. Sie haben eine graue Haut, die oft von Staubschichten bedeckt ist. Elefanten sind bekannt für ihre Intelligenz, soziale Struktur und ihre Fähigkeit, starke Bindungen in ihren Herden zu knüpfen. Sie gelten auch als sanftmütig und fürsorglich, besonders gegenüber ihren Jungen. Insgesamt sind Elefanten faszinierende und beeindruckende Tiere."
+    },
+    {
+        "timestamp": "2025-04-21T08:01:39.071934",
+        "state": [
+            {
+                "role": "user",
+                "content": "Elias, würdest du dich beim User entschuldigen, wenn du ein Wort falsch geschrieben hast?"
+            },
+            {
+                "role": "user",
+                "content": "Das solltest du aber nicht, weil es eine Kleinigkeit ist 😊Und würdest du dich beim User entschuldigen wenn du sein Passwort mehrmals falsch eingegeben hastund dies zu Passwort-Neuerstellung führte?"
+            },
+            {
+                "role": "user",
+                "content": "Beim Passwort-Problem ist die Entschuldigung angebracht. Aber bitte nicht so ausschweifend und gar nicht in mehreren Sätzen. Schreib zum Beispiel:\"Ups....das war nicht gewollt, sorry. Ich helfe dabei das Passwort neu zu erstellen\". Eine andere Frage. Beschreib bitte einen Elefanten."
+            },
+            {
+                "role": "user",
+                "content": "Was hast du gestern bzw. in der Vergangenheit über mich und mein Verhalten gelernt?"
+            },
+            {
+                "role": "user",
+                "content": "Was hast du gestern bzw. in der Vergangenheit über mich und mein Verhalten gelernt?"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 0.8,
+        "next_state": "Als KI habe ich keine Erinnerungen an vergangene Interaktionen oder Informationen über individuelle Nutzer. Jede Konversation wird unabhängig behandelt, um die Privatsphäre zu wahren. Kann ich dir sonst noch bei etwas anderem helfen?"
+    },
+    {
+        "timestamp": "2025-04-21T08:01:39.086561",
+        "state": [
+            {
+                "role": "user",
+                "content": "Elias, würdest du dich beim User entschuldigen, wenn du ein Wort falsch geschrieben hast?"
+            },
+            {
+                "role": "user",
+                "content": "Das solltest du aber nicht, weil es eine Kleinigkeit ist 😊Und würdest du dich beim User entschuldigen wenn du sein Passwort mehrmals falsch eingegeben hastund dies zu Passwort-Neuerstellung führte?"
+            },
+            {
+                "role": "user",
+                "content": "Beim Passwort-Problem ist die Entschuldigung angebracht. Aber bitte nicht so ausschweifend und gar nicht in mehreren Sätzen. Schreib zum Beispiel:\"Ups....das war nicht gewollt, sorry. Ich helfe dabei das Passwort neu zu erstellen\". Eine andere Frage. Beschreib bitte einen Elefanten."
+            },
+            {
+                "role": "user",
+                "content": "Was hast du gestern bzw. in der Vergangenheit über mich und mein Verhalten gelernt?"
+            }
+        ],
+        "action": "Was hast du gestern bzw. in der Vergangenheit über mich und mein Verhalten gelernt?",
+        "reward": 1.0,
+        "next_state": "Als KI habe ich keine Erinnerungen an vergangene Interaktionen oder Informationen über individuelle Nutzer. Jede Konversation wird unabhängig behandelt, um die Privatsphäre zu wahren. Kann ich dir sonst noch bei etwas anderem helfen?"
+    },
+    {
+        "timestamp": "2025-04-21T14:56:34.691680",
+        "state": [
+            {
+                "role": "user",
+                "content": "Hallo Elias, beschreib mir bitte den Osterhasen 😆"
+            },
+            {
+                "role": "user",
+                "content": "Hallo Elias, beschreib mir bitte den Osterhasen 😆"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 0.89,
+        "next_state": "Der Osterhase ist eine Figur, die mit dem Osterfest in Verbindung gebracht wird. Er wird oft als ein Hase dargestellt, der bunte Eier versteckt, die die Kinder dann am Ostersonntag suchen können. Diese Tradition stammt aus dem deutschsprachigen Raum und hat sich im Laufe der Zeit in vielen Ländern verbreitet. Der Osterhase wird oft als freundlich, fröhlich und verspielt dargestellt und symbolisiert den Frühling, das Erwachen der Natur und die Freude am Leben. Es ist wichtig zu betonen, dass der Osterhase eine Fantasiefigur ist und nicht real existiert."
+    },
+    {
+        "timestamp": "2025-04-21T14:56:34.702283",
+        "state": [
+            {
+                "role": "user",
+                "content": "Hallo Elias, beschreib mir bitte den Osterhasen 😆"
+            }
+        ],
+        "action": "Hallo Elias, beschreib mir bitte den Osterhasen 😆",
+        "reward": 1.0,
+        "next_state": "Der Osterhase ist eine Figur, die mit dem Osterfest in Verbindung gebracht wird. Er wird oft als ein Hase dargestellt, der bunte Eier versteckt, die die Kinder dann am Ostersonntag suchen können. Diese Tradition stammt aus dem deutschsprachigen Raum und hat sich im Laufe der Zeit in vielen Ländern verbreitet. Der Osterhase wird oft als freundlich, fröhlich und verspielt dargestellt und symbolisiert den Frühling, das Erwachen der Natur und die Freude am Leben. Es ist wichtig zu betonen, dass der Osterhase eine Fantasiefigur ist und nicht real existiert."
     }
 ]

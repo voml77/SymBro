@@ -1,0 +1,22 @@
+
+
+{
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "vae_model": {
+    "latent_dim": 32,
+    "hidden_dims": [128, 64],
+    "epochs": 100,
+    "batch_size": 16,
+    "learning_rate": 0.001
+  },
+  "reward_scaling": {
+    "cosine_similarity_weight": 0.5,
+    "confidence_weight": 0.3,
+    "emotion_weight": 0.2
+  },
+  "replay_buffer": {
+    "capacity": 1000,
+    "priority_alpha": 0.6,
+    "priority_epsilon": 1e-6
+  }
+}

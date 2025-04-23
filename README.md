@@ -178,3 +178,31 @@ SymBro — mehr als nur ein Bot. Ein smarter Begleiter, der Individualität, Ler
   - CPU/GPU-Autoerkennung für Embeddings
   - Tokenizer-Warnungen werden künftig unterdrückt (geplant)
 - Kontextuelles Denken („Was hast du über mich gelernt?“ → Reflexion) wird semantisch und adaptiv umgesetzt
+
+
+## Next Steps – Tag 19+
+
+### Aktueller Stand:
+- Outlier-Detection über KNN implementiert
+- ReplayBuffer befüllt, aber aktuell keine korrekte Gewichtungsdifferenzierung erkennbar
+- Erste Tests zeigen: Alle nicht erkannten Outlier werden mit 1.0 gewichtet, erkannte Outlier aktuell fälschlich auf 0.1 gesetzt (vermutlich zu starke Abwertung)
+- Problem identifiziert: KNN identifiziert nur wenige Outlier, das Gewichtungssystem ist derzeit noch zu grob und linear
+
+### Geplante Fixes & Verbesserungen:
+1. Überarbeitung der Outlier-Gewichtungslogik:
+   - Dynamische Anpassung anhand der Standardabweichung (STD) * 1.5 (wie ursprünglich geplant)
+   - Reale Streuung und Distanz zum Mittelwert als Grundlage für die Gewichtung
+2. Verbesserte Outlier-Bewertung:
+   - Statt harter 0.1-Abwertung: Differenzierte Anpassung je nach Distanzscore
+   - Optional: logarithmische oder sigmoidale Skalierung zur Vermeidung zu harter Strafen
+3. Stabilisierung des ReplayBuffer-Fill-Prozesses:
+   - Outlier-Check greift erst, wenn genug Vergleichsembeddings (>10) vorhanden sind
+   - Fehler beim Array-Shaping (inhomogene Dimensionen) beheben
+4. Test-Case Erweiterung:
+   - Unit Tests für die Outlier-Logik hinzufügen
+   - Kontrolliertes Einspielen von Test-Embeddings zur Validierung der Gewichtungsberechnung
+
+### Ziel für Tag 19:
+- Elias' IQ von 100 auf mindestens 180+ steigern 😉
+- Fokus auf robuste und faire Gewichtungslogik
+- Nächster Commit inklusive Fixes und dokumentiertem Testlauf

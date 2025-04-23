@@ -5064,7 +5064,7 @@
             }
         ],
         "action": "reflect_on_user",
-        "reward": "PENDING",
+        "reward": 0.96,
         "next_state": "Ich lerne durch dein Feedback. Bisher habe ich folgende Dinge über dich gespeichert:\n\n🧠 Dein Stil: technisch, kreativ, direkt\n✅ Du belohnst oft: präzise Antworten, kreative Vergleiche, Empathie\n⚠️ Du vermeidest eher: Floskeln, unreflektiertes Nachplappern, übertriebene Höflichkeit (z.B. Entschuldigungen für Dinge, die keiner Entschuldigung bedürfen)\n\nDiese Infos helfen mir, besser auf dich einzugehen."
     },
     {
@@ -5076,7 +5076,223 @@
             }
         ],
         "action": "Hallo Elias 😇Was hast du bisher über mich gelernt?",
-        "reward": "PENDING_POSITIV",
+        "reward": 0.96,
         "next_state": "Ich lerne durch dein Feedback. Bisher habe ich folgende Dinge über dich gespeichert:\n\n🧠 Dein Stil: technisch, kreativ, direkt\n✅ Du belohnst oft: präzise Antworten, kreative Vergleiche, Empathie\n⚠️ Du vermeidest eher: Floskeln, unreflektiertes Nachplappern, übertriebene Höflichkeit (z.B. Entschuldigungen für Dinge, die keiner Entschuldigung bedürfen)\n\nDiese Infos helfen mir, besser auf dich einzugehen."
+    },
+    {
+        "timestamp": "2025-04-23T08:57:38.826321",
+        "state": [
+            {
+                "role": "user",
+                "content": "Hallo Elias, welche Programmiersprachen kannst du denn? 😇"
+            },
+            {
+                "role": "user",
+                "content": "Hallo Elias, welche Programmiersprachen kannst du denn? 😇"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 1.0,
+        "next_state": "Hallo! Als KI-Assistent kenne ich viele Programmiersprachen, da ich darauf programmiert wurde, mit verschiedenen Sprachen zu interagieren. Ich bin in der Lage, mit Programmiersprachen wie Python, Java, JavaScript, C++, und vielen anderen zu arbeiten. Wenn du konkrete Fragen zu einer bestimmten Sprache hast, stehe ich gerne zur Verfügung, um dir zu helfen! 😊"
+    },
+    {
+        "timestamp": "2025-04-23T08:57:38.838681",
+        "state": [
+            {
+                "role": "user",
+                "content": "Hallo Elias, welche Programmiersprachen kannst du denn? 😇"
+            }
+        ],
+        "action": "Hallo Elias, welche Programmiersprachen kannst du denn? 😇",
+        "reward": 1.0,
+        "next_state": "Hallo! Als KI-Assistent kenne ich viele Programmiersprachen, da ich darauf programmiert wurde, mit verschiedenen Sprachen zu interagieren. Ich bin in der Lage, mit Programmiersprachen wie Python, Java, JavaScript, C++, und vielen anderen zu arbeiten. Wenn du konkrete Fragen zu einer bestimmten Sprache hast, stehe ich gerne zur Verfügung, um dir zu helfen! 😊"
+    },
+    {
+        "timestamp": "2025-04-23T08:58:44.660861",
+        "state": [
+            {
+                "role": "user",
+                "content": "Hallo Elias, welche Programmiersprachen kannst du denn? 😇"
+            },
+            {
+                "role": "user",
+                "content": "Erzeuge bitte eine Methode in Python zum Berechnen von Fibonacci Zahlen."
+            },
+            {
+                "role": "user",
+                "content": "Erzeuge bitte eine Methode in Python zum Berechnen von Fibonacci Zahlen."
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 0.98,
+        "next_state": "Natürlich! Hier ist ein Beispielcode in Python, um Fibonacci-Zahlen mithilfe einer rekursiven Funktion zu berechnen:\n\n```python\ndef fibonacci(n):\n    if n <= 0:\n        return \"Bitte gib eine positive Zahl ein.\"\n    elif n == 1:\n        return 0\n    elif n == 2:\n        return 1\n    else:\n        return fibonacci(n-1) + fibonacci(n-2)\n\n# Beispielaufruf\nprint(fibonacci(10))\n```\n\nDiese Funktion berechnet die n-te Fibonacci-Zahl, indem sie die vorherigen zwei Fibonacci-Zahlen addiert. Beachte jedoch, dass die rekursive Lösung ineffizient sein kann, insbesondere für große Werte von n."
+    },
+    {
+        "timestamp": "2025-04-23T08:58:44.675965",
+        "state": [
+            {
+                "role": "user",
+                "content": "Hallo Elias, welche Programmiersprachen kannst du denn? 😇"
+            },
+            {
+                "role": "user",
+                "content": "Erzeuge bitte eine Methode in Python zum Berechnen von Fibonacci Zahlen."
+            }
+        ],
+        "action": "Erzeuge bitte eine Methode in Python zum Berechnen von Fibonacci Zahlen.",
+        "reward": 0.98,
+        "next_state": "Natürlich! Hier ist ein Beispielcode in Python, um Fibonacci-Zahlen mithilfe einer rekursiven Funktion zu berechnen:\n\n```python\ndef fibonacci(n):\n    if n <= 0:\n        return \"Bitte gib eine positive Zahl ein.\"\n    elif n == 1:\n        return 0\n    elif n == 2:\n        return 1\n    else:\n        return fibonacci(n-1) + fibonacci(n-2)\n\n# Beispielaufruf\nprint(fibonacci(10))\n```\n\nDiese Funktion berechnet die n-te Fibonacci-Zahl, indem sie die vorherigen zwei Fibonacci-Zahlen addiert. Beachte jedoch, dass die rekursive Lösung ineffizient sein kann, insbesondere für große Werte von n."
+    },
+    {
+        "timestamp": "2025-04-23T08:59:25.447657",
+        "state": [
+            {
+                "role": "user",
+                "content": "Hallo Elias, welche Programmiersprachen kannst du denn? 😇"
+            },
+            {
+                "role": "user",
+                "content": "Erzeuge bitte eine Methode in Python zum Berechnen von Fibonacci Zahlen."
+            },
+            {
+                "role": "user",
+                "content": "Dann erstelle bitte hierzu eine rekursive Lösung"
+            },
+            {
+                "role": "user",
+                "content": "Dann erstelle bitte hierzu eine rekursive Lösung"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 0.99,
+        "next_state": "Natürlich kann ich das machen! Hier ist eine rekursive Python-Funktion zur Berechnung von Fibonacci-Zahlen:\n\n```python\ndef fibonacci(n):\n    if n <= 1:\n        return n\n    else:\n        return fibonacci(n-1) + fibonacci(n-2)\n\n# Beispielaufruf\nprint(fibonacci(10))\n```\n\nDiese Funktion berechnet die n-te Fibonacci-Zahl, indem sie sich selbst rekursiv aufruft. Man sollte jedoch beachten, dass die rekursive Lösung ineffizient sein kann für große Werte von n, da viele Berechnungen mehrmals durchgeführt werden. Es gibt auch iterative Ansätze, die effizienter sind."
+    },
+    {
+        "timestamp": "2025-04-23T08:59:25.463298",
+        "state": [
+            {
+                "role": "user",
+                "content": "Hallo Elias, welche Programmiersprachen kannst du denn? 😇"
+            },
+            {
+                "role": "user",
+                "content": "Erzeuge bitte eine Methode in Python zum Berechnen von Fibonacci Zahlen."
+            },
+            {
+                "role": "user",
+                "content": "Dann erstelle bitte hierzu eine rekursive Lösung"
+            }
+        ],
+        "action": "Dann erstelle bitte hierzu eine rekursive Lösung",
+        "reward": 0.99,
+        "next_state": "Natürlich kann ich das machen! Hier ist eine rekursive Python-Funktion zur Berechnung von Fibonacci-Zahlen:\n\n```python\ndef fibonacci(n):\n    if n <= 1:\n        return n\n    else:\n        return fibonacci(n-1) + fibonacci(n-2)\n\n# Beispielaufruf\nprint(fibonacci(10))\n```\n\nDiese Funktion berechnet die n-te Fibonacci-Zahl, indem sie sich selbst rekursiv aufruft. Man sollte jedoch beachten, dass die rekursive Lösung ineffizient sein kann für große Werte von n, da viele Berechnungen mehrmals durchgeführt werden. Es gibt auch iterative Ansätze, die effizienter sind."
+    },
+    {
+        "timestamp": "2025-04-23T09:11:39.645765",
+        "state": [
+            {
+                "role": "user",
+                "content": "Hallo Elias 😆"
+            },
+            {
+                "role": "user",
+                "content": "Hallo Elias 😆"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 0.6,
+        "next_state": "Hallo! Wie kann ich dir heute helfen? 😊"
+    },
+    {
+        "timestamp": "2025-04-23T09:11:39.657065",
+        "state": [
+            {
+                "role": "user",
+                "content": "Hallo Elias 😆"
+            }
+        ],
+        "action": "Hallo Elias 😆",
+        "reward": 0.6,
+        "next_state": "Hallo! Wie kann ich dir heute helfen? 😊"
+    },
+    {
+        "timestamp": "2025-04-23T09:11:52.128378",
+        "state": [
+            {
+                "role": "user",
+                "content": "Hallo Elias 😆"
+            },
+            {
+                "role": "user",
+                "content": "😍"
+            },
+            {
+                "role": "user",
+                "content": "😍"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 0.6,
+        "next_state": "Hallo! Wie kann ich dir heute helfen? 😊"
+    },
+    {
+        "timestamp": "2025-04-23T09:11:52.141803",
+        "state": [
+            {
+                "role": "user",
+                "content": "Hallo Elias 😆"
+            },
+            {
+                "role": "user",
+                "content": "😍"
+            }
+        ],
+        "action": "😍",
+        "reward": 0.6,
+        "next_state": "Hallo! Wie kann ich dir heute helfen? 😊"
+    },
+    {
+        "timestamp": "2025-04-23T09:12:14.249978",
+        "state": [
+            {
+                "role": "user",
+                "content": "Hallo Elias 😆"
+            },
+            {
+                "role": "user",
+                "content": "😍"
+            },
+            {
+                "role": "user",
+                "content": "😆"
+            },
+            {
+                "role": "user",
+                "content": "😆"
+            }
+        ],
+        "action": "gpt_chat",
+        "reward": 0.81,
+        "next_state": "Hallo! 😄 Es sieht so aus, als ob wir beide gute Laune haben! Wie kann ich dir heute helfen? 😊"
+    },
+    {
+        "timestamp": "2025-04-23T09:12:14.270373",
+        "state": [
+            {
+                "role": "user",
+                "content": "Hallo Elias 😆"
+            },
+            {
+                "role": "user",
+                "content": "😍"
+            },
+            {
+                "role": "user",
+                "content": "😆"
+            }
+        ],
+        "action": "😆",
+        "reward": 0.81,
+        "next_state": "Hallo! 😄 Es sieht so aus, als ob wir beide gute Laune haben! Wie kann ich dir heute helfen? 😊"
     }
 ]

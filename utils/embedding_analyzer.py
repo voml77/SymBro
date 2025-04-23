@@ -6,6 +6,62 @@ from sklearn.decomposition import PCA
 from sklearn.manifold import TSNE
 from sentence_transformers import SentenceTransformer
 
+# utils/embedding_analyzer.py
+
+import numpy as np
+
+def load_embeddings_from_embeddings_file(filepath="data/rlhf/embeddings.json"):
+    if not os.path.exists(filepath):
+        print(f"⚠️ Datei {filepath} nicht gefunden.")
+        return [], []
+    with open(filepath, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    embeddings = [np.array(entry["embedding"]) for entry in data if "embedding" in entry]
+    labels = [entry.get("outlier_weight", 1.0) for entry in data]
+    return embeddings, labels
+
+def get_outlier_weight(embedding, use_knn=True, n_neighbors=5):
+    embedding = np.array(embedding)
+    if embedding.ndim == 3:
+        embedding = embedding.squeeze()
+    if embedding.ndim == 1:
+        embedding = embedding.reshape(1, -1)
+
+    embeddings, _ = load_embeddings_from_embeddings_file()
+
+    if len(embeddings) < n_neighbors + 1:
+        print("⚠️ Outlier-Check übersprungen – zu wenige Vergleichsembeddings.")
+        return 1.0
+
+    embeddings = [np.array(e) for e in embeddings]
+    embeddings = [e.squeeze() if e.ndim == 3 else e for e in embeddings]
+    embeddings = [e.reshape(1, -1) if e.ndim == 1 else e for e in embeddings]
+    embeddings = np.vstack(embeddings)
+
+    nbrs = NearestNeighbors(n_neighbors=n_neighbors).fit(embeddings)
+
+    distances_all, _ = nbrs.kneighbors(embeddings)
+    mean_distances_all = distances_all.mean(axis=1)
+    mean = mean_distances_all.mean()
+    std = mean_distances_all.std()
+
+    distances, _ = nbrs.kneighbors(embedding)
+    mean_distance = distances.mean()
+
+    deviation = (mean_distance - mean)
+    factor = 1.5  # Justierbarer Streckfaktor
+    scaling = deviation / (std * factor) if std > 0 else 0
+    weight = 1.0 - scaling
+    weight = max(0.1, min(1.0, weight))  # Clamp
+
+    print(f"🎯 Outlier-Weight: {weight:.3f} (mean_distance: {mean_distance:.3f}, μ: {mean:.3f}, σ: {std:.3f})")
+
+    return weight
+
+def is_outlier(embedding, threshold=0.5):
+    """Optional: True, wenn Gewicht unterhalb des Schwellenwerts."""
+    return get_outlier_weight(embedding) < threshold
+
 # Modell initialisieren
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
@@ -84,5 +140,15 @@ if __name__ == "__main__":
         print("🟠 t-SNE Visualisierung und VAE Outlier Detection aktiviert (600+ Datenpunkte).")
         reduce_and_plot(embeddings, labels, method="tsne")
         
-        # Hinweis: VAE-Integration ist hier Platzhalter, da Modell separat geladen werden müsste
-        print("⚠️ VAE Outlier Detection hier vorgesehen (vae_model.py). Bitte Modell laden und anwenden.")
+        from utils.vae_model import vae_outlier_detection  # VAE-Funktion annehmen
+        outliers = vae_outlier_detection(embeddings)
+        print(f"🚩 Erkannte Outlier (VAE): {np.sum(outliers)} von {len(embeddings)}")
+
+        # Visualisierung der VAE-Outlier
+        plt.figure(figsize=(8, 6))
+        colors = np.where(outliers, "red", "blue")
+        plt.scatter(reduced[:, 0], reduced[:, 1], c=colors, alpha=0.6)
+        plt.title("VAE Outlier Detection (t-SNE-reduziert)")
+        plt.xlabel("Komponente 1")
+        plt.ylabel("Komponente 2")
+        plt.show()
